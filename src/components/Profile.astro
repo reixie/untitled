@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+import avatar from '../assets/images/alex-lohinov-avatar-original.png';
+import { profile } from '../data/homepage';
+---
+
+<header>
+  <div class="identity">
+    <span class="avatar">
+      <Image
+        src={avatar}
+        width={40}
+        height={40}
+        densities={[1, 2, 3]}
+        format="webp"
+        alt=""
+        loading="eager"
+      />
+    </span>
+    <div>
+      <h1>{profile.name}</h1>
+      <p>{profile.role}</p>
+    </div>
+  </div>
+  <div class="biography">
+    <p>{profile.introduction}</p>
+    <p>{profile.expertise}</p>
+    <p>
+      You can find me on{' '}
+      <a
+        href={profile.contacts.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-focus-region
+      >
+        LinkedIn
+      </a>
+      ,{' '}
+      <a
+        href={profile.contacts.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-focus-region
+      >
+        GitHub
+      </a>
+      ,{' '}
+      <a
+        href={profile.contacts.x}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-focus-region
+      >
+        X
+      </a>{' '}
+      or reach me via{' '}
+      <a
+        href={profile.contacts.email}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-focus-region
+      >
+        alex@lohinov.com
+      </a>
+    </p>
+  </div>
+</header>
+
+<style>
+  header {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .identity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .avatar {
+    position: relative;
+    flex: 0 0 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .avatar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 0.5px var(--color-image-border);
+    pointer-events: none;
+  }
+  .biography {
+    display: grid;
+    gap: 1rem;
+  }
+  p {
+    color: var(--color-text-secondary);
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

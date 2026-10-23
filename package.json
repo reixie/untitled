@@ -1,0 +1,36 @@
+{
+  "name": "alex-personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": "24.x",
+    "pnpm": "12.15.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "build": "astro build",
+    "preview": "astro preview",
+    "verify:content": "node scripts/verify-content.mjs",
+    "verify:output": "node scripts/verify-output.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.2",
+    "@astrojs/mdx": "8.1.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "eslint-plugin-astro": "3.2.1",
+    "prettier": "3.9.10",
+    "prettier-plugin-astro": "1.1.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.0"
+  }
+}

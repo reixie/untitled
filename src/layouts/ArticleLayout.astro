@@ -1,0 +1,79 @@
+---
+import DocumentLayout from './DocumentLayout.astro';
+import type { PublishedArticle } from '../lib/articles';
+
+interface Props {
+  article: PublishedArticle;
+}
+
+const { article } = Astro.props;
+const { title, description, publishedAt } = article.data;
+const date = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(publishedAt);
+---
+
+<DocumentLayout title={`${title} — Alex L.`} description={description}>
+  <nav aria-label="Article navigation">
+    <a href="/" class="back-link">
+      <span aria-hidden="true">←</span> Back to homepage
+    </a>
+  </nav>
+  <article aria-labelledby="article-title">
+    <header>
+      <h1 id="article-title">{title}</h1>
+      <time datetime={publishedAt.toISOString().slice(0, 10)}>{date}</time>
+    </header>
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+</DocumentLayout>
+
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    color: var(--color-text-secondary);
+  }
+  header {
+    margin-bottom: 2.5rem;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+  time {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-label);
+  }
+  .prose {
+    line-height: 1.625;
+  }
+  .prose :global(p),
+  .prose :global(ul) {
+    margin-block: 0 1.25rem;
+  }
+  .prose :global(h2) {
+    margin-block: 2.5rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  .prose :global(ul) {
+    padding-left: 1.5rem;
+  }
+  .prose :global(li + li) {
+    margin-top: 0.5rem;
+  }
+  .prose :global(> :last-child) {
+    margin-bottom: 0;
+  }
+</style>

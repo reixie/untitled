@@ -1,0 +1,263 @@
+{
+  "checkedAt": "2026-10-23",
+  "browser": "Codex in-app browser",
+  "method": "Temporary local proof server serving final production HTML/CSS. Actual macOS appearance changed Auto→Dark→Auto; initial Auto resolved Light. Colors converted to computed color(srgb) to avoid legacy CSSOM integer serialization.",
+  "light": {
+    "theme": "Light",
+    "colors": [
+      {
+        "property": "--color-text-primary",
+        "actual": "color(srgb 0.12549 0.12549 0.12549)",
+        "expected": [
+          32.00000189244747, 32.00000189244747, 32.00000189244747, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-text-secondary",
+        "actual": "color(srgb 0.392157 0.392157 0.392157)",
+        "expected": [
+          100.00000163912773, 100.00000163912773, 100.00000163912773, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-text-tertiary",
+        "actual": "color(srgb 0.513726 0.513726 0.513726)",
+        "expected": [
+          131.00000739097595, 131.00000739097595, 131.00000739097595, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-background-1",
+        "actual": "color(srgb 1 1 1)",
+        "expected": [255, 255, 255, 1],
+        "pass": true
+      },
+      {
+        "property": "--color-background-2",
+        "actual": "color(srgb 1 1 1)",
+        "expected": [255, 255, 255, 1],
+        "pass": true
+      },
+      {
+        "property": "--color-border-1",
+        "actual": "color(srgb 0.85098 0.85098 0.85098)",
+        "expected": [
+          217.0000022649765, 217.0000022649765, 217.0000022649765, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-hover",
+        "actual": "color(srgb 0.941176 0.941176 0.941176)",
+        "expected": [
+          240.00000089406967, 240.00000089406967, 240.00000089406967, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-selected",
+        "actual": "color(srgb 0.909804 0.909804 0.909804)",
+        "expected": [
+          232.00000137090683, 232.00000137090683, 232.00000137090683, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-border-2",
+        "actual": "color(srgb 0.82 0.82 0.82)",
+        "expected": [
+          209.09999817609787, 209.09999817609787, 209.09999817609787, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-image-border",
+        "actual": "color(srgb 0 0 0 / 0.1)",
+        "expected": [0, 0, 0, 0.10000000149011612],
+        "pass": true
+      }
+    ],
+    "fonts": {
+      "faces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        }
+      ],
+      "regular": true,
+      "medium": true,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4322/fonts/inter-medium.woff2",
+          "bytes": 114348
+        },
+        {
+          "name": "http://127.0.0.1:4322/fonts/inter-regular.woff2",
+          "bytes": 111268
+        }
+      ]
+    },
+    "typography": [
+      {
+        "selector": "h1",
+        "family": "Inter, system-ui, sans-serif",
+        "weight": "500",
+        "size": "16px",
+        "lineHeight": "20px",
+        "tracking": "-0.176px"
+      },
+      {
+        "selector": "p",
+        "family": "Inter, system-ui, sans-serif",
+        "weight": "400",
+        "size": "16px",
+        "lineHeight": "20px",
+        "tracking": "-0.176px"
+      }
+    ],
+    "labelStyle": {
+      "size": "13px",
+      "lineHeight": "20px",
+      "tracking": "-0.143px",
+      "weight": "500"
+    },
+    "pass": true
+  },
+  "dark": {
+    "theme": "Dark",
+    "colors": [
+      {
+        "property": "--color-text-primary",
+        "actual": "color(srgb 0.933333 0.933333 0.933333)",
+        "expected": [
+          238.00000101327896, 238.00000101327896, 238.00000101327896, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-text-secondary",
+        "actual": "color(srgb 0.705882 0.705882 0.705882)",
+        "expected": [
+          180.00000447034836, 180.00000447034836, 180.00000447034836, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-text-tertiary",
+        "actual": "color(srgb 0.482353 0.482353 0.482353)",
+        "expected": [
+          123.0000002682209, 123.0000002682209, 123.0000002682209, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-background-1",
+        "actual": "color(srgb 0 0 0)",
+        "expected": [0, 0, 0, 1],
+        "pass": true
+      },
+      {
+        "property": "--color-background-2",
+        "actual": "color(srgb 0.0392157 0.0392157 0.0392157)",
+        "expected": [
+          10.000000353902578, 10.000000353902578, 10.000000353902578, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-border-1",
+        "actual": "color(srgb 0.227451 0.227451 0.227451)",
+        "expected": [
+          58.00000034272671, 58.00000034272671, 58.00000034272671, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-hover",
+        "actual": "color(srgb 0.145098 0.145098 0.145098)",
+        "expected": [
+          37.00000159442425, 37.00000159442425, 37.00000159442425, 1
+        ],
+        "pass": true
+      },
+      {
+        "property": "--color-selected",
+        "actual": "color(srgb 0.184314 0.184314 0.184314)",
+        "expected": [47.0000009983778, 47.0000009983778, 47.0000009983778, 1],
+        "pass": true
+      },
+      {
+        "property": "--color-border-2",
+        "actual": "color(srgb 0.26 0.26 0.26)",
+        "expected": [66.2999975681305, 66.2999975681305, 66.2999975681305, 1],
+        "pass": true
+      },
+      {
+        "property": "--color-image-border",
+        "actual": "color(srgb 1 1 1 / 0.1)",
+        "expected": [255, 255, 255, 0.10000000149011612],
+        "pass": true
+      }
+    ],
+    "fonts": {
+      "faces": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        }
+      ],
+      "regular": true,
+      "medium": true,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4322/fonts/inter-regular.woff2",
+          "bytes": 111268
+        },
+        {
+          "name": "http://127.0.0.1:4322/fonts/inter-medium.woff2",
+          "bytes": 114348
+        }
+      ]
+    },
+    "typography": [
+      {
+        "selector": "h1",
+        "family": "Inter, system-ui, sans-serif",
+        "weight": "500",
+        "size": "16px",
+        "lineHeight": "20px",
+        "tracking": "-0.176px"
+      },
+      {
+        "selector": "p",
+        "family": "Inter, system-ui, sans-serif",
+        "weight": "400",
+        "size": "16px",
+        "lineHeight": "20px",
+        "tracking": "-0.176px"
+      }
+    ],
+    "labelStyle": {
+      "size": "13px",
+      "lineHeight": "20px",
+      "tracking": "-0.143px",
+      "weight": "500"
+    },
+    "pass": true
+  }
+}

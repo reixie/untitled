@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="preload"
+      href="/fonts/inter-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns:
+      minmax(var(--page-gutter), 1fr) minmax(0, var(--content-max-width))
+      minmax(var(--page-gutter), 1fr);
+    row-gap: 4rem;
+    padding-block: var(--page-padding-block);
+    overflow-wrap: anywhere;
+  }
+  main > :global(*) {
+    grid-column: 2;
+    min-width: 0;
+  }
+  main > :global(.showcase) {
+    grid-column: 1 / -1;
+  }
+</style>

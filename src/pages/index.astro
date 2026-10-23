@@ -1,0 +1,52 @@
+---
+import DocumentLayout from '../layouts/DocumentLayout.astro';
+import Profile from '../components/Profile.astro';
+import Showcase from '../components/Showcase.astro';
+import ContentRow from '../components/ContentRow.astro';
+import { experience } from '../data/homepage';
+import { getPublishedArticles } from '../lib/articles';
+
+const articles = await getPublishedArticles();
+---
+
+<DocumentLayout
+  title="Alex L. — Design Engineer"
+  description="Alex L., Design Engineer based in Lithuania."
+>
+  <Profile />
+  <Showcase />
+  <section aria-labelledby="experience-heading">
+    <h2 id="experience-heading">Experience</h2>
+    <ul>
+      {experience.map((item) => (
+        <li>
+          <ContentRow label={item.company} role={item.role} href={item.href} />
+        </li>
+      ))}
+    </ul>
+  </section>
+  <section aria-labelledby="writing-heading">
+    <h2 id="writing-heading">Writing</h2>
+    <ul>
+      {articles.map((article) => (
+        <li>
+          <ContentRow
+            label={article.data.title}
+            href={`/articles/${article.id}/`}
+          />
+        </li>
+      ))}
+    </ul>
+  </section>
+</DocumentLayout>
+
+<style>
+  h2 {
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

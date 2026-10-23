@@ -1,0 +1,889 @@
+{
+  "browser": "156.0.8078.48",
+  "matrix": [
+    {
+      "theme": "light",
+      "width": 320,
+      "before": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 272,
+          "height": 316
+        },
+        "experience": {
+          "x": 24,
+          "y": 960,
+          "width": 272,
+          "height": 232
+        },
+        "writing": {
+          "x": 24,
+          "y": 1256,
+          "width": 272,
+          "height": 124
+        },
+        "card": {
+          "x": 24,
+          "y": 496,
+          "width": 272,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 288,
+        "width": 320,
+        "items": [
+          {
+            "x": -264,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 24,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 312,
+            "width": 272,
+            "height": 181.328125
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "before": {
+        "viewport": 375,
+        "pageWidth": 375,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 327,
+          "height": 276
+        },
+        "experience": {
+          "x": 24,
+          "y": 920,
+          "width": 327,
+          "height": 212
+        },
+        "writing": {
+          "x": 24,
+          "y": 1196,
+          "width": 327,
+          "height": 124
+        },
+        "card": {
+          "x": 24,
+          "y": 456,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 343,
+        "width": 375,
+        "items": [
+          {
+            "x": -319,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 24,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 367,
+            "width": 327,
+            "height": 218
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "before": {
+        "viewport": 768,
+        "pageWidth": 768,
+        "profile": {
+          "x": 84,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 84,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 84,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 84,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 768,
+        "items": [
+          {
+            "x": -532,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 84,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 700,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1200,
+      "before": {
+        "viewport": 1200,
+        "pageWidth": 1200,
+        "profile": {
+          "x": 300,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 300,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 300,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 300,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1200,
+        "items": [
+          {
+            "x": -316,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 300,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 916,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "before": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "profile": {
+          "x": 420,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 420,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 420,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 420,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1440,
+        "items": [
+          {
+            "x": -196,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 420,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 1036,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "before": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 272,
+          "height": 316
+        },
+        "experience": {
+          "x": 24,
+          "y": 960,
+          "width": 272,
+          "height": 232
+        },
+        "writing": {
+          "x": 24,
+          "y": 1256,
+          "width": 272,
+          "height": 124
+        },
+        "card": {
+          "x": 24,
+          "y": 496,
+          "width": 272,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 288,
+        "width": 320,
+        "items": [
+          {
+            "x": -264,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 24,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 312,
+            "width": 272,
+            "height": 181.328125
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "before": {
+        "viewport": 375,
+        "pageWidth": 375,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 327,
+          "height": 276
+        },
+        "experience": {
+          "x": 24,
+          "y": 920,
+          "width": 327,
+          "height": 212
+        },
+        "writing": {
+          "x": 24,
+          "y": 1196,
+          "width": 327,
+          "height": 124
+        },
+        "card": {
+          "x": 24,
+          "y": 456,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 343,
+        "width": 375,
+        "items": [
+          {
+            "x": -319,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 24,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 367,
+            "width": 327,
+            "height": 218
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "before": {
+        "viewport": 768,
+        "pageWidth": 768,
+        "profile": {
+          "x": 84,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 84,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 84,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 84,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 768,
+        "items": [
+          {
+            "x": -532,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 84,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 700,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1200,
+      "before": {
+        "viewport": 1200,
+        "pageWidth": 1200,
+        "profile": {
+          "x": 300,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 300,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 300,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 300,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1200,
+        "items": [
+          {
+            "x": -316,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 300,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 916,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "before": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "profile": {
+          "x": 420,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 420,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 420,
+          "y": 1116,
+          "width": 600,
+          "height": 124
+        },
+        "card": {
+          "x": 420,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1440,
+        "items": [
+          {
+            "x": -196,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 420,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 1036,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded"
+          }
+        ],
+        "cls": 0
+      }
+    }
+  ],
+  "interactions": [
+    "Tabs: pointer, wraparound arrows, Home/End, Space/Enter, roving tabindex, focus outline, panel entry and hidden descendant exclusion",
+    "Gallery: scoped keyboard, native wheel, vertical page scrolling, reopen, fractional position, visible and hidden resize, reduced motion and smooth user navigation",
+    {
+      "touch": "375px Chromium touch emulation: tap + native swipe",
+      "before": 343,
+      "after": 679
+    },
+    "320px: long role and 200% root font size wrap without page overflow"
+  ],
+  "noJavaScript": [
+    {
+      "theme": "light",
+      "width": 320,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1200,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1200,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "bothPanelsReadable": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "cancelledRequests": [
+    "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp: net::ERR_ABORTED",
+    "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp: net::ERR_ABORTED",
+    "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp: net::ERR_ABORTED",
+    "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp: net::ERR_ABORTED",
+    "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp: net::ERR_ABORTED",
+    "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp: net::ERR_ABORTED"
+  ],
+  "links": [
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/in/alex-lohinov-b503683b4"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/reixie"
+    },
+    {
+      "text": "X",
+      "href": "https://x.com/reixxiie"
+    },
+    {
+      "text": "alex@lohinov.com",
+      "href": "mailto:alex@lohinov.com"
+    },
+    {
+      "text": "Konexta Agency~Product Designer",
+      "href": "https://www.konexta.agency/"
+    },
+    {
+      "text": "Valorx~Product Designer",
+      "href": "https://www.valorx.com/"
+    },
+    {
+      "text": "Roxfit~UI/UX Designer",
+      "href": "https://roxfit.app/"
+    },
+    {
+      "text": "OptiHint~UI/UX Designer",
+      "href": "https://optihint.com/"
+    }
+  ],
+  "resources": [
+    "http://127.0.0.1:4321/",
+    "http://127.0.0.1:4321/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+    "http://127.0.0.1:4321/_astro/index.DsZaNyZN.css",
+    "http://127.0.0.1:4321/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_Z2ufWQQ.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_Z2hvidt.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_1Shj0X.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+    "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+    "http://127.0.0.1:4321/fonts/inter-medium.woff2",
+    "http://127.0.0.1:4321/fonts/inter-regular.woff2"
+  ],
+  "media": [
+    {
+      "src": "http://127.0.0.1:4321/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+      "width": 40,
+      "height": 40,
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:4321/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+      "width": 40,
+      "height": 40,
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:4321/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:4321/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:4321/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    }
+  ]
+}

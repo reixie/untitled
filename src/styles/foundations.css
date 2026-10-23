@@ -1,0 +1,13 @@
+/* Implementation constants from observed text styles and geometry, not variables. */
+:root {
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-size-body: 1rem;
+  --font-size-label: 0.8125rem;
+  --line-height-body: 1.25rem;
+  --letter-spacing: -0.011em;
+  --content-max-width: 37.5rem;
+  --page-padding-block: 4rem;
+  --page-gutter: 1.5rem;
+}

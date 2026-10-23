@@ -1,0 +1,273 @@
+---
+import { Image } from 'astro:assets';
+import icon from '../assets/images/runnel-terminal-icon-original.png';
+import { runnel, selectedWork } from '../data/homepage';
+import PixelFlow from './PixelFlow.astro';
+---
+
+<section class="showcase" aria-label="Projects and selected work" data-showcase>
+  <nav class="tabs" aria-label="Showcase sections" data-tabs>
+    <a id="projects-tab" href="#projects">
+      Projects
+    </a>
+    <a id="selected-work-tab" href="#selected-work">
+      Selected work
+    </a>
+  </nav>
+  <section
+    id="projects"
+    class="panel"
+    aria-labelledby="projects-title"
+    data-panel
+  >
+    <h2 class="panel-title" id="projects-title">
+      Projects
+    </h2>
+    <a
+      class="project-link"
+      href={runnel.destination.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-labelledby="runnel-title"
+      data-tilt-card
+    >
+      <article class="project-card" data-tilt-surface>
+        <PixelFlow />
+        <div class="project-identity">
+          <Image
+            src={icon}
+            width={40}
+            height={40}
+            densities={[1, 2, 3]}
+            format="webp"
+            alt="A smiling retro computer with green stars on a black rounded square."
+          />
+          <div>
+            <h3 id="runnel-title">{runnel.title}</h3>
+            <p class="subtitle">{runnel.subtitle}</p>
+          </div>
+        </div>
+        <p>{runnel.description}</p>
+      </article>
+    </a>
+  </section>
+  <section
+    id="selected-work"
+    class="panel work-panel"
+    aria-labelledby="selected-work-title"
+    data-panel
+  >
+    <h2 class="panel-title" id="selected-work-title">
+      Selected work
+    </h2>
+    <p id="gallery-help" class="visually-hidden">
+      Scroll or swipe horizontally to explore the work. With the gallery
+      focused, use Left and Right arrows, Home, or End.
+    </p>
+    <div
+      class="gallery"
+      role="region"
+      aria-label="Selected work gallery"
+      aria-describedby="gallery-help"
+      tabindex="0"
+      data-gallery
+    >
+      {selectedWork.map((work) => (
+        <div class="work" data-work={work.sourceNode}>
+          <Image
+            src={work.image}
+            width={600}
+            height={400}
+            widths={[288, 384, 600, 768, 1200, 1800]}
+            sizes="(max-width: 648px) calc(100vw - 48px), 600px"
+            format="webp"
+            quality={85}
+            fit="cover"
+            position="center"
+            alt={work.alt}
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</section>
+
+<script>
+  import { enhanceShowcase } from '../scripts/showcase';
+  import { enhanceCardTilt } from '../scripts/card-tilt';
+  document
+    .querySelectorAll<HTMLElement>('[data-showcase]')
+    .forEach(enhanceShowcase);
+  document
+    .querySelectorAll<HTMLElement>('[data-tilt-card]')
+    .forEach(enhanceCardTilt);
+</script>
+
+<style>
+  .showcase {
+    display: grid;
+    grid-template-columns: subgrid;
+    row-gap: 1rem;
+  }
+  .tabs,
+  .panel {
+    grid-column: 2;
+    min-width: 0;
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tabs a {
+    padding: 0.5rem 0.75rem;
+    border-radius: 100px;
+    font-size: var(--font-size-label);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+  .tabs a:hover {
+    background: var(--color-hover);
+  }
+  .tabs a[aria-selected='true'] {
+    background: var(--color-selected);
+    color: var(--color-text-primary);
+  }
+  .panel {
+    min-height: 25rem;
+  }
+  .panel-title {
+    margin-bottom: 1rem;
+  }
+  [data-enhanced] .panel-title {
+    display: none;
+  }
+  .project-link {
+    display: block;
+    width: min(100%, 18.75rem);
+    border-radius: 1rem;
+    text-decoration: none;
+    perspective: 900px;
+  }
+  .project-card {
+    --project-base: 255 255 255;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    min-height: 25rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: var(--color-text-primary);
+    background: rgb(var(--project-base));
+  }
+  @media (prefers-color-scheme: dark) {
+    .project-card {
+      --project-base: 10 10 10;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .project-card {
+      transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+      transition:
+        transform 180ms ease-out,
+        box-shadow 180ms ease-out;
+    }
+    .project-link:hover .project-card {
+      box-shadow: 0 16px 32px rgb(0 0 0 / 12%);
+    }
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      180deg,
+      rgb(var(--project-base) / 96%) 0%,
+      rgb(var(--project-base) / 78%) 20%,
+      rgb(var(--project-base) / 0%) 42%,
+      rgb(var(--project-base) / 8%) 55%,
+      rgb(var(--project-base) / 92%) 78%,
+      rgb(var(--project-base)) 100%
+    );
+    pointer-events: none;
+  }
+  /* Keep the outline above the animated canvas and its contrast gradient. */
+  .project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 0.5px var(--color-border-1);
+    pointer-events: none;
+  }
+  .project-identity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .project-identity img {
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .subtitle {
+    color: var(--color-text-secondary);
+  }
+  .work-panel {
+    grid-column: 1 / -1;
+  }
+  .work-panel .panel-title {
+    width: min(calc(100% - 2 * var(--page-gutter)), var(--content-max-width));
+    margin-inline: auto;
+  }
+  .gallery {
+    display: flex;
+    gap: 1rem;
+    padding-inline: max(
+      var(--page-gutter),
+      calc((100% - var(--content-max-width)) / 2)
+    );
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+  .gallery:focus-visible {
+    outline-offset: -3px;
+  }
+  .work {
+    position: relative;
+    flex: 0 0 100%;
+    min-width: 0;
+    aspect-ratio: 3 / 2;
+    border-radius: 1rem;
+    overflow: hidden;
+    scroll-snap-align: center;
+  }
+  .work::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 0.5px var(--color-image-border);
+    pointer-events: none;
+  }
+  .work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+</style>
