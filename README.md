@@ -2,6 +2,8 @@
 
 Responsive static homepage and the first published Writing article, built on the preserved content foundation. The first release preserves the current design and interactions; unfinished case studies remain noninteractive and future enhancements are outside its scope.
 
+[Website](https://untitled-bice-chi.vercel.app/) · [Design the second attempt](https://untitled-bice-chi.vercel.app/articles/design-the-second-attempt/)
+
 ## Run locally
 
 Use Node.js **24.22.1** (`.node-version`) and pnpm **12.15.0** (`packageManager`). Install that Node version with your version manager, then install pnpm if needed:
