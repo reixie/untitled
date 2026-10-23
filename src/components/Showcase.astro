@@ -145,6 +145,14 @@ import PixelFlow from './PixelFlow.astro';
   [data-enhanced] .panel-title {
     display: none;
   }
+  /* Reserve the enhanced layout before module execution on a cold load.
+     With scripting disabled, both source sections and headings stay visible. */
+  @media (scripting: enabled) {
+    .panel-title,
+    .showcase:not([data-enhanced]) #selected-work {
+      display: none;
+    }
+  }
   .project-link {
     display: block;
     width: min(100%, 18.75rem);
