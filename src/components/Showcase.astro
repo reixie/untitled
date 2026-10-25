@@ -74,20 +74,43 @@ import PixelFlow from './PixelFlow.astro';
     >
       {selectedWork.map((work) => (
         <div class="work" data-work={work.sourceNode}>
-          <Image
-            src={work.image}
-            width={600}
-            height={400}
-            widths={[288, 384, 600, 768, 1200, 1800]}
-            sizes="(max-width: 648px) calc(100vw - 48px), 600px"
-            format="webp"
-            quality={85}
-            fit="cover"
-            position="center"
-            alt={work.alt}
-            loading="eager"
-            decoding="async"
-          />
+          {work.destination.href ? (
+            <a
+              class="work-link"
+              href={work.destination.href}
+              aria-label={work.title}
+            >
+              <Image
+                src={work.image}
+                width={600}
+                height={400}
+                widths={[288, 384, 600, 768, 1200, 1800]}
+                sizes="(max-width: 648px) calc(100vw - 48px), 600px"
+                format="webp"
+                quality={85}
+                fit="cover"
+                position="center"
+                alt={work.alt}
+                loading="eager"
+                decoding="async"
+              />
+            </a>
+          ) : (
+            <Image
+              src={work.image}
+              width={600}
+              height={400}
+              widths={[288, 384, 600, 768, 1200, 1800]}
+              sizes="(max-width: 648px) calc(100vw - 48px), 600px"
+              format="webp"
+              quality={85}
+              fit="cover"
+              position="center"
+              alt={work.alt}
+              loading="eager"
+              decoding="async"
+            />
+          )}
         </div>
       ))}
     </div>
@@ -277,5 +300,13 @@ import PixelFlow from './PixelFlow.astro';
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+  .work-link {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+  }
+  .work-link:focus-visible {
+    outline-offset: -5px;
   }
 </style>

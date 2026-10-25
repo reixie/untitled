@@ -1,6 +1,8 @@
 ---
 import DocumentLayout from './DocumentLayout.astro';
 import type { PublishedArticle } from '../lib/articles';
+import BackLink from '../components/BackLink.astro';
+import '../styles/prose.css';
 
 interface Props {
   article: PublishedArticle;
@@ -18,9 +20,7 @@ const date = new Intl.DateTimeFormat('en-GB', {
 
 <DocumentLayout title={`${title} — Alex L.`} description={description}>
   <nav aria-label="Article navigation">
-    <a href="/" class="back-link">
-      <span aria-hidden="true">←</span> Back to homepage
-    </a>
+    <BackLink />
   </nav>
   <article aria-labelledby="article-title">
     <header>
@@ -34,13 +34,6 @@ const date = new Intl.DateTimeFormat('en-GB', {
 </DocumentLayout>
 
 <style>
-  .back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    min-height: 2.75rem;
-    color: var(--color-text-secondary);
-  }
   header {
     margin-bottom: 2.5rem;
   }
@@ -54,26 +47,5 @@ const date = new Intl.DateTimeFormat('en-GB', {
     margin-top: 0.75rem;
     color: var(--color-text-secondary);
     font-size: var(--font-size-label);
-  }
-  .prose {
-    line-height: 1.625;
-  }
-  .prose :global(p),
-  .prose :global(ul) {
-    margin-block: 0 1.25rem;
-  }
-  .prose :global(h2) {
-    margin-block: 2.5rem 1rem;
-    font-size: 1.125rem;
-    line-height: 1.5;
-  }
-  .prose :global(ul) {
-    padding-left: 1.5rem;
-  }
-  .prose :global(li + li) {
-    margin-top: 0.5rem;
-  }
-  .prose :global(> :last-child) {
-    margin-bottom: 0;
   }
 </style>

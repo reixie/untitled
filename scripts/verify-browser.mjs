@@ -21,6 +21,41 @@ const browser = await chromium.launch({
 const baseURL = process.env.VERIFY_URL ?? 'http://127.0.0.1:4321';
 const articlePath = '/articles/design-the-second-attempt/';
 const articleURL = new URL(articlePath, baseURL).href;
+const caseStudies = await Promise.all(
+  [
+    {
+      id: 'accord',
+      node: '42:378',
+      title: 'Accord — a CRM for small teams',
+      listItems: 4,
+    },
+    {
+      id: 'pascal',
+      node: '42:382',
+      title: 'Pascal — Markdown notes for macOS',
+      listItems: 5,
+    },
+  ].map(async (study) => {
+    const source = await readFile(`src/content/work/${study.id}.mdx`, 'utf8');
+    const paragraphs = source
+      .replace(/^---\n[\s\S]*?\n---\n/, '')
+      .replace(/^import .*;\n/gm, '')
+      .replace(/<CaseFigure[\s\S]*?\/>/g, '')
+      .trim()
+      .split(/\n\s*\n/)
+      .map((paragraph) =>
+        paragraph
+          .replace(/^## |^- /gm, '')
+          .replace(/\s+/g, ' ')
+          .trim(),
+      );
+    return {
+      ...study,
+      paragraphs,
+      url: new URL(`/work/${study.id}/`, baseURL).href,
+    };
+  }),
+);
 const articleSource = await readFile(
   'src/content/articles/design-the-second-attempt.md',
   'utf8',
@@ -31,7 +66,7 @@ const articleBody = articleSource
   .replace(/\s+/g, ' ')
   .trim();
 // New evidence stays separate from the historical Stage 1/2 captures.
-const output = resolve('docs/article-verification');
+const output = resolve('docs/pascal-verification');
 await mkdir(output, { recursive: true });
 const report = {
   browser: browser.version(),
@@ -39,6 +74,7 @@ const report = {
   interactions: [],
   noJavaScript: [],
   article: [],
+  caseStudy: [],
   errors: [],
   cancelledRequests: [],
 };
@@ -124,6 +160,13 @@ try {
   });
   const page = await context.newPage();
   page.on('pageerror', (error) => report.errors.push(error.message));
+  page.on('console', (message) => {
+    if (message.type() === 'error') report.errors.push(message.text());
+  });
+  page.on('response', (response) => {
+    if (response.status() >= 400)
+      report.errors.push(`${response.status()}: ${response.url()}`);
+  });
   page.on('requestfailed', (request) => {
     const failure = `${request.url()}: ${request.failure()?.errorText}`;
     // Navigation/srcset changes can cancel an obsolete image request.
@@ -367,6 +410,8 @@ try {
       'https://x.com/reixxiie',
       'mailto:alex@lohinov.com',
       'https://github.com/reixie/runnel',
+      '/work/pascal/',
+      '/work/accord/',
       'https://www.konexta.agency/',
       'https://www.valorx.com/',
       'https://roxfit.app/',
@@ -710,6 +755,265 @@ try {
   console.log(
     'PASS: article themes/mobile/no-JS matrix, same-tab navigation, refresh and keyboard return.',
   );
+
+  for (const study of caseStudies) {
+    // Each Selected work route retains the shared checks; Writing assertions stay above.
+    await page.goto(baseURL);
+    await page.getByRole('tab', { name: 'Selected work', exact: true }).click();
+    assert.deepEqual(
+      await page
+        .locator('[data-work]')
+        .evaluateAll((items) => items.map((item) => item.dataset.work)),
+      ['42:382', '42:378', '42:393'],
+    );
+    assert.equal(await page.locator('[data-gallery] button').count(), 0);
+    assert.equal(await page.locator('[data-work] a').count(), 2);
+    assert.equal(await page.locator('[data-work="42:393"] a').count(), 0);
+    const caseLink = page.locator(`[data-work="${study.node}"] a`);
+    assert.equal(await caseLink.getAttribute('href'), `/work/${study.id}/`);
+    assert.equal(await caseLink.getAttribute('aria-label'), study.title);
+    assert.equal(await caseLink.getAttribute('target'), null);
+    await page.locator('[data-gallery]').focus();
+    await page.keyboard.press('Tab');
+    assert.equal(
+      await page
+        .locator('[data-work="42:382"] a')
+        .evaluate((el) => el === document.activeElement),
+      true,
+    );
+    if (study.id === 'accord') await page.keyboard.press('Tab');
+    assert.equal(
+      await caseLink.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    assert.equal(
+      await caseLink.evaluate((el) => getComputedStyle(el).outlineStyle),
+      'solid',
+    );
+    await caseLink.press('Enter');
+    assert.equal(page.url(), study.url);
+    assert.equal(context.pages().length, 1);
+    assert.equal((await page.reload()).status(), 200);
+    await page.goBack();
+    assert.equal(page.url(), new URL('/', baseURL).href);
+    await page.getByRole('tab', { name: 'Selected work', exact: true }).click();
+    await caseLink.click();
+    assert.equal(page.url(), study.url);
+    await page.keyboard.press('Tab');
+    const caseHome = page
+      .getByRole('link', { name: 'Back to homepage' })
+      .first();
+    assert.equal(
+      await caseHome.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    assert.equal(
+      await caseHome.evaluate((el) => getComputedStyle(el).outlineStyle),
+      'solid',
+    );
+    await page.keyboard.press('Tab');
+    const imageLinks = page.getByRole('link', {
+      name: /^View full-size image:/,
+    });
+    assert.equal(await imageLinks.count(), 6);
+    for (const link of await imageLinks.all()) {
+      assert.equal(
+        await link.evaluate((el) => el === document.activeElement),
+        true,
+      );
+      assert.equal(
+        await link.evaluate((el) => getComputedStyle(el).outlineStyle),
+        'solid',
+      );
+      const response = await context.request.get(
+        new URL(await link.getAttribute('href'), baseURL).href,
+      );
+      assert.equal(response.status(), 200);
+      assert.match(response.headers()['content-type'], /image\/webp/);
+      await page.keyboard.press('Tab');
+    }
+    // Follow a real original image with the keyboard, then return through browser history.
+    await imageLinks.nth(2).focus();
+    const originalURL = new URL(
+      await imageLinks.nth(2).getAttribute('href'),
+      baseURL,
+    ).href;
+    await imageLinks.nth(2).press('Enter');
+    assert.equal(page.url(), originalURL);
+    await page.goBack();
+    assert.equal(page.url(), study.url);
+    await page.getByRole('link', { name: 'Back to homepage' }).last().click();
+    assert.equal(page.url(), new URL('/', baseURL).href);
+    report.interactions.push(
+      `${study.id}: gallery image → same-tab case → refresh → browser Back → pointer link → keyboard image links/full-size original → browser Back → homepage link`,
+    );
+
+    for (const theme of ['light', 'dark']) {
+      for (const javaScriptEnabled of [true, false]) {
+        const caseContext = await browser.newContext({
+          javaScriptEnabled,
+          colorScheme: theme,
+          reducedMotion: 'reduce',
+        });
+        const reading = await caseContext.newPage();
+        reading.on('pageerror', (error) => report.errors.push(error.message));
+        reading.on('console', (message) => {
+          if (message.type() === 'error') report.errors.push(message.text());
+        });
+        reading.on('requestfailed', (request) => {
+          if (request.failure()?.errorText !== 'net::ERR_ABORTED')
+            report.errors.push(
+              `${request.url()}: ${request.failure()?.errorText}`,
+            );
+        });
+        reading.on('response', (response) => {
+          if (response.status() >= 400)
+            report.errors.push(`${response.status()}: ${response.url()}`);
+        });
+        for (const width of [320, 375, 768, 1200, 1440]) {
+          await reading.setViewportSize({ width, height: 900 });
+          assert.equal((await reading.goto(study.url)).status(), 200);
+          await reading.evaluate(() => document.fonts.ready);
+          assert.equal(await reading.locator('h1').innerText(), study.title);
+          assert.equal(await reading.locator('article h2').count(), 8);
+          assert.equal(
+            await reading.locator('article li').count(),
+            study.listItems,
+          );
+          assert.equal(await reading.locator('time, script').count(), 0);
+          const body = (await reading.locator('article').innerText()).replace(
+            /\s+/g,
+            ' ',
+          );
+          for (const paragraph of study.paragraphs)
+            assert.ok(
+              body.includes(paragraph),
+              `Missing case paragraph: ${paragraph}`,
+            );
+          for (const img of await reading.locator('article img').all()) {
+            await img.scrollIntoViewIfNeeded();
+            await img.evaluate((el) => el.decode());
+          }
+          const layout = await reading.evaluate(() => {
+            const text = document.querySelector('.case-body > p');
+            const r = text.getBoundingClientRect();
+            return {
+              textWidth: r.width,
+              textX: r.x,
+              overflow: document.documentElement.scrollWidth > innerWidth,
+              color: getComputedStyle(text).color,
+              font: getComputedStyle(text).fontFamily,
+              lineHeight: getComputedStyle(text).lineHeight,
+              images: [...document.querySelectorAll('article img')].map(
+                (img) => {
+                  const style = getComputedStyle(img);
+                  const rect = img.getBoundingClientRect();
+                  return {
+                    src: img.currentSrc,
+                    naturalWidth: img.naturalWidth,
+                    naturalHeight: img.naturalHeight,
+                    width:
+                      rect.width -
+                      parseFloat(style.borderLeftWidth) -
+                      parseFloat(style.borderRightWidth),
+                    height:
+                      rect.height -
+                      parseFloat(style.borderTopWidth) -
+                      parseFloat(style.borderBottomWidth),
+                    attrWidth: img.getAttribute('width'),
+                    attrHeight: img.getAttribute('height'),
+                    loading: img.loading,
+                    alt: img.alt,
+                    complete: img.complete,
+                  };
+                },
+              ),
+            };
+          });
+          assert.equal(layout.overflow, false);
+          closeTo(layout.textWidth, Math.min(600, width - 48));
+          closeTo(layout.textX, Math.max(24, (width - 600) / 2));
+          assert.equal(layout.lineHeight, '26px');
+          assert.match(layout.font, /Inter/);
+          assert.equal(
+            layout.color,
+            theme === 'light' ? 'rgb(32, 32, 32)' : 'rgb(238, 238, 238)',
+          );
+          assert.equal(layout.images.length, 6);
+          assert.equal(new Set(layout.images.map((img) => img.src)).size, 6);
+          assert.equal(
+            await reading.locator('[data-case-image$="— Light"]').count(),
+            study.id === 'pascal' ? 3 : 1,
+          );
+          assert.equal(
+            await reading.locator('[data-case-image$="— Dark"]').count(),
+            study.id === 'pascal' ? 2 : 1,
+          );
+          for (const [i, img] of layout.images.entries()) {
+            assert.ok(
+              img.complete && img.naturalWidth > 0 && img.alt.length > 30,
+            );
+            assert.ok(img.src.startsWith(baseURL));
+            closeTo(
+              img.width / img.height,
+              Number(img.attrWidth) / Number(img.attrHeight),
+              0.01,
+            );
+            closeTo(
+              img.naturalWidth / img.naturalHeight,
+              Number(img.attrWidth) / Number(img.attrHeight),
+              0.01,
+            );
+            assert.equal(img.loading, i === 0 ? 'eager' : 'lazy');
+          }
+          report.caseStudy.push({
+            id: study.id,
+            theme,
+            javaScriptEnabled,
+            viewport: width,
+            ...layout,
+          });
+          if (javaScriptEnabled && [375, 1200].includes(width)) {
+            await reading.evaluate(() => window.scrollTo(0, 0));
+            await capture(
+              reading,
+              `${output}/${theme}-${study.id}-${width}.png`,
+            );
+          }
+        }
+        await reading
+          .getByRole('link', { name: 'Back to homepage' })
+          .first()
+          .click();
+        assert.equal(reading.url(), new URL('/', baseURL).href);
+        await caseContext.close();
+      }
+    }
+    await page.goto(study.url);
+    for (const theme of ['light', 'dark']) {
+      await page.emulateMedia({ colorScheme: theme });
+      assert.equal(
+        await page.locator('h1').evaluate((el) => getComputedStyle(el).color),
+        theme === 'light' ? 'rgb(32, 32, 32)' : 'rgb(238, 238, 238)',
+      );
+    }
+    await page.setViewportSize({ width: 320, height: 900 });
+    await page.locator('html').evaluate((el) => {
+      el.style.fontSize = '200%';
+    });
+    assert.equal(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+      true,
+    );
+    report.interactions.push(
+      `${study.id}: complete static text, six local proportional images, both screenshot variants visible in both site themes, five widths with/without JS, live system themes, 320px at 200% text`,
+    );
+    console.log(
+      `PASS: ${study.id} route, full copy, local images/originals, keyboard/history, themes/mobile/no-JS matrix.`,
+    );
+  }
   // Enlarged text and long roles must wrap within the same gutters.
   await page.setViewportSize({ width: 320, height: 1000 });
   await page.goto(baseURL);
@@ -739,7 +1043,7 @@ try {
     `${JSON.stringify(report, null, 2)}\n`,
   );
   console.log(
-    `PASS: ${report.matrix.length} homepage and ${report.article.length} article theme/width/JS combinations, keyboard/pointer/touch, resize/reopen, no-JS, local resources, CLS and links. Evidence: ${output}`,
+    `PASS: ${report.matrix.length} homepage, ${report.article.length} article and ${report.caseStudy.length} case theme/width/JS combinations, keyboard/pointer/touch, resize/reopen, no-JS, local resources, CLS and links. Evidence: ${output}`,
   );
 } finally {
   await browser.close();

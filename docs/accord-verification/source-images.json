@@ -1,0 +1,38 @@
+[
+  {
+    "source": "/Users/alex/Downloads/White cross symbol@2160p.webp",
+    "repository": "src/assets/images/accord/accord-brand-original.webp",
+    "sha256": "674de4ea8199f181acc284867144db4dd8aca989e7d8b2d6906931d08a332df9",
+    "unchanged": true
+  },
+  {
+    "source": "/Users/alex/Downloads/Microsoft Teams interface@2160p.webp",
+    "repository": "src/assets/images/accord/accord-application-shell-original.webp",
+    "sha256": "9d4f8c4b2f13cfc06a2c4633fc27daf0d4e1e0c78a0ea8ab6628cdc2984b6074",
+    "unchanged": true
+  },
+  {
+    "source": "/Users/alex/Downloads/Colorful spreadsheet squares@2160p.webp",
+    "repository": "src/assets/images/accord/accord-companies-light-original.webp",
+    "sha256": "3a736c1beaa531cfc0acc7aa440b30805e924f8394595d225455bf15f600f192",
+    "unchanged": true
+  },
+  {
+    "source": "/Users/alex/Downloads/Project management tool@2160p.webp",
+    "repository": "src/assets/images/accord/accord-companies-dark-original.webp",
+    "sha256": "f69570b957ac15dd614fdc526ff28fb6c4039806ea0ea28bc78786437060cdef",
+    "unchanged": true
+  },
+  {
+    "source": "/Users/alex/Downloads/Settings menu@2160p.webp",
+    "repository": "src/assets/images/accord/accord-workspace-menu-light-original.webp",
+    "sha256": "4cefc24c23e84e94faf11d2e74f83d1a2ad43171f3f120f46387231afed030f4",
+    "unchanged": true
+  },
+  {
+    "source": "/Users/alex/Downloads/Dark computer interface@2160p.webp",
+    "repository": "src/assets/images/accord/accord-workspace-menu-dark-original.webp",
+    "sha256": "b0c00fd657c2f94a3a8402b2f4d05934a2cd3c58ca0a9ece3ff6fd40a668766c",
+    "unchanged": true
+  }
+]

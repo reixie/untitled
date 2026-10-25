@@ -43,15 +43,17 @@ export const runnel = {
 export const selectedWork = [
   {
     sourceNode: '42:382',
+    title: 'Pascal — Markdown notes for macOS',
     image: taskBoard,
     alt: 'Desktop notes interface with a Research Brief, research links, an evidence table, and tasks on a blue desktop background.',
-    destination: pending,
+    destination: { href: '/work/pascal/', status: 'ready' },
   },
   {
     sourceNode: '42:378',
+    title: 'Accord — a CRM for small teams',
     image: companyTable,
     alt: 'Desktop company directory with a sidebar and a table of companies, domains, category tags, employees, revenue, and addresses.',
-    destination: pending,
+    destination: { href: '/work/accord/', status: 'ready' },
   },
   {
     sourceNode: '42:393',

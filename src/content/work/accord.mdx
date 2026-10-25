@@ -1,0 +1,115 @@
+---
+title: Accord — a CRM for small teams
+subtitle: Bringing company records and everyday team tools into a shared workspace.
+description: A CRM design for small teams, bringing a scannable company directory, everyday tools, and workspace controls into one interface.
+---
+
+import CaseFigure from '../../components/CaseFigure.astro';
+import brand from '../../assets/images/accord/accord-brand-original.webp';
+import shell from '../../assets/images/accord/accord-application-shell-original.webp';
+import companiesLight from '../../assets/images/accord/accord-companies-light-original.webp';
+import companiesDark from '../../assets/images/accord/accord-companies-dark-original.webp';
+import menuLight from '../../assets/images/accord/accord-workspace-menu-light-original.webp';
+import menuDark from '../../assets/images/accord/accord-workspace-menu-dark-original.webp';
+
+<CaseFigure
+  src={brand}
+  label="Accord brand artwork"
+  alt="A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background."
+  caption="A rounded geometric mark gives Accord a recognizable shape, from the opening artwork to its small workspace icon."
+  opening
+/>
+
+## A shared place for everyday work
+
+Accord is a modern CRM system for small teams, intended to simplify everyday work and collaboration. Its organizing idea is to bring company records and everyday team tools into one shared workspace. The company directory is the clearest expression of that idea: a structured view of customer information, with the wider workspace always in reach.
+
+The interface brings two scales of work together. Someone can review the available context around a company while keeping sight of destinations for tasks, meetings, and notes. Accord is the working project name shown in these designs.
+
+## The design challenge
+
+The design premise is straightforward: make customer information and everyday team tools easier to navigate within a shared interface. A CRM needs room for detailed records, but the surrounding controls should help people orient themselves before asking them to interpret a dense table.
+
+The challenge is balancing that breadth with clarity. Giving every destination equal weight would compete with the current task. Grouping navigation and separating workspace actions from record controls supports a more legible hierarchy, while keeping the directory central.
+
+## Organizing the workspace
+
+The sidebar separates Records—Companies, People, and Opportunities—from Tools—Tasks, Meetings, and Notes. This structure supports an initial choice between looking up information and moving toward an activity. Companies has a filled selected state, connecting the navigation to the page title and table beside it.
+
+Search, Home, and Inbox sit above those groups. Integrations and Help & Support sit near the bottom, while Partners appears under List. These labels establish visible destinations; the screens here demonstrate the Companies view, rather than the functionality behind every entry. Keeping supporting navigation apart gives the core groups more definition, though a longer sidebar still asks people to scan several sections.
+
+<CaseFigure
+  src={shell}
+  label="Application shell and workspace menu"
+  alt="Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area."
+  caption="The expanded workspace menu sits within the application shell. This view shows its relationship to navigation; the blank content area does not describe an onboarding flow."
+/>
+
+## Making company information scannable
+
+The Companies table carries the most detailed design work. Each row begins with a company logo and name, followed by its domain, category labels, employee count, revenue, and address. Names and domains offer two ways to recognize an entry. Consistent column positions let someone move across a row without relearning where each kind of information belongs.
+
+Category tags use compact colored backgrounds inside an otherwise neutral table. Their text carries the label, while color helps distinguish clusters during a scan. Thin dividers and a regular row rhythm keep adjacent records separate without heavy boxes. Employee and revenue values begin at consistent positions in their columns, and currency symbols occupy a repeated position beside the amounts.
+
+Consider one task: finding a company and reviewing its available context. The selected Companies destination establishes the location, and All Companies names the visible view. A search field labeled Search companies offers a clear place to begin looking. Once the relevant row is found, the reader can follow its domain, categories, and numeric fields across the table. The supplied designs stop at this overview; they do not show a company detail page or a completed search interaction.
+
+Filter and Display sit together above the table, separating view-related controls from the New action in the page header. Their placement makes those entry points discoverable without filling each row with controls. The images establish their labels and hierarchy, but leave their subsequent interactions open.
+
+Density is the main tradeoff. Seventeen sample companies fit in one view, making comparison possible across many records. Yet long addresses and some category groups meet the column edges, showing the pressure that detailed content places on fixed space. Company names, logos, domains, figures, and addresses are sample interface data, not verified business facts or client endorsements.
+
+<CaseFigure
+  src={companiesLight}
+  label="Companies directory — Light"
+  alt="Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows."
+  caption="Light presentation: neutral surfaces and fine dividers carry the table structure, leaving logos and category tags as the strongest color accents."
+/>
+
+<CaseFigure
+  src={companiesDark}
+  label="Companies directory — Dark"
+  alt="The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows."
+  caption="Dark presentation of the same directory preserves the column positions and row rhythm, making the two visual treatments directly comparable."
+/>
+
+## Workspace context and team entry points
+
+The workspace selector keeps Accord visible at the top of the sidebar. Its expanded menu lists Accord and My Space, with a check beside Accord. This gives the current context a persistent label and places alternative workspace entries nearby.
+
+Invite people and Settings share a separate group below the workspace entries. Theme and Log out follow beneath another divider. Bringing these secondary actions into one menu keeps them reachable without competing with company information. The tradeoff is discovery: someone must open the selector to see them. The menu establishes entry points, without specifying permissions, invitation steps, or collaboration behavior.
+
+## Light and Dark presentation
+
+The directory variants retain the same hierarchy through different surfaces. Light styling uses pale backgrounds, subtle borders, and dark text. Dark styling places a slightly lighter table surface against the surrounding shell, with muted dividers and light text. In both, a filled Companies selection is distinct from the unselected navigation, and category colors remain concentrated inside tags.
+
+The menu close-ups show the corresponding surface treatments and a Theme submenu containing Light, Dark, and System. These are designed appearance choices. The images demonstrate their presentation, without establishing switching behavior or saved preferences. Borders and secondary text deserve particular attention in later checks because their restraint also makes them easier to overlook.
+
+<CaseFigure
+  src={menuLight}
+  label="Workspace and appearance menus — Light styling"
+  alt="Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked."
+  caption="Light menu styling uses dividers to separate workspace entries, team actions, and appearance controls within a compact surface."
+/>
+
+<CaseFigure
+  src={menuDark}
+  label="Workspace and appearance menus — Dark styling"
+  alt="Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu."
+  caption="The corresponding dark-styled menus preserve the grouping and submenu hierarchy, allowing their visual treatment to be compared directly."
+/>
+
+## A consistent visual identity
+
+The brand artwork pairs a white geometric mark with a blurred, multicolored background. Rounded stepped edges surround a cross-shaped opening. The same form appears at a smaller scale inside the workspace icon beside Accord. Repetition connects the expressive artwork to the restrained interface, giving the product a recognizable visual anchor without adding decoration to the table.
+
+## Design outcome and next checks
+
+Together, these artifacts demonstrate a coherent company directory, grouped navigation, a workspace menu, and Light and Dark visual variants. They make the product’s organizing idea tangible: records remain central, with everyday tools and workspace actions arranged around them.
+
+The next validation work should test that structure through concrete tasks:
+
+- Find a named company and review its available context across a row.
+- Interpret category labels without relying on their colors.
+- Locate the current workspace, Invite people, and Settings.
+- Check dense tables at narrower widths, especially long addresses and category groups.
+
+These are proposed checks for a future interactive version.

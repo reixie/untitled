@@ -1,6 +1,6 @@
 # Alex L. — personal website
 
-Responsive static homepage and the first published Writing article, built on the preserved content foundation. The first release preserves the current design and interactions; unfinished case studies remain noninteractive and future enhancements are outside its scope.
+Responsive static homepage, the first published Writing article, and the Accord and Pascal Selected work case studies, built on the preserved content foundation. The vocabulary preview stays noninteractive.
 
 [Website](https://untitled-bice-chi.vercel.app/) · [Design the second attempt](https://untitled-bice-chi.vercel.app/articles/design-the-second-attempt/)
 
@@ -14,17 +14,17 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-| Command               | Purpose                                                                          |
-| --------------------- | -------------------------------------------------------------------------------- |
-| `pnpm dev`            | Development server                                                               |
-| `pnpm check`          | Astro sync and strict TypeScript/Astro diagnostics                               |
-| `pnpm lint`           | ESLint for TypeScript, JavaScript and Astro                                      |
-| `pnpm format:check`   | Prettier check                                                                   |
-| `pnpm format`         | Apply formatting                                                                 |
-| `pnpm verify:content` | Isolated Markdown/MDX, metadata and selection integration checks                 |
-| `pnpm build`          | Static production output in `dist/`                                              |
-| `pnpm verify:output`  | Homepage + article HTML, no placeholders, 30 KiB gzip JS budget, no proof routes |
-| `pnpm preview`        | Serve the production build on localhost                                          |
+| Command               | Purpose                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| `pnpm dev`            | Development server                                                                    |
+| `pnpm check`          | Astro sync and strict TypeScript/Astro diagnostics                                    |
+| `pnpm lint`           | ESLint for TypeScript, JavaScript and Astro                                           |
+| `pnpm format:check`   | Prettier check                                                                        |
+| `pnpm format`         | Apply formatting                                                                      |
+| `pnpm verify:content` | Isolated Markdown/MDX, metadata and selection integration checks                      |
+| `pnpm build`          | Static production output in `dist/`                                                   |
+| `pnpm verify:output`  | Homepage, article and case HTML, local images, 30 KiB gzip JS budget, no proof routes |
+| `pnpm preview`        | Serve the production build on localhost                                               |
 
 Astro 7 runs its dev/preview server in the background. Use `pnpm exec astro preview stop` (or `pnpm exec astro dev stop`) to stop it; `status` and `logs` are also available. In restricted environments, set `ASTRO_TELEMETRY_DISABLED=1` when running Astro to avoid its user-preference directory write.
 
@@ -40,9 +40,11 @@ Astro 7 runs its dev/preview server in the background. Use `pnpm exec astro prev
 - Inter 4.1 static 400/500 WOFF2 files are self-hosted with their SIL OFL license. No font CDN or runtime external fetches.
 - CSS minification is disabled because conversion to 8-bit hex rounds Figma's fractional border channels and 10% alpha. HTML remains optimized. Revisit only with a verified precision-preserving minifier.
 
-The homepage includes the profile, biography, verified contact links, Projects / Selected work, Experience and Writing. Small Astro components share the existing tokens and local fonts. `src/data/homepage.ts` retains verified copy, confirmed company URLs and explicit null destinations for unfinished cases. These case previews remain noninteractive. Writing comes from the articles collection through `getPublishedArticles()`, the same helper used by `src/pages/articles/[...id].astro` to generate published routes. Internal ContentRow links open in the same tab; external destinations retain their new-tab behavior. The Runnel card links to its GitHub project and follows the pointer with a perspective tilt on devices with a precise hover pointer. Reduced-motion preferences disable the tilt. Its animated satin background adapts to the system's light and dark themes, pauses when hidden or offscreen, and displays a still frame with reduced motion enabled. A 0.5px outline stays above the animation.
+The homepage includes the profile, biography, verified contact links, Projects / Selected work, Experience and Writing. Small Astro components share the existing tokens and local fonts. `src/data/homepage.ts` retains verified copy, confirmed company URLs and explicit null destinations for unfinished cases. The central company-directory preview (source node `42:378`) links to `/work/accord/` in the same tab. The Research Brief notes preview (`42:382`, historical asset alias `taskBoard`) links to `/work/pascal/`; the vocabulary preview (`42:393`) remains noninteractive. Source order and initial Accord centering are preserved. Writing comes from the articles collection through `getPublishedArticles()`, the same helper used by `src/pages/articles/[...id].astro` to generate published routes. Internal ContentRow links open in the same tab; external destinations retain their new-tab behavior. The Runnel card links to its GitHub project and follows the pointer with a perspective tilt on devices with a precise hover pointer. Reduced-motion preferences disable the tilt. Its animated satin background adapts to the system's light and dark themes, pauses when hidden or offscreen, and displays a still frame with reduced motion enabled. A 0.5px outline stays above the animation.
 
 The first article is `/articles/design-the-second-attempt/`. Its Markdown metadata supplies the homepage title, article heading, document title, description and publication date. `ArticleLayout.astro` reuses the document's 600px column, local Inter fonts, semantic colors and system theme, with reading spacing and a keyboard-accessible homepage link. Article HTML includes the full body and no JavaScript.
+
+Selected work uses a separate small `work` collection: MDX with title, subtitle and description, without a project date. `src/content/work/accord.mdx` supplies the complete Accord case at `/work/accord/`; `src/content/work/pascal.mdx` supplies Pascal at `/work/pascal/`. The same collection schema and route generate both. `CaseStudyLayout.astro` shares the document layout, reading styles and homepage-link primitive with Writing. Text stays in the 600px column; six uncropped figures can span 1120px. `CaseFigure.astro` uses Astro's local WebP pipeline at 320/640/960/1120/1600/2240px, explicit intrinsic dimensions, eager loading for the cover and lazy loading below it. Both supplied appearance variants always remain visible. Each figure has alt text, a caption and a keyboard-accessible link to its unchanged full-size original. Sources live in `src/assets/images/accord/` and `src/assets/images/pascal/`; production has no Downloads dependency. Pascal uses six unique originals: brand artwork, Light/Dark editor overviews, a formatting menu, and Light/Dark command palettes. The byte-identical dark palette exports share one source, shown once. Neither case emits JavaScript.
 
 Tabs progressively enhance real fragment links and two readable sections with a small TypeScript controller. Projects is initially selected. CSS reserves that initial layout when scripting is enabled, preventing a cold-load shift before the controller runs. Arrow keys wrap, Home/End select the edge tabs, and Enter/Space activate. Tab enters the active panel; hidden panels cannot receive focus. No URL/history synchronization is added. With JavaScript disabled, both sections remain visible.
 
@@ -60,7 +62,7 @@ BROWSER_EXECUTABLE=/absolute/path/to/chromium \
 node scripts/verify-browser.mjs
 ```
 
-`BROWSER_EXECUTABLE` is optional if that Playwright install has its matching Chromium. `VERIFY_URL` defaults to `http://127.0.0.1:4321`. The script verifies both themes at 320, 375, 768, 1200 and 1440px, pointer/keyboard/touch behavior, resize/reopen, hidden focus, no-JS fallback, local resources, actual hrefs and layout shifts. It also checks the article's full text, direct URL, same-tab navigation, refresh, return link, keyboard focus, live theme changes and 200% text at 320px. New evidence is written to `docs/article-verification/`; historical Stage 1/2 evidence is preserved. No verification route or probe ships in `dist/`.
+`BROWSER_EXECUTABLE` is optional if that Playwright install has its matching Chromium. `VERIFY_URL` defaults to `http://127.0.0.1:4321`. The script verifies both themes at 320, 375, 768, 1200 and 1440px, pointer/keyboard/touch behavior, resize/reopen, hidden focus, no-JS fallback, local resources, actual hrefs and layout shifts. Article-specific assertions retain its publication date and full text. Route-aware case assertions check both gallery destinations, full copy, all six proportional local images per case, original-image links, browser Back, same-tab navigation, refresh, keyboard focus, live theme changes and 200% text at 320px. Static-output checks also verify Pascal asset uniqueness and the single dark palette placement. New evidence is written to `docs/pascal-verification/`, including both case captures at desktop 1200px and mobile 375px in both themes. These are Chromium browser emulations, not real-device tests. Historical Accord, article and Stage 1/2 evidence is preserved. No verification route or probe ships in `dist/`.
 
 ## Content contract
 
@@ -92,6 +94,8 @@ GitHub Actions uses the pinned Node/pnpm versions and runs a frozen install, typ
 
 ## Sources and handoff
 
+- [Pascal: Russian handoff, final English copy, source mapping and verification](docs/pascal-handoff.ru.md)
+- [Accord: Russian handoff, final English copy, source mapping and verification](docs/accord-handoff.ru.md)
 - [Design token and asset mapping](docs/design-sources.md)
 - [Raw read-only Figma snapshot](docs/figma-source.json)
 - [Stage 1 verification evidence and remaining decisions](docs/stage-1-verification.md)
