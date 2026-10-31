@@ -122,7 +122,12 @@ const rendered = await Promise.all(articles.map(async article => ({
       new RegExp(`<h1\\b[^>]*>${id === 'older' ? 'Older' : id}</h1>`),
     );
     assert.match(article, /Markdown body|data-static-proof/);
-    assert.doesNotMatch(article, /Unfinished draft|<script|astro-island/);
+    assert.doesNotMatch(article, /Unfinished draft|astro-island/);
+    assert.doesNotMatch(
+      /<article\b[\s\S]*?<\/article>/.exec(article)?.[0] ?? '',
+      /<script\b/,
+    );
+    assert.match(article, /data-coastal-footer/);
   }
   assert.doesNotMatch(homepage, /Unfinished draft|\/articles\/unfinished\//);
   console.log(

@@ -1,0 +1,32 @@
+[
+  {
+    "theme": "light",
+    "exact": {
+      "changedFraction": 0,
+      "meanChannelDelta": 0
+    },
+    "before": {
+      "changedFraction": 0.002136178731923413,
+      "meanChannelDelta": 0.043905430252947984
+    },
+    "after": {
+      "changedFraction": 0.0026739505462909717,
+      "meanChannelDelta": 0.05592205680858163
+    }
+  },
+  {
+    "theme": "dark",
+    "exact": {
+      "changedFraction": 0,
+      "meanChannelDelta": 0
+    },
+    "before": {
+      "changedFraction": 0.0020941153919877323,
+      "meanChannelDelta": 0.0417055353225566
+    },
+    "after": {
+      "changedFraction": 0.0026499904159478626,
+      "meanChannelDelta": 0.054903662527776
+    }
+  }
+]

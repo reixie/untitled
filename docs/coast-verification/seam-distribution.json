@@ -1,0 +1,180 @@
+{
+  "samples": [
+    {
+      "time": 0.7424242424242424,
+      "changedFraction": 0.0025217207035388854,
+      "meanChannelDelta": 0.040326945781491236
+    },
+    {
+      "time": 1.4848484848484849,
+      "changedFraction": 0.0023055732146641237,
+      "meanChannelDelta": 0.043282576009848736
+    },
+    {
+      "time": 2.227272727272727,
+      "changedFraction": 0.0013628795446977266,
+      "meanChannelDelta": 0.01023441205259387
+    },
+    {
+      "time": 2.9696969696969697,
+      "changedFraction": 0.0019810492537765266,
+      "meanChannelDelta": 0.04677585041221405
+    },
+    {
+      "time": 3.712121212121212,
+      "changedFraction": 0.001998607453152908,
+      "meanChannelDelta": 0.03118215118215118
+    },
+    {
+      "time": 4.454545454545454,
+      "changedFraction": 0.002211122211122211,
+      "meanChannelDelta": 0.024872904872904875
+    },
+    {
+      "time": 5.196969696969697,
+      "changedFraction": 0.0019465383101746738,
+      "meanChannelDelta": 0.022860170132897404
+    },
+    {
+      "time": 5.9393939393939394,
+      "changedFraction": 0.0019156600974782794,
+      "meanChannelDelta": 0.025562720108174654
+    },
+    {
+      "time": 6.681818181818182,
+      "changedFraction": 0.0018333181969545605,
+      "meanChannelDelta": 0.020669633396906126
+    },
+    {
+      "time": 7.424242424242424,
+      "changedFraction": 0.002724548179093634,
+      "meanChannelDelta": 0.04179719270628362
+    },
+    {
+      "time": 8.166666666666666,
+      "changedFraction": 0.001982260164078346,
+      "meanChannelDelta": 0.025383909020272658
+    },
+    {
+      "time": 8.909090909090908,
+      "changedFraction": 0.0022783277328731876,
+      "meanChannelDelta": 0.030149446513082878
+    },
+    {
+      "time": 9.651515151515152,
+      "changedFraction": 0.0016795325886234977,
+      "meanChannelDelta": 0.017626212171666718
+    },
+    {
+      "time": 10.393939393939394,
+      "changedFraction": 0.0020240365694911147,
+      "meanChannelDelta": 0.029128245491881855
+    },
+    {
+      "time": 11.136363636363637,
+      "changedFraction": 0.001603245239608876,
+      "meanChannelDelta": 0.0205911260456715
+    },
+    {
+      "time": 11.878787878787879,
+      "changedFraction": 0.002310416855871401,
+      "meanChannelDelta": 0.03181868636414091
+    },
+    {
+      "time": 12.621212121212121,
+      "changedFraction": 0.0017721672267126812,
+      "meanChannelDelta": 0.013422738877284332
+    },
+    {
+      "time": 13.363636363636363,
+      "changedFraction": 0.0012496594314776134,
+      "meanChannelDelta": 0.008108659017749927
+    },
+    {
+      "time": 14.106060606060606,
+      "changedFraction": 0.0013071776708140344,
+      "meanChannelDelta": 0.012634436270799907
+    },
+    {
+      "time": 14.848484848484848,
+      "changedFraction": 0.002037962037962038,
+      "meanChannelDelta": 0.026351829988193624
+    },
+    {
+      "time": 15.590909090909092,
+      "changedFraction": 0.0021384675930130478,
+      "meanChannelDelta": 0.028287268287268286
+    },
+    {
+      "time": 16.333333333333332,
+      "changedFraction": 0.002384887839433294,
+      "meanChannelDelta": 0.03921916467371013
+    },
+    {
+      "time": 17.075757575757574,
+      "changedFraction": 0.0018817546090273364,
+      "meanChannelDelta": 0.023989747626111262
+    },
+    {
+      "time": 17.818181818181817,
+      "changedFraction": 0.001924136469591015,
+      "meanChannelDelta": 0.02286279377188468
+    },
+    {
+      "time": 18.560606060606062,
+      "changedFraction": 0.0025689462053098415,
+      "meanChannelDelta": 0.04166338711793257
+    },
+    {
+      "time": 19.303030303030305,
+      "changedFraction": 0.002519904338086156,
+      "meanChannelDelta": 0.0379832288923198
+    },
+    {
+      "time": 20.045454545454547,
+      "changedFraction": 0.0025931644113462294,
+      "meanChannelDelta": 0.039027639027639026
+    },
+    {
+      "time": 20.78787878787879,
+      "changedFraction": 0.002562286198649835,
+      "meanChannelDelta": 0.0272182363091454
+    },
+    {
+      "time": 21.53030303030303,
+      "changedFraction": 0.0021003239185057366,
+      "meanChannelDelta": 0.017200375382193565
+    },
+    {
+      "time": 22.272727272727273,
+      "changedFraction": 0.00247207338116429,
+      "meanChannelDelta": 0.03760804851713943
+    },
+    {
+      "time": 23.015151515151516,
+      "changedFraction": 0.0024018405836587656,
+      "meanChannelDelta": 0.031246733064914885
+    },
+    {
+      "time": 23.757575757575758,
+      "changedFraction": 0.0022765113674204584,
+      "meanChannelDelta": 0.028602710420892238
+    }
+  ],
+  "boundary": {
+    "time": 24.5,
+    "changedFraction": 0.002580449853177126,
+    "meanChannelDelta": 0.035331738968102606
+  },
+  "afterBoundary": {
+    "time": 0.03333333333333333,
+    "changedFraction": 0.0017764054127690492,
+    "meanChannelDelta": 0.016331749059021787
+  },
+  "normalRange": {
+    "minMeanChannelDelta": 0.008108659017749927,
+    "maxMeanChannelDelta": 0.04677585041221405,
+    "minChangedFraction": 0.0012496594314776134,
+    "maxChangedFraction": 0.002724548179093634
+  }
+}

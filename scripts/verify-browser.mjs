@@ -711,7 +711,8 @@ try {
         );
         assert.match(layout.font, /Inter/);
         assert.equal(layout.lineHeight, '26px');
-        assert.equal(await reading.locator('script').count(), 0);
+        assert.equal(await reading.locator('article script').count(), 0);
+        assert.equal(await reading.locator('[data-coastal-footer]').count(), 1);
         assert.equal(
           await reading
             .getByRole('link', { name: 'Back to homepage' })
@@ -895,7 +896,14 @@ try {
             await reading.locator('article li').count(),
             study.listItems,
           );
-          assert.equal(await reading.locator('time, script').count(), 0);
+          assert.equal(
+            await reading.locator('article time, article script').count(),
+            0,
+          );
+          assert.equal(
+            await reading.locator('[data-coastal-footer]').count(),
+            1,
+          );
           const body = (await reading.locator('article').innerText()).replace(
             /\s+/g,
             ' ',

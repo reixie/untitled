@@ -7,3 +7,6 @@ public/fonts/
 src/assets/
 # Deterministic machine-generated font inventories and browser evidence.
 docs/font-optimization/**/*.json
+docs/coast-verification/**/*.json
+docs/coast-art-verification/**/*.json
+docs/coastal-footer-verification/**/*.json

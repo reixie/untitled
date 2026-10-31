@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "engine": "chromium",
+      "lighthouseRoofWorldY": 20,
+      "loopDifferentChannels": 0,
+      "offscreenSuspended": true,
+      "resumed": true,
+      "textContrasts": [
+        {
+          "selector": "h1",
+          "contrast": 15.730361190191035
+        },
+        {
+          "selector": ".invitation",
+          "contrast": 9.42140979614742
+        },
+        {
+          "selector": ".contact",
+          "contrast": 12.085948223599278
+        },
+        {
+          "selector": ".footnote",
+          "contrast": 8.528178252362904
+        },
+        {
+          "selector": ".role",
+          "contrast": 8.701828035539489
+        },
+        {
+          "selector": ".playback",
+          "contrast": 10.186842607635889
+        },
+        {
+          "selector": ".bottom nav",
+          "contrast": 10.186842607635889
+        }
+      ],
+      "zoom200": {
+        "viewport": 375,
+        "scroll": 375,
+        "cta": {
+          "x": 26.25,
+          "y": 810.34375,
+          "width": 322.5,
+          "height": 88,
+          "top": 810.34375,
+          "right": 348.75,
+          "bottom": 898.34375,
+          "left": 26.25
+        },
+        "copy": {
+          "x": 26.25,
+          "y": 254,
+          "width": 322.5,
+          "height": 644.34375,
+          "top": 254,
+          "right": 348.75,
+          "bottom": 898.34375,
+          "left": 26.25
+        },
+        "bottom": {
+          "x": 26.25,
+          "y": 1557,
+          "width": 322.5,
+          "height": 155,
+          "top": 1557,
+          "right": 348.75,
+          "bottom": 1712,
+          "left": 26.25
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "lighthouseRoofWorldY": 20,
+      "loopDifferentChannels": 0,
+      "offscreenSuspended": true,
+      "resumed": true,
+      "textContrasts": [
+        {
+          "selector": "h1",
+          "contrast": 15.730361190191035
+        },
+        {
+          "selector": ".invitation",
+          "contrast": 9.42140979614742
+        },
+        {
+          "selector": ".contact",
+          "contrast": 12.085948223599278
+        },
+        {
+          "selector": ".footnote",
+          "contrast": 8.528178252362904
+        },
+        {
+          "selector": ".role",
+          "contrast": 8.701828035539489
+        },
+        {
+          "selector": ".playback",
+          "contrast": 10.186842607635889
+        },
+        {
+          "selector": ".bottom nav",
+          "contrast": 10.186842607635889
+        }
+      ],
+      "zoom200": {
+        "viewport": 375,
+        "scroll": 375,
+        "cta": {
+          "x": 26.25,
+          "y": 810.34375,
+          "width": 322.5,
+          "height": 88,
+          "top": 810.34375,
+          "right": 348.75,
+          "bottom": 898.34375,
+          "left": 26.25
+        },
+        "copy": {
+          "x": 26.25,
+          "y": 254,
+          "width": 322.5,
+          "height": 644.34375,
+          "top": 254,
+          "right": 348.75,
+          "bottom": 898.34375,
+          "left": 26.25
+        },
+        "bottom": {
+          "x": 26.25,
+          "y": 1557,
+          "width": 322.5,
+          "height": 155,
+          "top": 1557,
+          "right": 348.75,
+          "bottom": 1712,
+          "left": 26.25
+        }
+      }
+    }
+  ],
+  "selfContained": true,
+  "bytes": 30726
+}

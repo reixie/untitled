@@ -1,0 +1,4732 @@
+{
+  "browser": "156.0.8078.74",
+  "matrix": [
+    {
+      "theme": "light",
+      "width": 320,
+      "before": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 272,
+          "height": 316
+        },
+        "experience": {
+          "x": 24,
+          "y": 960,
+          "width": 272,
+          "height": 232
+        },
+        "writing": {
+          "x": 24,
+          "y": 1256,
+          "width": 272,
+          "height": 80
+        },
+        "card": {
+          "x": 24,
+          "y": 496,
+          "width": 272,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 288,
+        "width": 320,
+        "items": [
+          {
+            "x": -264,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 24,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 312,
+            "width": 272,
+            "height": 181.328125
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "before": {
+        "viewport": 375,
+        "pageWidth": 375,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 327,
+          "height": 276
+        },
+        "experience": {
+          "x": 24,
+          "y": 920,
+          "width": 327,
+          "height": 212
+        },
+        "writing": {
+          "x": 24,
+          "y": 1196,
+          "width": 327,
+          "height": 80
+        },
+        "card": {
+          "x": 24,
+          "y": 456,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 343,
+        "width": 375,
+        "items": [
+          {
+            "x": -319,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 24,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 367,
+            "width": 327,
+            "height": 218
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "before": {
+        "viewport": 768,
+        "pageWidth": 768,
+        "profile": {
+          "x": 84,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 84,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 84,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 84,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 768,
+        "items": [
+          {
+            "x": -532,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 84,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 700,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1200,
+      "before": {
+        "viewport": 1200,
+        "pageWidth": 1200,
+        "profile": {
+          "x": 300,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 300,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 300,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 300,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1200,
+        "items": [
+          {
+            "x": -316,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 300,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 916,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "before": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "profile": {
+          "x": 420,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 420,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 420,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 420,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1440,
+        "items": [
+          {
+            "x": -196,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 420,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 1036,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(32, 32, 32)",
+        "arrow": "rgb(100, 100, 100)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "before": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 272,
+          "height": 316
+        },
+        "experience": {
+          "x": 24,
+          "y": 960,
+          "width": 272,
+          "height": 232
+        },
+        "writing": {
+          "x": 24,
+          "y": 1256,
+          "width": 272,
+          "height": 80
+        },
+        "card": {
+          "x": 24,
+          "y": 496,
+          "width": 272,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 288,
+        "width": 320,
+        "items": [
+          {
+            "x": -264,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 24,
+            "width": 272,
+            "height": 181.328125
+          },
+          {
+            "x": 312,
+            "width": 272,
+            "height": 181.328125
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "before": {
+        "viewport": 375,
+        "pageWidth": 375,
+        "profile": {
+          "x": 24,
+          "y": 64,
+          "width": 327,
+          "height": 276
+        },
+        "experience": {
+          "x": 24,
+          "y": 920,
+          "width": 327,
+          "height": 212
+        },
+        "writing": {
+          "x": 24,
+          "y": 1196,
+          "width": 327,
+          "height": 80
+        },
+        "card": {
+          "x": 24,
+          "y": 456,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 343,
+        "width": 375,
+        "items": [
+          {
+            "x": -319,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 24,
+            "width": 327,
+            "height": 218
+          },
+          {
+            "x": 367,
+            "width": 327,
+            "height": 218
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "before": {
+        "viewport": 768,
+        "pageWidth": 768,
+        "profile": {
+          "x": 84,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 84,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 84,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 84,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 768,
+        "items": [
+          {
+            "x": -532,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 84,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 700,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1200,
+      "before": {
+        "viewport": 1200,
+        "pageWidth": 1200,
+        "profile": {
+          "x": 300,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 300,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 300,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 300,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1200,
+        "items": [
+          {
+            "x": -316,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 300,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 916,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "before": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "profile": {
+          "x": 420,
+          "y": 64,
+          "width": 600,
+          "height": 196
+        },
+        "experience": {
+          "x": 420,
+          "y": 840,
+          "width": 600,
+          "height": 212
+        },
+        "writing": {
+          "x": 420,
+          "y": 1116,
+          "width": 600,
+          "height": 80
+        },
+        "card": {
+          "x": 420,
+          "y": 376,
+          "width": 300,
+          "height": 400
+        }
+      },
+      "gallery": {
+        "scrollLeft": 616,
+        "width": 1440,
+        "items": [
+          {
+            "x": -196,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 420,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 1036,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "styles": {
+        "fontSize": "16px",
+        "primary": "rgb(238, 238, 238)",
+        "arrow": "rgb(180, 180, 180)",
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "unloaded",
+            "unicodeRange": "U+A4, U+A6-A8, U+AF, U+B2-B4, U+B8-B9"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "status": "loaded",
+            "unicodeRange": "U+0-10FFFF"
+          }
+        ],
+        "cls": 0
+      }
+    }
+  ],
+  "interactions": [
+    "Tabs: pointer, wraparound arrows, Home/End, Space/Enter, roving tabindex, focus outline, panel entry and hidden descendant exclusion",
+    "Gallery: scoped keyboard, native wheel, vertical page scrolling, reopen, fractional position, visible and hidden resize, reduced motion and smooth user navigation",
+    "Runnel pointer tilt/reset, animated canvas, reduced-motion still frame and disabled tilt; Writing hover fade/reset",
+    {
+      "touch": "375px Chromium touch emulation: tap + native swipe",
+      "before": 343,
+      "after": 686
+    },
+    "Writing keyboard focus → same-tab article → successful refresh → focused return link → homepage tabs",
+    "Article: direct URL, full text and return navigation with/without JS; live system themes; 320px at 200% text",
+    "accord: gallery image → same-tab case → refresh → browser Back → pointer link → keyboard image links/full-size original → browser Back → homepage link",
+    "accord: complete static text, six local proportional images, both screenshot variants visible in both site themes, five widths with/without JS, live system themes, 320px at 200% text",
+    "pascal: gallery image → same-tab case → refresh → browser Back → pointer link → keyboard image links/full-size original → browser Back → homepage link",
+    "pascal: complete static text, six local proportional images, both screenshot variants visible in both site themes, five widths with/without JS, live system themes, 320px at 200% text",
+    "320px: long role and 200% root font size wrap without page overflow"
+  ],
+  "noJavaScript": [
+    {
+      "theme": "light",
+      "width": 320,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1200,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1200,
+      "bothPanelsReadable": true,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "bothPanelsReadable": true,
+      "overflow": false
+    }
+  ],
+  "article": [
+    {
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "width": 272,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "width": 327,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "width": 600,
+      "x": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "width": 600,
+      "x": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "width": 600,
+      "x": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "width": 272,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "width": 327,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "width": 600,
+      "x": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "width": 600,
+      "x": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "width": 600,
+      "x": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "background": "rgb(255, 255, 255)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "width": 272,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "width": 327,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "width": 600,
+      "x": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "width": 600,
+      "x": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "width": 600,
+      "x": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "width": 272,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "width": 327,
+      "x": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "width": 600,
+      "x": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "width": 600,
+      "x": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    },
+    {
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "width": 600,
+      "x": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "background": "rgb(0, 0, 0)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px"
+    }
+  ],
+  "caseStudy": [
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1QJroH.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZArLXq.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 170,
+          "width": 270,
+          "height": 168.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_Z1h7n3F.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z7KlML.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_25i0ie.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZWQ8wc.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 204,
+          "width": 325,
+          "height": 203.125,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1DgQbX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZbumQq.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 450,
+          "width": 718,
+          "height": 448.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_2lSQCX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_1MpBLD.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1v9jYX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_k0CxN.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1QJroH.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZArLXq.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 170,
+          "width": 270,
+          "height": 168.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_Z1h7n3F.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z7KlML.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_25i0ie.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZWQ8wc.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 204,
+          "width": 325,
+          "height": 203.125,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1DgQbX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZbumQq.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 450,
+          "width": 718,
+          "height": 448.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_2lSQCX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_1MpBLD.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1v9jYX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_k0CxN.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1QJroH.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZArLXq.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 170,
+          "width": 270,
+          "height": 168.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_Z1h7n3F.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z7KlML.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_25i0ie.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZWQ8wc.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 204,
+          "width": 325,
+          "height": 203.125,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1DgQbX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZbumQq.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 450,
+          "width": 718,
+          "height": 448.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_2lSQCX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_1MpBLD.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1v9jYX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_k0CxN.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1QJroH.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZArLXq.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 170,
+          "width": 270,
+          "height": 168.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_Z1h7n3F.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z7KlML.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_25i0ie.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZWQ8wc.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 204,
+          "width": 325,
+          "height": 203.125,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_1DgQbX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_ZbumQq.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 450,
+          "width": 718,
+          "height": 448.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_2lSQCX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_1MpBLD.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_1v9jYX.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_k0CxN.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "accord",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 700,
+          "width": 1118,
+          "height": 698.75,
+          "attrWidth": "3456",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZjsApN.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_1VY8EO.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1vxvdw.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_24UR3w.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_Z24PGQ9.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1ftJBi.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZwVbCx.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_iEE6K.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z2dQGgy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Zuf83A.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_qaqPF.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1OCpTy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZjsApN.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_1VY8EO.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1vxvdw.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_24UR3w.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_Z24PGQ9.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1ftJBi.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZwVbCx.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_iEE6K.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z2dQGgy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Zuf83A.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_qaqPF.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1OCpTy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "light",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(32, 32, 32)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZjsApN.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_1VY8EO.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1vxvdw.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_24UR3w.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_Z24PGQ9.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1ftJBi.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZwVbCx.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_iEE6K.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z2dQGgy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Zuf83A.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_qaqPF.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1OCpTy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": true,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 320,
+      "textWidth": 272,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZjsApN.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_1VY8EO.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1vxvdw.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_24UR3w.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_Z24PGQ9.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1ftJBi.webp",
+          "naturalWidth": 272,
+          "naturalHeight": 153,
+          "width": 270,
+          "height": 151.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 375,
+      "textWidth": 327,
+      "textX": 24,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+          "naturalWidth": 327,
+          "naturalHeight": 183,
+          "width": 325,
+          "height": 182.8125,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 768,
+      "textWidth": 600,
+      "textX": 84,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_ZwVbCx.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_iEE6K.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_Z2dQGgy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Zuf83A.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_qaqPF.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1OCpTy.webp",
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "width": 718,
+          "height": 403.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1200,
+      "textWidth": 600,
+      "textX": 300,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "pascal",
+      "theme": "dark",
+      "javaScriptEnabled": false,
+      "viewport": 1440,
+      "textWidth": 600,
+      "textX": 420,
+      "overflow": false,
+      "color": "rgb(238, 238, 238)",
+      "font": "Inter, system-ui, sans-serif",
+      "lineHeight": "26px",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "eager",
+          "alt": "Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions.",
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:8766/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+          "naturalWidth": 1120,
+          "naturalHeight": 630,
+          "width": 1118,
+          "height": 628.875,
+          "attrWidth": "3840",
+          "attrHeight": "2160",
+          "loading": "lazy",
+          "alt": "Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces.",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "cancelledRequests": [],
+  "links": [
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/in/alex-lohinov-b503683b4"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/reixie"
+    },
+    {
+      "text": "X",
+      "href": "https://x.com/reixxiie"
+    },
+    {
+      "text": "alex@lohinov.com",
+      "href": "mailto:alex@lohinov.com"
+    },
+    {
+      "text": "function e(e){let t=e.getContext(`2d`,{alpha:!1});if(!t)return;let n=matchMedia(`(prefers-reduced-motion: reduce)`),r=matchMedia(`(prefers-color-scheme: dark)`),i={light:{base:[255,255,255],sage:[166,187,171],clay:[199,180,174],sheen:[235,231,216]},dark:{base:[10,10,10],sage:[76,99,83],clay:[95,76,79],sheen:[132,142,119]}},a=new Float32Array(4096),o=82973;for(let e=0;e<a.length;e++)o=Math.imul(o,1664525)+1013904223>>>0,a[e]=o/4294967296;function s(e,t){let n=Math.floor(e),r=Math.floor(t),i=e-n,o=t-r,s=i*i*(3-2*i),c=o*o*(3-2*o),l=a[(r&63)*64+(n&63)],u=a[(r&63)*64+(n+1&63)],d=a[(r+1&63)*64+(n&63)],f=a[(r+1&63)*64+(n+1&63)];return l+(u-l)*s+(d-l)*c+(l-u-d+f)*s*c}function c(e,t){return s(e,t)*.57+s(e*2.03+13,t*2.03+7)*.29+s(e*4.09+3,t*4.09+19)*.14}let l,u=!1,d=0,f=0,p=0;function m(){let{width:e,height:n,data:o}=l,s=r.matches?i.dark:i.light,u=p*.21;for(let t=0;t<n;t++)for(let n=0;n<e;n++){let r=(n/e-.5)*4.2,i=(t/e-.5)*4.2,l=c(r*.6+11+u*.25,i*.6+7-u*.18),d=(r*.72-i*.28+Math.sin(i*.75+u*.4)*.6+(l-.5)*1.7)*4.2-u,f=(Math.sin(d)+1)*.5,p=f*f*(3-2*f)*.85,m=((Math.cos(d-.45)+1)*.5)**12*.55,h=(Math.sin(r*.45+i*.35+u*.3+l*2)+1)*.5,g=(a[(t&63)*64+(n&63)]-.5)*3,_=(t*e+n)*4;for(let e=0;e<3;e++){let t=s.sage[e]+(s.clay[e]-s.sage[e])*h,n=s.base[e]+(t-s.base[e])*p;o[_+e]=n+(s.sheen[e]-n)*m+g}o[_+3]=255}t.putImageData(l,0,0)}function h(){if(!e.clientWidth||!e.clientHeight)return;let n=Math.ceil(e.clientWidth/2.5),r=Math.ceil(e.clientHeight/2.5);(l?.width!==n||l.height!==r)&&(e.width=n,e.height=r,l=t.createImageData(n,r),m())}function g(e){d=requestAnimationFrame(g),!(e-f<1e3/24)&&(p+=Math.min((e-f)/1e3,.1),f=e,m())}function _(){cancelAnimationFrame(d),d=0,u&&!document.hidden&&!n.matches&&l&&(f=performance.now(),d=requestAnimationFrame(g))}h(),new ResizeObserver(h).observe(e),new IntersectionObserver(([e])=>{u=e?.isIntersecting??!1,_()}).observe(e),n.addEventListener(`change`,_),r.addEventListener(`change`,()=>{l&&m()}),document.addEventListener(`visibilitychange`,_)}document.querySelectorAll(`[data-pixel-flow]`).forEach(e);RunnelNative terminal for MacOSAn intelligent feedback loop–so your product, marketing, and customer success teams stay ahead of the curve.",
+      "href": "https://github.com/reixie/runnel"
+    },
+    {
+      "text": "",
+      "href": "/work/pascal/"
+    },
+    {
+      "text": "",
+      "href": "/work/accord/"
+    },
+    {
+      "text": "Konexta Agency~Product Designer",
+      "href": "https://www.konexta.agency/"
+    },
+    {
+      "text": "Valorx~Product Designer",
+      "href": "https://www.valorx.com/"
+    },
+    {
+      "text": "Roxfit~UI/UX Designer",
+      "href": "https://roxfit.app/"
+    },
+    {
+      "text": "OptiHint~UI/UX Designer",
+      "href": "https://optihint.com/"
+    },
+    {
+      "text": "Design the second attempt",
+      "href": "/articles/design-the-second-attempt/"
+    }
+  ],
+  "resources": [
+    "http://127.0.0.1:8766/",
+    "http://127.0.0.1:8766/_astro/CoastalFooter.astro_astro_type_script_index_0_lang.DUuvFAhH.js",
+    "http://127.0.0.1:8766/_astro/DocumentLayout.CMl1zKWm.css",
+    "http://127.0.0.1:8766/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+    "http://127.0.0.1:8766/_astro/coastal-world.DgHwrLXq.js",
+    "http://127.0.0.1:8766/_astro/index.CbvHbKBN.css",
+    "http://127.0.0.1:8766/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-company-table-original.CJq3a5Eg_Z2ufWQQ.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-task-board-original.CxqfYTnw_Z2hvidt.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-vocabulary-app-original.BqsHrKbc_1Shj0X.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+    "http://127.0.0.1:8766/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+    "http://127.0.0.1:8766/fonts/inter-medium-core.woff2",
+    "http://127.0.0.1:8766/fonts/inter-regular-core.woff2"
+  ],
+  "media": [
+    {
+      "src": "http://127.0.0.1:8766/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+      "width": 40,
+      "height": 40,
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:8766/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+      "width": 40,
+      "height": 40,
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:8766/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:8766/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    },
+    {
+      "src": "http://127.0.0.1:8766/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+      "width": 600,
+      "height": 400,
+      "naturalWidth": 600,
+      "naturalHeight": 400,
+      "complete": true
+    }
+  ]
+}

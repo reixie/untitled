@@ -1,0 +1,886 @@
+{
+  "engine": "webkit",
+  "browser": "26.5",
+  "layouts": [
+    {
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "light",
+      "rootStyle": null,
+      "background": "rgb(255, 255, 255)",
+      "corner": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 320,
+      "scrollWidth": 320,
+      "footerWidth": 320,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 375,
+      "scrollWidth": 375,
+      "footerWidth": 375,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 700,
+      "scrollWidth": 700,
+      "footerWidth": 700,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 701,
+      "scrollWidth": 701,
+      "footerWidth": 701,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "footerWidth": 1440,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "width": 1944,
+      "scrollWidth": 1944,
+      "footerWidth": 1944,
+      "afterMain": true,
+      "text": "",
+      "controls": 0,
+      "theme": "dark",
+      "rootStyle": null,
+      "background": "rgb(0, 0, 0)",
+      "corner": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "theme": "light",
+      "changedChannels": 0
+    },
+    {
+      "theme": "dark",
+      "changedChannels": 0
+    }
+  ],
+  "errors": [],
+  "lazyLoading": true,
+  "keyboardPauseAndReducedMotion": true,
+  "offscreenSuspension": true,
+  "liveThemeSwitch": true,
+  "noJavaScriptContentIntact": true
+}

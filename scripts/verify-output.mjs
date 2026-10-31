@@ -37,6 +37,16 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
     /figma\.com\/api\/mcp\/asset|__stage\d|data-static-proof|localhost:|127\.0\.0\.1:|\/Users\/alex\/Downloads/,
   );
   if (file.endsWith('.html')) {
+    assert.equal(
+      [...content.matchAll(/data-coastal-footer(?:\s|>)/g)].length,
+      1,
+      'Every page must include one shared coastal footer',
+    );
+    assert.doesNotMatch(
+      /<main\b[\s\S]*?<\/main>/.exec(content)?.[0] ?? '',
+      /data-coastal-footer/,
+      'The site footer belongs after the main content',
+    );
     assert.doesNotMatch(
       content,
       /Using AI as a design engineer|Less is more, more or less/,
@@ -118,9 +128,11 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
         content,
         /<a\b[^>]*href="\/"[^>]*>[\s\S]*?Back to homepage<\/a>/,
       );
+      assert.doesNotMatch(content, /id="projects"|id="selected-work"/);
       assert.doesNotMatch(
-        content,
-        /<script\b|id="projects"|id="selected-work"/,
+        /<article\b[\s\S]*?<\/article>/.exec(content)?.[0] ?? '',
+        /<script\b/,
+        'Article content remains static; only the shared footer has a controller',
       );
       const source = await readFile(
         'src/content/articles/design-the-second-attempt.md',
@@ -144,7 +156,11 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
       }[id];
       assert.ok(title, `Unverified work route: ${id}`);
       assert.match(content, new RegExp(`<h1\\b[^>]*>${title}</h1>`));
-      assert.doesNotMatch(content, /<script\b|<time\b|id="writing-heading"/);
+      assert.doesNotMatch(content, /<time\b|id="writing-heading"/);
+      assert.doesNotMatch(
+        /<article\b[\s\S]*?<\/article>/.exec(content)?.[0] ?? '',
+        /<script\b/,
+      );
       assert.match(content, /href="\/"[^>]*>[\s\S]*?Back to homepage/);
       const source = await readFile(`src/content/work/${id}.mdx`, 'utf8');
       const body = source
@@ -237,5 +253,5 @@ assert.ok(
   `${gzipBytes} gzip bytes exceeds the 30 KiB budget`,
 );
 console.log(
-  `PASS: static homepage + article + Accord/Pascal cases, one Writing entry, complete article/case HTML without JS, six responsive images per case with unchanged local originals, Pascal deduplication, both gallery destinations/order; no placeholders, islands, temporary URLs, original PNGs or verification routes. JS: ${rawBytes} raw bytes / ${gzipBytes} gzip bytes (level 9), budget 30720 bytes.`,
+  `PASS: static homepage + article + Accord/Pascal cases, one Writing entry, complete static article/case content and one shared coastal footer per page, six responsive images per case with unchanged local originals, Pascal deduplication, both gallery destinations/order; no placeholders, islands, temporary URLs, original PNGs or verification routes. JS: ${rawBytes} raw bytes / ${gzipBytes} gzip bytes (level 9), budget 30720 bytes.`,
 );

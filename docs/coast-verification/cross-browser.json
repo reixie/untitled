@@ -1,0 +1,294 @@
+[
+  {
+    "engine": "chromium",
+    "version": "156.0.8078.74",
+    "width": 1944,
+    "height": 760,
+    "dpr": 2,
+    "live": {
+      "period": 24.5,
+      "grid": [
+        286,
+        75
+      ],
+      "bitmap": [
+        4004,
+        1575
+      ],
+      "world": [
+        1944,
+        760
+      ],
+      "renderMS": 3.7999999821186066,
+      "frames": 196,
+      "samples": 180,
+      "medianMS": 4,
+      "p95MS": 6,
+      "meanFrameIntervalMS": 33.33222222222222,
+      "active": true,
+      "reducedMotion": false,
+      "time": 6.4565,
+      "lighthouse": {
+        "x": 1623.24,
+        "y": 177.39999999999998,
+        "width": 108,
+        "height": 252
+      },
+      "sprites": {
+        "whale": 172,
+        "dolphin": 61,
+        "bird": 16,
+        "fish": 20,
+        "jelly": 38
+      }
+    },
+    "boundary": {
+      "differentChannels": 0,
+      "totalPixels": 6306300
+    },
+    "layout": {
+      "scrollWidth": 1944,
+      "viewport": 1944,
+      "cta": {
+        "x": 159.40625,
+        "y": 409.34375,
+        "width": 175.53125,
+        "height": 44,
+        "top": 409.34375,
+        "right": 334.9375,
+        "bottom": 453.34375,
+        "left": 159.40625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 1944,
+        "height": 760,
+        "top": 0,
+        "right": 1944,
+        "bottom": 760,
+        "left": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "version": "156.0.8078.74",
+    "width": 375,
+    "height": 812,
+    "dpr": 2,
+    "live": {
+      "period": 24.5,
+      "grid": [
+        83,
+        61
+      ],
+      "bitmap": [
+        830,
+        915
+      ],
+      "world": [
+        1000,
+        1093.3333333333333
+      ],
+      "renderMS": 1.2000000178813934,
+      "frames": 195,
+      "samples": 180,
+      "medianMS": 1.399999976158142,
+      "p95MS": 2.5,
+      "meanFrameIntervalMS": 33.33277777777778,
+      "active": true,
+      "reducedMotion": false,
+      "time": 6.4245,
+      "lighthouse": {
+        "x": 790,
+        "y": 218.13333333333327,
+        "width": 108,
+        "height": 252
+      },
+      "sprites": {
+        "whale": 62,
+        "dolphin": 22,
+        "bird": 6,
+        "fish": 10,
+        "jelly": 16
+      }
+    },
+    "boundary": {
+      "differentChannels": 0,
+      "totalPixels": 759450
+    },
+    "layout": {
+      "scrollWidth": 375,
+      "viewport": 375,
+      "cta": {
+        "x": 26.25,
+        "y": 310.25,
+        "width": 175.53125,
+        "height": 44,
+        "top": 310.25,
+        "right": 201.78125,
+        "bottom": 354.25,
+        "left": 26.25
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 880,
+        "top": 0,
+        "right": 375,
+        "bottom": 880,
+        "left": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "version": "26.5",
+    "width": 1944,
+    "height": 760,
+    "dpr": 2,
+    "live": {
+      "period": 24.5,
+      "grid": [
+        286,
+        75
+      ],
+      "bitmap": [
+        4004,
+        1575
+      ],
+      "world": [
+        1944,
+        760
+      ],
+      "renderMS": 3,
+      "frames": 192,
+      "samples": 180,
+      "medianMS": 3,
+      "p95MS": 4,
+      "meanFrameIntervalMS": 33.7,
+      "active": true,
+      "reducedMotion": false,
+      "time": 6.441,
+      "lighthouse": {
+        "x": 1623.24,
+        "y": 177.39999999999998,
+        "width": 108,
+        "height": 252
+      },
+      "sprites": {
+        "whale": 174,
+        "dolphin": 61,
+        "bird": 16,
+        "fish": 22,
+        "jelly": 38
+      }
+    },
+    "boundary": {
+      "differentChannels": 0,
+      "totalPixels": 6306300
+    },
+    "layout": {
+      "scrollWidth": 1944,
+      "viewport": 1944,
+      "cta": {
+        "x": 159.40625,
+        "y": 409.3125,
+        "width": 175.53125,
+        "height": 44,
+        "top": 409.3125,
+        "right": 334.9375,
+        "bottom": 453.3125,
+        "left": 159.40625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 1944,
+        "height": 760,
+        "top": 0,
+        "right": 1944,
+        "bottom": 760,
+        "left": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "version": "26.5",
+    "width": 375,
+    "height": 812,
+    "dpr": 2,
+    "live": {
+      "period": 24.5,
+      "grid": [
+        83,
+        61
+      ],
+      "bitmap": [
+        830,
+        915
+      ],
+      "world": [
+        1000,
+        1093.3333333333333
+      ],
+      "renderMS": 1,
+      "frames": 187,
+      "samples": 180,
+      "medianMS": 1,
+      "p95MS": 2,
+      "meanFrameIntervalMS": 34.63333333333333,
+      "active": true,
+      "reducedMotion": false,
+      "time": 6.42,
+      "lighthouse": {
+        "x": 790,
+        "y": 218.13333333333327,
+        "width": 108,
+        "height": 252
+      },
+      "sprites": {
+        "whale": 62,
+        "dolphin": 22,
+        "bird": 6,
+        "fish": 10,
+        "jelly": 16
+      }
+    },
+    "boundary": {
+      "differentChannels": 0,
+      "totalPixels": 759450
+    },
+    "layout": {
+      "scrollWidth": 375,
+      "viewport": 375,
+      "cta": {
+        "x": 26.25,
+        "y": 311.25,
+        "width": 175.53125,
+        "height": 44,
+        "top": 311.25,
+        "right": 201.78125,
+        "bottom": 355.25,
+        "left": 26.25
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 880,
+        "top": 0,
+        "right": 375,
+        "bottom": 880,
+        "left": 0
+      }
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,988 @@
+{
+  "engines": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.74",
+      "layouts": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "height": 1000,
+          "grid": [
+            423,
+            111
+          ],
+          "roof": 88.00000000000006,
+          "scrollWidth": 1944,
+          "viewport": 1944,
+          "scene": {
+            "x": 0,
+            "y": 120,
+            "width": 1944,
+            "height": 760,
+            "top": 120,
+            "right": 1944,
+            "bottom": 880,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 1440,
+          "height": 900,
+          "grid": [
+            313,
+            82
+          ],
+          "roof": 87.99269531250002,
+          "scrollWidth": 1440,
+          "viewport": 1440,
+          "scene": {
+            "x": 0,
+            "y": 168.515625,
+            "width": 1440,
+            "height": 562.953125,
+            "top": 168.515625,
+            "right": 1440,
+            "bottom": 731.46875,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 768,
+          "height": 900,
+          "grid": [
+            167,
+            70
+          ],
+          "roof": 338.25,
+          "scrollWidth": 768,
+          "viewport": 768,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 768,
+            "height": 480,
+            "top": 210,
+            "right": 768,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 701,
+          "height": 900,
+          "grid": [
+            152,
+            70
+          ],
+          "roof": 402.11982881597726,
+          "scrollWidth": 701,
+          "viewport": 701,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 701,
+            "height": 480,
+            "top": 210,
+            "right": 701,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 700,
+          "height": 900,
+          "grid": [
+            200,
+            115
+          ],
+          "roof": 20,
+          "scrollWidth": 700,
+          "viewport": 700,
+          "scene": {
+            "x": 0,
+            "y": 150,
+            "width": 700,
+            "height": 600,
+            "top": 150,
+            "right": 700,
+            "bottom": 750,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 390,
+          "height": 844,
+          "grid": [
+            111,
+            114
+          ],
+          "roof": 251.53846153846155,
+          "scrollWidth": 390,
+          "viewport": 390,
+          "scene": {
+            "x": 0,
+            "y": 122,
+            "width": 390,
+            "height": 600,
+            "top": 122,
+            "right": 390,
+            "bottom": 722,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 375,
+          "height": 812,
+          "grid": [
+            107,
+            115
+          ],
+          "roof": 274.80000000000007,
+          "scrollWidth": 375,
+          "viewport": 375,
+          "scene": {
+            "x": 0,
+            "y": 106,
+            "width": 375,
+            "height": 600,
+            "top": 106,
+            "right": 375,
+            "bottom": 706,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 320,
+          "height": 740,
+          "grid": [
+            91,
+            113
+          ],
+          "roof": 369.30000000000007,
+          "scrollWidth": 320,
+          "viewport": 320,
+          "scene": {
+            "x": 0,
+            "y": 74,
+            "width": 320,
+            "height": 592,
+            "top": 74,
+            "right": 320,
+            "bottom": 666,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "height": 1000,
+          "grid": [
+            423,
+            111
+          ],
+          "roof": 88.00000000000006,
+          "scrollWidth": 1944,
+          "viewport": 1944,
+          "scene": {
+            "x": 0,
+            "y": 120,
+            "width": 1944,
+            "height": 760,
+            "top": 120,
+            "right": 1944,
+            "bottom": 880,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 1440,
+          "height": 900,
+          "grid": [
+            313,
+            82
+          ],
+          "roof": 87.99269531250002,
+          "scrollWidth": 1440,
+          "viewport": 1440,
+          "scene": {
+            "x": 0,
+            "y": 168.515625,
+            "width": 1440,
+            "height": 562.953125,
+            "top": 168.515625,
+            "right": 1440,
+            "bottom": 731.46875,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 768,
+          "height": 900,
+          "grid": [
+            167,
+            70
+          ],
+          "roof": 338.25,
+          "scrollWidth": 768,
+          "viewport": 768,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 768,
+            "height": 480,
+            "top": 210,
+            "right": 768,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 701,
+          "height": 900,
+          "grid": [
+            152,
+            70
+          ],
+          "roof": 402.11982881597726,
+          "scrollWidth": 701,
+          "viewport": 701,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 701,
+            "height": 480,
+            "top": 210,
+            "right": 701,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 700,
+          "height": 900,
+          "grid": [
+            200,
+            115
+          ],
+          "roof": 20,
+          "scrollWidth": 700,
+          "viewport": 700,
+          "scene": {
+            "x": 0,
+            "y": 150,
+            "width": 700,
+            "height": 600,
+            "top": 150,
+            "right": 700,
+            "bottom": 750,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 390,
+          "height": 844,
+          "grid": [
+            111,
+            114
+          ],
+          "roof": 251.53846153846155,
+          "scrollWidth": 390,
+          "viewport": 390,
+          "scene": {
+            "x": 0,
+            "y": 122,
+            "width": 390,
+            "height": 600,
+            "top": 122,
+            "right": 390,
+            "bottom": 722,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 375,
+          "height": 812,
+          "grid": [
+            107,
+            115
+          ],
+          "roof": 274.80000000000007,
+          "scrollWidth": 375,
+          "viewport": 375,
+          "scene": {
+            "x": 0,
+            "y": 106,
+            "width": 375,
+            "height": 600,
+            "top": 106,
+            "right": 375,
+            "bottom": 706,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 320,
+          "height": 740,
+          "grid": [
+            91,
+            113
+          ],
+          "roof": 369.30000000000007,
+          "scrollWidth": 320,
+          "viewport": 320,
+          "scene": {
+            "x": 0,
+            "y": 74,
+            "width": 320,
+            "height": 592,
+            "top": 74,
+            "right": 320,
+            "bottom": 666,
+            "left": 0
+          },
+          "text": ""
+        }
+      ],
+      "profiles": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "period": 24.5,
+          "grid": [
+            423,
+            111
+          ],
+          "bitmap": [
+            4230,
+            1665
+          ],
+          "world": [
+            1944,
+            760
+          ],
+          "renderMS": 9.100000023841858,
+          "frames": 213,
+          "samples": 180,
+          "medianMS": 9.5,
+          "p95MS": 10,
+          "meanFrameIntervalMS": 33.33166666666666,
+          "active": true,
+          "background": "#080f1c",
+          "reducedMotion": false,
+          "time": 6.311199999988079,
+          "lighthouse": {
+            "x": 1623.24,
+            "y": 166.00000000000006,
+            "width": 108,
+            "height": 252
+          },
+          "sprites": {
+            "whale": 468,
+            "dolphin": 118,
+            "bird": 25,
+            "fish": 43,
+            "jelly": 77
+          }
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "period": 24.5,
+          "grid": [
+            423,
+            111
+          ],
+          "bitmap": [
+            4230,
+            1665
+          ],
+          "world": [
+            1944,
+            760
+          ],
+          "renderMS": 9.099999994039536,
+          "frames": 213,
+          "samples": 180,
+          "medianMS": 9.299999982118607,
+          "p95MS": 9.800000011920929,
+          "meanFrameIntervalMS": 33.33222222222222,
+          "active": true,
+          "background": "#f3f4ef",
+          "reducedMotion": false,
+          "time": 6.308,
+          "lighthouse": {
+            "x": 1623.24,
+            "y": 166.00000000000006,
+            "width": 108,
+            "height": 252
+          },
+          "sprites": {
+            "whale": 468,
+            "dolphin": 118,
+            "bird": 25,
+            "fish": 43,
+            "jelly": 77
+          }
+        }
+      ],
+      "boundary": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "changedChannels": 0,
+          "pixels": 7042950
+        },
+        {
+          "theme": "dark",
+          "width": 375,
+          "changedChannels": 0,
+          "pixels": 1181280
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "changedChannels": 0,
+          "pixels": 7042950
+        },
+        {
+          "theme": "light",
+          "width": 375,
+          "changedChannels": 0,
+          "pixels": 1181280
+        }
+      ],
+      "checks": {
+        "artOnly": true,
+        "automaticTheme": true,
+        "livePreferenceSwitch": true,
+        "siteAttributeOverride": true,
+        "siteClassOverride": true,
+        "reducedMotion": true,
+        "keyboardPause": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "26.5",
+      "layouts": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "height": 1000,
+          "grid": [
+            423,
+            111
+          ],
+          "roof": 88.00000000000006,
+          "scrollWidth": 1944,
+          "viewport": 1944,
+          "scene": {
+            "x": 0,
+            "y": 120,
+            "width": 1944,
+            "height": 760,
+            "top": 120,
+            "right": 1944,
+            "bottom": 880,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 1440,
+          "height": 900,
+          "grid": [
+            313,
+            82
+          ],
+          "roof": 87.99269531250002,
+          "scrollWidth": 1440,
+          "viewport": 1440,
+          "scene": {
+            "x": 0,
+            "y": 168.515625,
+            "width": 1440,
+            "height": 562.953125,
+            "top": 168.515625,
+            "right": 1440,
+            "bottom": 731.46875,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 768,
+          "height": 900,
+          "grid": [
+            167,
+            70
+          ],
+          "roof": 338.25,
+          "scrollWidth": 768,
+          "viewport": 768,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 768,
+            "height": 480,
+            "top": 210,
+            "right": 768,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 701,
+          "height": 900,
+          "grid": [
+            152,
+            70
+          ],
+          "roof": 402.11982881597726,
+          "scrollWidth": 701,
+          "viewport": 701,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 701,
+            "height": 480,
+            "top": 210,
+            "right": 701,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 700,
+          "height": 900,
+          "grid": [
+            200,
+            115
+          ],
+          "roof": 20,
+          "scrollWidth": 700,
+          "viewport": 700,
+          "scene": {
+            "x": 0,
+            "y": 150,
+            "width": 700,
+            "height": 600,
+            "top": 150,
+            "right": 700,
+            "bottom": 750,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 390,
+          "height": 844,
+          "grid": [
+            111,
+            114
+          ],
+          "roof": 251.53846153846155,
+          "scrollWidth": 390,
+          "viewport": 390,
+          "scene": {
+            "x": 0,
+            "y": 121.984375,
+            "width": 390,
+            "height": 600,
+            "top": 121.984375,
+            "right": 390,
+            "bottom": 721.984375,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 375,
+          "height": 812,
+          "grid": [
+            107,
+            115
+          ],
+          "roof": 274.80000000000007,
+          "scrollWidth": 375,
+          "viewport": 375,
+          "scene": {
+            "x": 0,
+            "y": 106,
+            "width": 375,
+            "height": 600,
+            "top": 106,
+            "right": 375,
+            "bottom": 706,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "dark",
+          "width": 320,
+          "height": 740,
+          "grid": [
+            91,
+            113
+          ],
+          "roof": 369.30000000000007,
+          "scrollWidth": 320,
+          "viewport": 320,
+          "scene": {
+            "x": 0,
+            "y": 74,
+            "width": 320,
+            "height": 592,
+            "top": 74,
+            "right": 320,
+            "bottom": 666,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "height": 1000,
+          "grid": [
+            423,
+            111
+          ],
+          "roof": 88.00000000000006,
+          "scrollWidth": 1944,
+          "viewport": 1944,
+          "scene": {
+            "x": 0,
+            "y": 120,
+            "width": 1944,
+            "height": 760,
+            "top": 120,
+            "right": 1944,
+            "bottom": 880,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 1440,
+          "height": 900,
+          "grid": [
+            313,
+            82
+          ],
+          "roof": 87.99269531250002,
+          "scrollWidth": 1440,
+          "viewport": 1440,
+          "scene": {
+            "x": 0,
+            "y": 168.515625,
+            "width": 1440,
+            "height": 562.953125,
+            "top": 168.515625,
+            "right": 1440,
+            "bottom": 731.46875,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 768,
+          "height": 900,
+          "grid": [
+            167,
+            70
+          ],
+          "roof": 338.25,
+          "scrollWidth": 768,
+          "viewport": 768,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 768,
+            "height": 480,
+            "top": 210,
+            "right": 768,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 701,
+          "height": 900,
+          "grid": [
+            152,
+            70
+          ],
+          "roof": 402.11982881597726,
+          "scrollWidth": 701,
+          "viewport": 701,
+          "scene": {
+            "x": 0,
+            "y": 210,
+            "width": 701,
+            "height": 480,
+            "top": 210,
+            "right": 701,
+            "bottom": 690,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 700,
+          "height": 900,
+          "grid": [
+            200,
+            115
+          ],
+          "roof": 20,
+          "scrollWidth": 700,
+          "viewport": 700,
+          "scene": {
+            "x": 0,
+            "y": 150,
+            "width": 700,
+            "height": 600,
+            "top": 150,
+            "right": 700,
+            "bottom": 750,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 390,
+          "height": 844,
+          "grid": [
+            111,
+            114
+          ],
+          "roof": 251.53846153846155,
+          "scrollWidth": 390,
+          "viewport": 390,
+          "scene": {
+            "x": 0,
+            "y": 121.984375,
+            "width": 390,
+            "height": 600,
+            "top": 121.984375,
+            "right": 390,
+            "bottom": 721.984375,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 375,
+          "height": 812,
+          "grid": [
+            107,
+            115
+          ],
+          "roof": 274.80000000000007,
+          "scrollWidth": 375,
+          "viewport": 375,
+          "scene": {
+            "x": 0,
+            "y": 106,
+            "width": 375,
+            "height": 600,
+            "top": 106,
+            "right": 375,
+            "bottom": 706,
+            "left": 0
+          },
+          "text": ""
+        },
+        {
+          "theme": "light",
+          "width": 320,
+          "height": 740,
+          "grid": [
+            91,
+            113
+          ],
+          "roof": 369.30000000000007,
+          "scrollWidth": 320,
+          "viewport": 320,
+          "scene": {
+            "x": 0,
+            "y": 74,
+            "width": 320,
+            "height": 592,
+            "top": 74,
+            "right": 320,
+            "bottom": 666,
+            "left": 0
+          },
+          "text": ""
+        }
+      ],
+      "profiles": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "period": 24.5,
+          "grid": [
+            423,
+            111
+          ],
+          "bitmap": [
+            4230,
+            1665
+          ],
+          "world": [
+            1944,
+            760
+          ],
+          "renderMS": 4,
+          "frames": 207,
+          "samples": 180,
+          "medianMS": 5,
+          "p95MS": 9,
+          "meanFrameIntervalMS": 34.172222222222224,
+          "active": true,
+          "background": "#080f1c",
+          "reducedMotion": false,
+          "time": 6.304,
+          "lighthouse": {
+            "x": 1623.24,
+            "y": 166.00000000000006,
+            "width": 108,
+            "height": 252
+          },
+          "sprites": {
+            "whale": 471,
+            "dolphin": 117,
+            "bird": 28,
+            "fish": 42,
+            "jelly": 77
+          }
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "period": 24.5,
+          "grid": [
+            423,
+            111
+          ],
+          "bitmap": [
+            4230,
+            1665
+          ],
+          "world": [
+            1944,
+            760
+          ],
+          "renderMS": 5,
+          "frames": 206,
+          "samples": 180,
+          "medianMS": 5,
+          "p95MS": 5,
+          "meanFrameIntervalMS": 34.45,
+          "active": true,
+          "background": "#f3f4ef",
+          "reducedMotion": false,
+          "time": 6.304,
+          "lighthouse": {
+            "x": 1623.24,
+            "y": 166.00000000000006,
+            "width": 108,
+            "height": 252
+          },
+          "sprites": {
+            "whale": 471,
+            "dolphin": 117,
+            "bird": 28,
+            "fish": 42,
+            "jelly": 77
+          }
+        }
+      ],
+      "boundary": [
+        {
+          "theme": "dark",
+          "width": 1944,
+          "changedChannels": 0,
+          "pixels": 7042950
+        },
+        {
+          "theme": "dark",
+          "width": 375,
+          "changedChannels": 0,
+          "pixels": 1181280
+        },
+        {
+          "theme": "light",
+          "width": 1944,
+          "changedChannels": 0,
+          "pixels": 7042950
+        },
+        {
+          "theme": "light",
+          "width": 375,
+          "changedChannels": 0,
+          "pixels": 1181280
+        }
+      ],
+      "checks": {
+        "artOnly": true,
+        "automaticTheme": true,
+        "livePreferenceSwitch": true,
+        "siteAttributeOverride": true,
+        "siteClassOverride": true,
+        "reducedMotion": true,
+        "keyboardPause": true
+      }
+    }
+  ],
+  "errors": [],
+  "checks": []
+}

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CoastalFooter from '../components/CoastalFooter.astro';
 
 interface Props {
   title: string;
@@ -37,6 +38,7 @@ const { title, description } = Astro.props;
     <main>
       <slot />
     </main>
+    <CoastalFooter />
   </body>
 </html>
 

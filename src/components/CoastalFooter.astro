@@ -1,0 +1,51 @@
+<footer class="coastal-footer" aria-label="Coastal scene">
+  <div class="coastal-scene">
+    <canvas
+      data-coastal-footer
+      role="img"
+      tabindex="0"
+      aria-label="An ASCII lighthouse on a rocky coast, with waves, seabirds and marine life. Press Space to pause or resume the animation."
+    ></canvas>
+  </div>
+</footer>
+
+<script>
+  import '../scripts/coastal-footer';
+</script>
+
+<style>
+  .coastal-footer {
+    width: 100%;
+    overflow: clip;
+    background: var(--color-background-1);
+  }
+
+  .coastal-scene {
+    position: relative;
+    width: min(100%, 2400px);
+    height: clamp(280px, 39.095vw, 940px);
+    margin-inline: auto;
+  }
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  canvas:focus-visible {
+    outline-offset: -8px;
+  }
+
+  @media (max-width: 700px) {
+    .coastal-scene {
+      height: clamp(360px, 85vw, 480px);
+    }
+  }
+
+  @media (scripting: none) {
+    .coastal-footer {
+      display: none;
+    }
+  }
+</style>
