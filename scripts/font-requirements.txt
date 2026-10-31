@@ -1,0 +1,5 @@
+# Manual font maintenance and visual verification only; never a build dependency.
+fonttools[woff]==4.60.2
+brotli==1.1.0
+uharfbuzz==0.51.7
+Pillow==11.3.0

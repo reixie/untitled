@@ -1,0 +1,96 @@
+{
+  "fonts": {
+    "regular": {
+      "before": 111268,
+      "core": 17896,
+      "extended": 4016
+    },
+    "medium": {
+      "before": 114348,
+      "core": 18292,
+      "extended": 3984
+    }
+  },
+  "publishedPages": [
+    {
+      "route": "/",
+      "before": 225616,
+      "after": 36188,
+      "preloadsBefore": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "preloadsAfter": [
+        "/fonts/inter-regular-core.woff2",
+        "/fonts/inter-medium-core.woff2"
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "before": 225616,
+      "after": 36188,
+      "preloadsBefore": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "preloadsAfter": [
+        "/fonts/inter-regular-core.woff2",
+        "/fonts/inter-medium-core.woff2"
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "before": 225616,
+      "after": 36188,
+      "preloadsBefore": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "preloadsAfter": [
+        "/fonts/inter-regular-core.woff2",
+        "/fonts/inter-medium-core.woff2"
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "before": 225616,
+      "after": 36188,
+      "preloadsBefore": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "preloadsAfter": [
+        "/fonts/inter-regular-core.woff2",
+        "/fonts/inter-medium-core.woff2"
+      ]
+    }
+  ],
+  "rendering": {
+    "chromium": {
+      "browser": "156.0.8078.74",
+      "comparisons": 28,
+      "changedPixels": 0,
+      "geometryDifferences": 0
+    },
+    "webkit": {
+      "browser": "26.5",
+      "comparisons": 28,
+      "changedPixels": 0,
+      "geometryDifferences": 0
+    },
+    "additionalPooledChromium": {
+      "comparisons": 8,
+      "changedPixels": 0
+    }
+  },
+  "checks": {
+    "astro": "0 errors, 0 warnings, 0 hints",
+    "eslint": "pass",
+    "content": "pass",
+    "output": "pass",
+    "browser": "70 homepage/article/case theme-width-JS combinations plus interactions; no errors",
+    "unexpectedCLS": "0 in existing browser matrix",
+    "fontBinariesReproduceByteForByte": true,
+    "openTypeDeviceHintRecordsInOriginals": 0
+  }
+}

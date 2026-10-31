@@ -1,0 +1,466 @@
+{
+  "tools": {
+    "fonttools": "4.60.2",
+    "brotli": "1.1.0",
+    "uharfbuzz": "0.51.7"
+  },
+  "rasterReferences": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "coreCssRange": "omitted to preserve WebKit 1x rendering; coverage is restricted by cmap",
+  "faceOrder": "extended, then preloaded core for each weight",
+  "featuresRequested": [
+    "calt",
+    "ccmp",
+    "locl",
+    "kern",
+    "mark",
+    "mkmk"
+  ],
+  "strictSplit": false,
+  "inputs": {
+    "src/components/BackLink.astro": "30c26e4f510f894c7f0ce9d4b17a10dc8857da06749d7a1dd44ade96398afff8",
+    "src/components/CaseFigure.astro": "70e38be9660dc6597025af12ed55b4808dfbfffc0c6e7ec418e92c56e68369d2",
+    "src/components/ContentRow.astro": "c883aeed51ae4daba71494e72f2ca31e4f82baae036255d6feed037e23b65ee9",
+    "src/components/PixelFlow.astro": "4cadc571af8d0f3a29af9033ef544644a38886d6ef0cb1e5cef064d4243ca104",
+    "src/components/Profile.astro": "6a2ba74ddaa2df80f0241312b3ecdd0cd97b7359016441d43fb9cff9de77f187",
+    "src/components/Showcase.astro": "5176d3a55ca653e96059237904a9f637d293756d2ad4ce72ce10ccf0e590e6c2",
+    "src/content/articles/design-the-second-attempt.md": "def5dfb501038e4a35049eed8508e0b44220b3b9b9c688d33a0c1ba62cfa2d75",
+    "src/content/work/accord.mdx": "a933a57b51fac97c96b71d013029e605aeec15ad2f55fbdaad7cb42a5a496365",
+    "src/content/work/pascal.mdx": "bf31c8cfcd8103173f313c7cd6c980c95ff604da7b43d1fe8c3c5721c0f7c4d3",
+    "src/content.config.ts": "75f504fff6c8c86a52c3a3c42d158b05ba2233991644cbea82f75a7d04278574",
+    "src/data/homepage.ts": "0e3d94f96c197ac8c6193d2d3ed7439f1d4ec30339df82faeab7b1bfe2c47f19",
+    "src/layouts/ArticleLayout.astro": "4ef3eaacd279736219e840b60f480bae4240e6a2d02011e97acf45cb5dcb0b68",
+    "src/layouts/CaseStudyLayout.astro": "b911c67a35e4e631db0baf04c3e9c31f28bd637ee01e4eff5003b62b9b5ae898",
+    "src/layouts/DocumentLayout.astro": "67d41b0632851ae18ceed0effc41494d9c6bf18fd085884a705d2a994ab73743",
+    "src/lib/articles.ts": "da9e15f2f9de1aab16403954313bfd6f036ff935f3625d9500c7517fe3afacaa",
+    "src/pages/articles/[...id].astro": "edadb17132388197419feb3b90aa95a5cf4cede276467b62e1412f812d85506a",
+    "src/pages/index.astro": "c82dccff8b230657fa925b98d826925cf3f464ad975ec4afddd78326c4efd449",
+    "src/pages/work/[...id].astro": "af30840146454be5cb1b1059625575e38fc83db96b19da6c8da2b180a994f500",
+    "src/scripts/card-tilt.ts": "824a461f69e6e00389802317880f015e6d5e9f2862c242e3cd2ece44e7578656",
+    "src/scripts/pixel-flow.ts": "11f27e627f0ace8f7ecdae7b120cf2d52d493f041eabab85dbf5f0163ec9957f",
+    "src/scripts/showcase.ts": "92f0331e10fd9b3cafa2579928b5982e7a362cde7ec1c1f0a4f52c52150dde5d",
+    "src/styles/colors.css": "fde4d137c2a82fa2e2892c663cdae28ddbfa78867532006d983ef0785c541db2",
+    "src/styles/foundations.css": "1cef22b6b204608c5d8cf64ed11679a8beebbda28180ac4de7411d109dc8e441",
+    "src/styles/global.css": "a3ba296e7bbc3f9cc295ccf97ea6e2dfcc1bd72b1822a2fc91519e0915cff86a",
+    "src/styles/prose.css": "e471be94fc7d63002de849bee05f056e48576df821d54b295df37e98a37fc537"
+  },
+  "before": {
+    "regular": {
+      "bytes": 111268,
+      "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+      "glyphs": 2937,
+      "codepoints": 2852,
+      "unicodeRange": "U+0000, U+0020-007E, U+00A0-00AC, U+00AE-0148, U+014A-01C3, U+01C5-0254, U+0256-027B, U+027E-0284, U+0286-0290, U+0292-02A4, U+02A6-0304, U+0306-030A, U+030C, U+030F, U+0313, U+0315, U+031B, U+0323, U+0326-0328, U+032C, U+0337-0338, U+0342-0343, U+0346-036F, U+0374-0376, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03D7, U+03DC-03DD, U+03F0-03F6, U+03F9-03FA, U+03FC-0479, U+0480-049D, U+04A0-04FF, U+052F, U+0E3F, U+1D00, U+1D0D, U+1D1B, U+1D43, U+1D47-1D49, U+1D4D, U+1D4F-1D50, U+1D52, U+1D56-1D58, U+1D5B, U+1D62-1D65, U+1D9C, U+1DA0, U+1DBB, U+1DBF-1DF5, U+1DFC-1E9B, U+1E9D-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200B, U+2010-2027, U+202F-2055, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20A0-20AF, U+20B1-20B5, U+20B8-20BA, U+20BC-20C0, U+20DB-20DE, U+20E8, U+20F0, U+2100-2101, U+2103, U+2105-2106, U+2109, U+2113, U+2116-2117, U+211E-2122, U+2126, U+212A-212B, U+212E, U+2132, U+213B, U+214D, U+2150-217F, U+2183-2186, U+2189, U+2190-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21BA-21BB, U+21D0, U+21D2, U+21D4, U+21DE-21DF, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2205-2206, U+220F, U+2211-2212, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2295-2298, U+2303-2305, U+2318, U+2325-2327, U+232B, U+2380, U+2387, U+238B, U+23CE-23CF, U+2423, U+2460-2468, U+24B6-24CF, U+24EA, U+25A0-25A2, U+25AA, U+25B2-25B3, U+25B6-25B7, U+25BA-25BD, U+25C0-25C1, U+25C4-25C7, U+25CA-25CB, U+25CF, U+25E6, U+25EF, U+2600, U+2605-2606, U+263C, U+2661, U+2665, U+266A-266B, U+26A0, U+2713, U+2717, U+2756, U+2764, U+2780-2788, U+27EF, U+27F5-27FA, U+2913, U+2A38, U+2B06, U+2B12-2B13, U+2B1C, U+2B24, U+2C7C, U+2C7F, U+2DFF, U+2E18, U+A69F, U+A7FF, U+A92E, U+E000, U+E002-E05E, U+E06A-E0BD, U+E0C8-E0CC, U+E0DC-E0E6, U+E0F3-E0F5, U+E106, U+E109-E10A, U+E10C-E10F, U+E111-E113, U+E117-E118, U+E121-E122, U+E124, U+E12A-E15E, U+E163, U+E1C3, U+E1D2-E1DF, U+E1E1-E2DC, U+EE01-EE07, U+EE09-EE0A, U+EE0C-EE12, U+EE14, U+EE17, U+EE1D-EE45, U+EE47-EE84, U+EE87-EED6, U+EED8-EEE1, U+F6C3, U+FEFF, U+1F12F-1F149, U+1F16A-1F16B, U+1F850, U+1F852",
+      "axes": [],
+      "features": {
+        "GSUB": [
+          "aalt",
+          "calt",
+          "case",
+          "ccmp",
+          "cv01",
+          "cv02",
+          "cv03",
+          "cv04",
+          "cv05",
+          "cv06",
+          "cv07",
+          "cv08",
+          "cv09",
+          "cv10",
+          "cv11",
+          "cv12",
+          "cv13",
+          "cv14",
+          "dlig",
+          "dnom",
+          "frac",
+          "locl",
+          "numr",
+          "ordn",
+          "pnum",
+          "salt",
+          "sinf",
+          "ss01",
+          "ss02",
+          "ss03",
+          "ss04",
+          "ss05",
+          "ss06",
+          "ss07",
+          "ss08",
+          "subs",
+          "sups",
+          "tnum",
+          "zero"
+        ],
+        "GPOS": [
+          "cpsp",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Inter",
+        "2": "Regular",
+        "3": "4.001;git-9221beed3;RSMS;Inter-Regular",
+        "4": "Inter Regular",
+        "5": "Version 4.001;git-9221beed3",
+        "6": "Inter-Regular",
+        "7": "Inter UI and Inter is a trademark of rsms.",
+        "8": "rsms",
+        "9": "Rasmus Andersson",
+        "11": "https://rsms.me/",
+        "12": "https://rsms.me/",
+        "13": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+        "14": "http://scripts.sil.org/OFL",
+        "256": "Open digits",
+        "257": "Disambiguation",
+        "258": "Round quotes & commas",
+        "259": "Disambiguation (no slashed zero)",
+        "260": "Circled characters",
+        "261": "Squared characters",
+        "262": "Square punctuation",
+        "263": "Square quotes",
+        "264": "Alternate one",
+        "265": "Open four",
+        "266": "Open six",
+        "267": "Open nine",
+        "268": "Lower-case L with tail",
+        "269": "Simplified u",
+        "270": "Alternate sharp s",
+        "271": "Upper-case i with serif",
+        "272": "Flat-top three",
+        "273": "Capital G with spur",
+        "274": "Single-story a",
+        "275": "Compact f",
+        "276": "Compact t",
+        "277": "Alternate capital sharp S"
+      }
+    },
+    "medium": {
+      "bytes": 114348,
+      "sha256": "0ff3e94614e1493eb556314fd247ae6c4a85a7783b4cc86be539940cf83f2a48",
+      "glyphs": 2937,
+      "codepoints": 2852,
+      "unicodeRange": "U+0000, U+0020-007E, U+00A0-00AC, U+00AE-0148, U+014A-01C3, U+01C5-0254, U+0256-027B, U+027E-0284, U+0286-0290, U+0292-02A4, U+02A6-0304, U+0306-030A, U+030C, U+030F, U+0313, U+0315, U+031B, U+0323, U+0326-0328, U+032C, U+0337-0338, U+0342-0343, U+0346-036F, U+0374-0376, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03D7, U+03DC-03DD, U+03F0-03F6, U+03F9-03FA, U+03FC-0479, U+0480-049D, U+04A0-04FF, U+052F, U+0E3F, U+1D00, U+1D0D, U+1D1B, U+1D43, U+1D47-1D49, U+1D4D, U+1D4F-1D50, U+1D52, U+1D56-1D58, U+1D5B, U+1D62-1D65, U+1D9C, U+1DA0, U+1DBB, U+1DBF-1DF5, U+1DFC-1E9B, U+1E9D-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200B, U+2010-2027, U+202F-2055, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20A0-20AF, U+20B1-20B5, U+20B8-20BA, U+20BC-20C0, U+20DB-20DE, U+20E8, U+20F0, U+2100-2101, U+2103, U+2105-2106, U+2109, U+2113, U+2116-2117, U+211E-2122, U+2126, U+212A-212B, U+212E, U+2132, U+213B, U+214D, U+2150-217F, U+2183-2186, U+2189, U+2190-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21BA-21BB, U+21D0, U+21D2, U+21D4, U+21DE-21DF, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2205-2206, U+220F, U+2211-2212, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2295-2298, U+2303-2305, U+2318, U+2325-2327, U+232B, U+2380, U+2387, U+238B, U+23CE-23CF, U+2423, U+2460-2468, U+24B6-24CF, U+24EA, U+25A0-25A2, U+25AA, U+25B2-25B3, U+25B6-25B7, U+25BA-25BD, U+25C0-25C1, U+25C4-25C7, U+25CA-25CB, U+25CF, U+25E6, U+25EF, U+2600, U+2605-2606, U+263C, U+2661, U+2665, U+266A-266B, U+26A0, U+2713, U+2717, U+2756, U+2764, U+2780-2788, U+27EF, U+27F5-27FA, U+2913, U+2A38, U+2B06, U+2B12-2B13, U+2B1C, U+2B24, U+2C7C, U+2C7F, U+2DFF, U+2E18, U+A69F, U+A7FF, U+A92E, U+E000, U+E002-E05E, U+E06A-E0BD, U+E0C8-E0CC, U+E0DC-E0E6, U+E0F3-E0F5, U+E106, U+E109-E10A, U+E10C-E10F, U+E111-E113, U+E117-E118, U+E121-E122, U+E124, U+E12A-E15E, U+E163, U+E1C3, U+E1D2-E1DF, U+E1E1-E2DC, U+EE01-EE07, U+EE09-EE0A, U+EE0C-EE12, U+EE14, U+EE17, U+EE1D-EE45, U+EE47-EE84, U+EE87-EED6, U+EED8-EEE1, U+F6C3, U+FEFF, U+1F12F-1F149, U+1F16A-1F16B, U+1F850, U+1F852",
+      "axes": [],
+      "features": {
+        "GSUB": [
+          "aalt",
+          "calt",
+          "case",
+          "ccmp",
+          "cv01",
+          "cv02",
+          "cv03",
+          "cv04",
+          "cv05",
+          "cv06",
+          "cv07",
+          "cv08",
+          "cv09",
+          "cv10",
+          "cv11",
+          "cv12",
+          "cv13",
+          "cv14",
+          "dlig",
+          "dnom",
+          "frac",
+          "locl",
+          "numr",
+          "ordn",
+          "pnum",
+          "salt",
+          "sinf",
+          "ss01",
+          "ss02",
+          "ss03",
+          "ss04",
+          "ss05",
+          "ss06",
+          "ss07",
+          "ss08",
+          "subs",
+          "sups",
+          "tnum",
+          "zero"
+        ],
+        "GPOS": [
+          "cpsp",
+          "kern",
+          "mark",
+          "mkmk"
+        ]
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Inter Medium",
+        "2": "Regular",
+        "3": "4.001;git-9221beed3;RSMS;Inter-Medium",
+        "4": "Inter Medium",
+        "5": "Version 4.001;git-9221beed3",
+        "6": "Inter-Medium",
+        "7": "Inter UI and Inter is a trademark of rsms.",
+        "8": "rsms",
+        "9": "Rasmus Andersson",
+        "11": "https://rsms.me/",
+        "12": "https://rsms.me/",
+        "13": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+        "14": "http://scripts.sil.org/OFL",
+        "16": "Inter",
+        "17": "Medium",
+        "21": "Inter",
+        "22": "Medium",
+        "256": "Open digits",
+        "257": "Disambiguation",
+        "258": "Round quotes & commas",
+        "259": "Disambiguation (no slashed zero)",
+        "260": "Circled characters",
+        "261": "Squared characters",
+        "262": "Square punctuation",
+        "263": "Square quotes",
+        "264": "Alternate one",
+        "265": "Open four",
+        "266": "Open six",
+        "267": "Open nine",
+        "268": "Lower-case L with tail",
+        "269": "Simplified u",
+        "270": "Alternate sharp s",
+        "271": "Upper-case i with serif",
+        "272": "Flat-top three",
+        "273": "Capital G with spur",
+        "274": "Single-story a",
+        "275": "Compact f",
+        "276": "Compact t",
+        "277": "Alternate capital sharp S"
+      }
+    }
+  },
+  "after": {
+    "inter-regular-extended.woff2": {
+      "bytes": 4016,
+      "sha256": "69739d645c30a0136cd501fbce0785d11faa9d9efeaf0a28d74a98a5615197e6",
+      "glyphs": 70,
+      "codepoints": 10,
+      "unicodeRange": "U+00A4, U+00A6-00A8, U+00AF, U+00B2-00B4, U+00B8-00B9",
+      "axes": [],
+      "features": {
+        "GSUB": [],
+        "GPOS": []
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Site Sans",
+        "2": "Regular",
+        "4": "Site Sans Regular",
+        "6": "SiteSans-Regular"
+      }
+    },
+    "inter-regular-core.woff2": {
+      "bytes": 17896,
+      "sha256": "a220d3149fdccea726f3e8cfaccba72467513b3797ab43115b4749f04ace7262",
+      "glyphs": 407,
+      "codepoints": 319,
+      "unicodeRange": "U+0020-007E, U+00A0-00A3, U+00A5, U+00A9-00AC, U+00AE, U+00B0-00B1, U+00B5-00B7, U+00BA-0148, U+014A-017F, U+2010-2011, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+2190, U+2197",
+      "axes": [],
+      "features": {
+        "GSUB": [
+          "calt",
+          "locl"
+        ],
+        "GPOS": [
+          "kern"
+        ]
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Site Sans",
+        "2": "Regular",
+        "4": "Site Sans Regular",
+        "6": "SiteSans-Regular"
+      }
+    },
+    "inter-medium-extended.woff2": {
+      "bytes": 3984,
+      "sha256": "c0e9697bf54e8ad8660b5cf7f360a3904d211f3d24987fd1b640d6e7295669fb",
+      "glyphs": 70,
+      "codepoints": 10,
+      "unicodeRange": "U+00A4, U+00A6-00A8, U+00AF, U+00B2-00B4, U+00B8-00B9",
+      "axes": [],
+      "features": {
+        "GSUB": [],
+        "GPOS": []
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Site Sans",
+        "2": "Medium",
+        "4": "Site Sans Medium",
+        "6": "SiteSans-Medium"
+      }
+    },
+    "inter-medium-core.woff2": {
+      "bytes": 18292,
+      "sha256": "c9ecec6e9ac53c95930bcb4b8d39e517bd899248c41e1e7c5fd1d932f7ff69ff",
+      "glyphs": 407,
+      "codepoints": 319,
+      "unicodeRange": "U+0020-007E, U+00A0-00A3, U+00A5, U+00A9-00AC, U+00AE, U+00B0-00B1, U+00B5-00B7, U+00BA-0148, U+014A-017F, U+2010-2011, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+2190, U+2197",
+      "axes": [],
+      "features": {
+        "GSUB": [
+          "calt",
+          "locl"
+        ],
+        "GPOS": [
+          "kern"
+        ]
+      },
+      "hinting": {
+        "tables": [],
+        "glyphPrograms": 0
+      },
+      "names": {
+        "0": "Copyright 2016 The Inter Project Authors",
+        "1": "Site Sans",
+        "2": "Medium",
+        "4": "Site Sans Medium",
+        "6": "SiteSans-Medium"
+      }
+    }
+  },
+  "partition": {
+    "regular": {
+      "requested": "U+0020-007E, U+00A0-00AC, U+00AE-0148, U+014A-017F, U+2010-2011, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+2190, U+2197",
+      "missingFromOriginal": "U+00AD, U+0149",
+      "promotedToPreserveShaping": "U+00A1-00A3, U+00A5, U+00A9-00AC, U+00AE, U+00B0-00B1, U+00B5-00B7, U+00BA-0148, U+014A-017F",
+      "interactionExamples": [
+        [
+          "U+0028",
+          "U+00A1"
+        ],
+        [
+          "U+0022",
+          "U+00A2"
+        ],
+        [
+          "U+0028",
+          "U+00A3"
+        ],
+        [
+          "U+0028",
+          "U+00A5"
+        ],
+        [
+          "U+002A",
+          "U+00A9"
+        ],
+        [
+          "U+0026",
+          "U+00AA"
+        ],
+        [
+          "U+0033",
+          "U+00AB"
+        ],
+        [
+          "U+0041",
+          "U+00AC"
+        ],
+        [
+          "U+0026",
+          "U+00AE"
+        ],
+        [
+          "U+00B0",
+          "U+0026"
+        ],
+        [
+          "U+0021",
+          "U+00B1"
+        ],
+        [
+          "U+00B5",
+          "U+002B"
+        ]
+      ]
+    },
+    "medium": {
+      "requested": "U+0020-007E, U+00A0-00AC, U+00AE-0148, U+014A-017F, U+2010-2011, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+2190, U+2197",
+      "missingFromOriginal": "U+00AD, U+0149",
+      "promotedToPreserveShaping": "U+00A1-00A3, U+00A5, U+00A9-00AC, U+00AE, U+00B0-00B1, U+00B5-00B7, U+00BA-0148, U+014A-017F",
+      "interactionExamples": [
+        [
+          "U+0028",
+          "U+00A1"
+        ],
+        [
+          "U+0022",
+          "U+00A2"
+        ],
+        [
+          "U+0028",
+          "U+00A3"
+        ],
+        [
+          "U+0028",
+          "U+00A5"
+        ],
+        [
+          "U+002A",
+          "U+00A9"
+        ],
+        [
+          "U+0026",
+          "U+00AA"
+        ],
+        [
+          "U+0033",
+          "U+00AB"
+        ],
+        [
+          "U+0041",
+          "U+00AC"
+        ],
+        [
+          "U+0026",
+          "U+00AE"
+        ],
+        [
+          "U+00B0",
+          "U+0026"
+        ],
+        [
+          "U+0021",
+          "U+00B1"
+        ],
+        [
+          "U+00B5",
+          "U+002B"
+        ]
+      ]
+    }
+  }
+}

@@ -1,21 +1,6 @@
 @import './colors.css';
 @import './foundations.css';
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-regular.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-medium.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
+@import './fonts.css';
 
 *,
 *::before,

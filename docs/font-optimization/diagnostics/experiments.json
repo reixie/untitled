@@ -1,0 +1,159 @@
+{
+  "rejectedCoreCssRange": {
+    "before": "rejected-core-range-before.webp",
+    "after": "rejected-core-range-after.webp",
+    "changedPixels": 9340,
+    "fontFiles": "identical original fonts; only CSS ranges differ"
+  },
+  "fontOptions": {
+    "discardGlyphNames": {
+      "regular": 16724,
+      "medium": 17092
+    },
+    "discardExtensionReferences": {
+      "regular": 1184,
+      "medium": 1196
+    }
+  },
+  "coreGlyphNameSavingBytes": 2372,
+  "extensionReferenceSavingBytes": 5620,
+  "pooledControls": {
+    "pooled-aa": {
+      "description": "unchanged original fonts on both sides",
+      "comparisons": [
+        {
+          "id": "___font-proof_typography_-375-light-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-light-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-dark-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-dark-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-light-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-light-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-dark-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-dark-2x",
+          "changedPixels": 840,
+          "maxChannelDifference": 93,
+          "geometryIdentical": true,
+          "bounds": [
+            1474,
+            1762,
+            1557,
+            4849
+          ]
+        }
+      ]
+    },
+    "pooled-ab": {
+      "description": "original vs final fonts",
+      "comparisons": [
+        {
+          "id": "___font-proof_typography_-375-light-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-light-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-dark-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-375-dark-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-light-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-light-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-dark-1x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        },
+        {
+          "id": "___font-proof_typography_-1200-dark-2x",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "geometryIdentical": true,
+          "bounds": null
+        }
+      ]
+    }
+  },
+  "isolatedControls": {
+    "originalVsOriginal": {
+      "comparisons": 1,
+      "changedPixels": 0
+    },
+    "originalVsFinal": {
+      "comparisons": 1,
+      "changedPixels": 0
+    }
+  }
+}

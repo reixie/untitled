@@ -1,0 +1,755 @@
+{
+  "browser": "156.0.8078.74",
+  "engine": "chromium",
+  "pages": [
+    {
+      "route": "/",
+      "text": "Alex L.Design EngineerI’m a product designer based in Lithuania with 4 years of experience across B2B SaaS, mobile apps, and websites.I design complex workflows and design systems, and build working prototypes with React and AI tools. Available for Product Designer roles.You can find me on LinkedIn, GitHub, X or reach me via alex@lohinov.comProjectsSelected workProjectsfunction e(e){let t=e.getContext(`2d`,{alpha:!1});if(!t)return;let n=matchMedia(`(prefers-reduced-motion: reduce)`),r=matchMedia(`(prefers-color-scheme: dark)`),i={light:{base:[255,255,255],sage:[166,187,171],clay:[199,180,174],sheen:[235,231,216]},dark:{base:[10,10,10],sage:[76,99,83],clay:[95,76,79],sheen:[132,142,119]}},a=new Float32Array(4096),o=82973;for(let e=0;e<a.length;e++)o=Math.imul(o,1664525)+1013904223>>>0,a[e]=o/4294967296;function s(e,t){let n=Math.floor(e),r=Math.floor(t),i=e-n,o=t-r,s=i*i*(3-2*i),c=o*o*(3-2*o),l=a[(r&63)*64+(n&63)],u=a[(r&63)*64+(n+1&63)],d=a[(r+1&63)*64+(n&63)],f=a[(r+1&63)*64+(n+1&63)];return l+(u-l)*s+(d-l)*c+(l-u-d+f)*s*c}function c(e,t){return s(e,t)*.57+s(e*2.03+13,t*2.03+7)*.29+s(e*4.09+3,t*4.09+19)*.14}let l,u=!1,d=0,f=0,p=0;function m(){let{width:e,height:n,data:o}=l,s=r.matches?i.dark:i.light,u=p*.21;for(let t=0;t<n;t++)for(let n=0;n<e;n++){let r=(n/e-.5)*4.2,i=(t/e-.5)*4.2,l=c(r*.6+11+u*.25,i*.6+7-u*.18),d=(r*.72-i*.28+Math.sin(i*.75+u*.4)*.6+(l-.5)*1.7)*4.2-u,f=(Math.sin(d)+1)*.5,p=f*f*(3-2*f)*.85,m=((Math.cos(d-.45)+1)*.5)**12*.55,h=(Math.sin(r*.45+i*.35+u*.3+l*2)+1)*.5,g=(a[(t&63)*64+(n&63)]-.5)*3,_=(t*e+n)*4;for(let e=0;e<3;e++){let t=s.sage[e]+(s.clay[e]-s.sage[e])*h,n=s.base[e]+(t-s.base[e])*p;o[_+e]=n+(s.sheen[e]-n)*m+g}o[_+3]=255}t.putImageData(l,0,0)}function h(){if(!e.clientWidth||!e.clientHeight)return;let n=Math.ceil(e.clientWidth/2.5),r=Math.ceil(e.clientHeight/2.5);(l?.width!==n||l.height!==r)&&(e.width=n,e.height=r,l=t.createImageData(n,r),m())}function g(e){d=requestAnimationFrame(g),!(e-f<1e3/24)&&(p+=Math.min((e-f)/1e3,.1),f=e,m())}function _(){cancelAnimationFrame(d),d=0,u&&!document.hidden&&!n.matches&&l&&(f=performance.now(),d=requestAnimationFrame(g))}h(),new ResizeObserver(h).observe(e),new IntersectionObserver(([e])=>{u=e?.isIntersecting??!1,_()}).observe(e),n.addEventListener(`change`,_),r.addEventListener(`change`,()=>{l&&m()}),document.addEventListener(`visibilitychange`,_)}document.querySelectorAll(`[data-pixel-flow]`).forEach(e);RunnelNative terminal for MacOSAn intelligent feedback loop–so your product, marketing, and customer success teams stay ahead of the curve.Selected workScroll or swipe horizontally to explore the work. With the gallery focused, use Left and Right arrows, Home, or End.function e(e){let t=e.querySelector(`[data-tabs]`),n=Array.from(e.querySelectorAll(`[data-tabs] a`)),r=Array.from(e.querySelectorAll(`[data-panel]`)),i=e.querySelector(`[data-gallery]`),a=i?.querySelector(`[data-work]`);if(!t||n.length!==2||r.length!==2||!i||!a)return;let o=1,s=0;function c(){if(!i||!a||!i.clientWidth)return;let e=a.getBoundingClientRect().width+parseFloat(getComputedStyle(i).columnGap);e!==s&&(s=e,i.scrollTo({left:o*s,behavior:`instant`}))}i.addEventListener(`scroll`,()=>{let e=a.getBoundingClientRect().width+parseFloat(getComputedStyle(i).columnGap);!r[1]?.hidden&&i.clientWidth&&s===e&&(o=i.scrollLeft/s)},{passive:!0}),new ResizeObserver(c).observe(i),i.addEventListener(`keydown`,e=>{if(e.target!==i||e.altKey||e.ctrlKey||e.metaKey)return;let t=i.querySelectorAll(`[data-work]`).length,n=Math.round(i.scrollLeft/s),r={ArrowLeft:n-1,ArrowRight:n+1,Home:0,End:t-1}[e.key];r!==void 0&&(e.preventDefault(),i.scrollTo({left:Math.max(0,Math.min(t-1,r))*s,behavior:matchMedia(`(prefers-reduced-motion: reduce)`).matches?`instant`:`smooth`}))});function l(e,t=!1){let i=n[e];i&&((t||r.some((t,n)=>n!==e&&t.contains(document.activeElement)))&&i.focus({preventScroll:!0}),n.forEach((t,n)=>{t.setAttribute(`aria-selected`,String(n===e)),t.tabIndex=n===e?0:-1}),r.forEach((t,n)=>{t.hidden=n!==e}),e===1&&(s=0,c()))}t.setAttribute(`role`,`tablist`),t.setAttribute(`aria-label`,`Projects and selected work`),n.forEach((e,t)=>{let i=r[t];i&&(e.setAttribute(`role`,`tab`),e.setAttribute(`aria-controls`,i.id),i.setAttribute(`role`,`tabpanel`),i.setAttribute(`aria-labelledby`,e.id),i.tabIndex=0,e.addEventListener(`click`,e=>{e.preventDefault(),l(t)}),e.addEventListener(`keydown`,e=>{if(e.altKey||e.ctrlKey||e.metaKey)return;let r={ArrowLeft:(t+n.length-1)%n.length,ArrowRight:(t+1)%n.length,Home:0,End:n.length-1,\" \":t,Enter:t}[e.key];r!==void 0&&(e.preventDefault(),l(r,!0))}))}),e.dataset.enhanced=``,l(0)}function t(e){let t=e.querySelector(`[data-tilt-surface]`);if(!t)return;let n=matchMedia(`(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)`),r=0,i=0,a=0;function o(){r=0;let n=e.getBoundingClientRect();if(!n.width||!n.height)return;let o=Math.max(0,Math.min(1,(i-n.left)/n.width)),s=Math.max(0,Math.min(1,(a-n.top)/n.height));t.style.setProperty(`--tilt-x`,`${((.5-s)*18).toFixed(2)}deg`),t.style.setProperty(`--tilt-y`,`${((o-.5)*18).toFixed(2)}deg`)}function s(){cancelAnimationFrame(r),r=0,t.style.removeProperty(`--tilt-x`),t.style.removeProperty(`--tilt-y`)}e.addEventListener(`pointermove`,e=>{n.matches&&e.pointerType!==`touch`&&(i=e.clientX,a=e.clientY,r||=requestAnimationFrame(o))}),e.addEventListener(`pointerleave`,s),e.addEventListener(`pointercancel`,s),e.addEventListener(`blur`,s),n.addEventListener(`change`,s),document.addEventListener(`visibilitychange`,s),window.addEventListener(`blur`,s)}document.querySelectorAll(`[data-showcase]`).forEach(e),document.querySelectorAll(`[data-tilt-card]`).forEach(t);ExperienceKonexta Agency~Product DesignerValorx~Product DesignerRoxfit~UI/UX DesignerOptiHint~UI/UX DesignerWritingDesign the second attempt",
+      "groups": [
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "16px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " .AELPRSWcdegijklnoprstuwx",
+          "examples": [
+            {
+              "tag": "H1",
+              "class": "",
+              "inline": null,
+              "text": "Alex L."
+            },
+            {
+              "tag": "H2",
+              "class": "panel-title",
+              "inline": null,
+              "text": "Projects"
+            },
+            {
+              "tag": "H3",
+              "class": "",
+              "inline": null,
+              "text": "Runnel"
+            },
+            {
+              "tag": "H2",
+              "class": "panel-title",
+              "inline": null,
+              "text": "Selected work"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "16px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ,./24@ABDEGHIKLMNOPRSUVWXYabcdefghiklmnoprstuvwxyz~–’",
+          "examples": [
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "Design Engineer"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "I’m a product designer based in Lithuania with 4 years of experience across B2B SaaS, mobile apps, a"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "I design complex workflows and design systems, and build working prototypes with React and AI tools."
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "You can find me on"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "13px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.143px"
+          },
+          "characters": " PScdejklorstw",
+          "examples": [
+            {
+              "tag": "A",
+              "class": "",
+              "inline": null,
+              "text": "Projects"
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "inline": null,
+              "text": "Selected work"
+            }
+          ]
+        }
+      ],
+      "pseudo": [],
+      "preloads": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "faces": [
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "400",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "500",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        }
+      ],
+      "resources": [
+        {
+          "file": "/fonts/inter-regular.woff2",
+          "bytes": 111268,
+          "transferBytes": 111568
+        },
+        {
+          "file": "/fonts/inter-medium.woff2",
+          "bytes": 114348,
+          "transferBytes": 114648
+        }
+      ]
+    },
+    {
+      "route": "/articles/design-the-second-attempt/",
+      "text": "← Back to homepageDesign the second attempt23 October 2026A save button is easy to prototype. A failed save forces more useful decisions: which values stay in the form, where the error appears, and how someone tries again. Take a simple flow: someone edits a customer record and clicks Save. The request fails. An error message explains the problem. Keeping their edits makes recovery possible. Separate correction from retry An invalid email address needs a correction. An unavailable service needs a retry. These states should give different guidance. For an invalid field, explain what needs to change and place the message next to it. For a failed request, explain that saving failed and provide a clear way to try again. Keep valid input in both cases. Keep the work visible Leave the entered values in place. Avoid resetting the form or closing it after an unsuccessful save. The interface should also distinguish entered changes from confirmed saved data. Preserve the draft, but show success only after the save has been confirmed. Prototype the second attempt Add a short recovery path to the prototype: Submit a form with one invalid value. Correct it without re-entering the other fields. Simulate an unsuccessful save. Retry with the changes still present. Ask someone else to follow that path without explaining the controls. Watch for repeated typing, uncertainty about what was saved, and difficulty finding the next action. A useful review ends with a concrete observation: the person recovered from the error and completed the task without rebuilding their work.",
+      "groups": [
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "16px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": "\n ,-.:ABCFKLPRSTWabcdefghiklmnopqrstuvwxy←",
+          "examples": [
+            {
+              "tag": "SPAN",
+              "class": "",
+              "inline": null,
+              "text": "←"
+            },
+            {
+              "tag": "A",
+              "class": "back-link",
+              "inline": null,
+              "text": "Back to homepage"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "A save button is easy to prototype. A failed save forces more useful\ndecisions: which values stay in"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "Take a simple flow: someone edits a customer record and clicks Save.\nThe request fails. An error mes"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "32px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " Dacdeghimnopst",
+          "examples": [
+            {
+              "tag": "H1",
+              "class": "",
+              "inline": null,
+              "text": "Design the second attempt"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "13px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " 0236Obceort",
+          "examples": [
+            {
+              "tag": "TIME",
+              "class": "",
+              "inline": null,
+              "text": "23 October 2026"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "18px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " KPSabcdefhiklmnoprstvwy",
+          "examples": [
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Separate correction from retry"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Keep the work visible"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Prototype the second attempt"
+            }
+          ]
+        }
+      ],
+      "pseudo": [],
+      "preloads": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "faces": [
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "400",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "500",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        }
+      ],
+      "resources": [
+        {
+          "file": "/fonts/inter-regular.woff2",
+          "bytes": 111268,
+          "transferBytes": 111568
+        },
+        {
+          "file": "/fonts/inter-medium.woff2",
+          "bytes": 114348,
+          "transferBytes": 114648
+        }
+      ]
+    },
+    {
+      "route": "/work/accord/",
+      "text": "← Back to homepageSelected workAccord — a CRM for small teamsBringing company records and everyday team tools into a shared workspace.A rounded geometric mark gives Accord a recognizable shape, from the opening artwork to its small workspace icon.View full-size image ↗ A shared place for everyday work Accord is a modern CRM system for small teams, intended to simplify everyday work and collaboration. Its organizing idea is to bring company records and everyday team tools into one shared workspace. The company directory is the clearest expression of that idea: a structured view of customer information, with the wider workspace always in reach. The interface brings two scales of work together. Someone can review the available context around a company while keeping sight of destinations for tasks, meetings, and notes. Accord is the working project name shown in these designs. The design challenge The design premise is straightforward: make customer information and everyday team tools easier to navigate within a shared interface. A CRM needs room for detailed records, but the surrounding controls should help people orient themselves before asking them to interpret a dense table. The challenge is balancing that breadth with clarity. Giving every destination equal weight would compete with the current task. Grouping navigation and separating workspace actions from record controls supports a more legible hierarchy, while keeping the directory central. Organizing the workspace The sidebar separates Records—Companies, People, and Opportunities—from Tools—Tasks, Meetings, and Notes. This structure supports an initial choice between looking up information and moving toward an activity. Companies has a filled selected state, connecting the navigation to the page title and table beside it. Search, Home, and Inbox sit above those groups. Integrations and Help & Support sit near the bottom, while Partners appears under List. These labels establish visible destinations; the screens here demonstrate the Companies view, rather than the functionality behind every entry. Keeping supporting navigation apart gives the core groups more definition, though a longer sidebar still asks people to scan several sections. The expanded workspace menu sits within the application shell. This view shows its relationship to navigation; the blank content area does not describe an onboarding flow.View full-size image ↗ Making company information scannable The Companies table carries the most detailed design work. Each row begins with a company logo and name, followed by its domain, category labels, employee count, revenue, and address. Names and domains offer two ways to recognize an entry. Consistent column positions let someone move across a row without relearning where each kind of information belongs. Category tags use compact colored backgrounds inside an otherwise neutral table. Their text carries the label, while color helps distinguish clusters during a scan. Thin dividers and a regular row rhythm keep adjacent records separate without heavy boxes. Employee and revenue values begin at consistent positions in their columns, and currency symbols occupy a repeated position beside the amounts. Consider one task: finding a company and reviewing its available context. The selected Companies destination establishes the location, and All Companies names the visible view. A search field labeled Search companies offers a clear place to begin looking. Once the relevant row is found, the reader can follow its domain, categories, and numeric fields across the table. The supplied designs stop at this overview; they do not show a company detail page or a completed search interaction. Filter and Display sit together above the table, separating view-related controls from the New action in the page header. Their placement makes those entry points discoverable without filling each row with controls. The images establish their labels and hierarchy, but leave their subsequent interactions open. Density is the main tradeoff. Seventeen sample companies fit in one view, making comparison possible across many records. Yet long addresses and some category groups meet the column edges, showing the pressure that detailed content places on fixed space. Company names, logos, domains, figures, and addresses are sample interface data, not verified business facts or client endorsements. Light presentation: neutral surfaces and fine dividers carry the table structure, leaving logos and category tags as the strongest color accents.View full-size image ↗ Dark presentation of the same directory preserves the column positions and row rhythm, making the two visual treatments directly comparable.View full-size image ↗ Workspace context and team entry points The workspace selector keeps Accord visible at the top of the sidebar. Its expanded menu lists Accord and My Space, with a check beside Accord. This gives the current context a persistent label and places alternative workspace entries nearby. Invite people and Settings share a separate group below the workspace entries. Theme and Log out follow beneath another divider. Bringing these secondary actions into one menu keeps them reachable without competing with company information. The tradeoff is discovery: someone must open the selector to see them. The menu establishes entry points, without specifying permissions, invitation steps, or collaboration behavior. Light and Dark presentation The directory variants retain the same hierarchy through different surfaces. Light styling uses pale backgrounds, subtle borders, and dark text. Dark styling places a slightly lighter table surface against the surrounding shell, with muted dividers and light text. In both, a filled Companies selection is distinct from the unselected navigation, and category colors remain concentrated inside tags. The menu close-ups show the corresponding surface treatments and a Theme submenu containing Light, Dark, and System. These are designed appearance choices. The images demonstrate their presentation, without establishing switching behavior or saved preferences. Borders and secondary text deserve particular attention in later checks because their restraint also makes them easier to overlook. Light menu styling uses dividers to separate workspace entries, team actions, and appearance controls within a compact surface.View full-size image ↗ The corresponding dark-styled menus preserve the grouping and submenu hierarchy, allowing their visual treatment to be compared directly.View full-size image ↗ A consistent visual identity The brand artwork pairs a white geometric mark with a blurred, multicolored background. Rounded stepped edges surround a cross-shaped opening. The same form appears at a smaller scale inside the workspace icon beside Accord. Repetition connects the expressive artwork to the restrained interface, giving the product a recognizable visual anchor without adding decoration to the table. Design outcome and next checks Together, these artifacts demonstrate a coherent company directory, grouped navigation, a workspace menu, and Light and Dark visual variants. They make the product’s organizing idea tangible: records remain central, with everyday tools and workspace actions arranged around them. The next validation work should test that structure through concrete tasks: Find a named company and review its available context across a row. Interpret category labels without relying on their colors. Locate the current workspace, Invite people, and Settings. Check dense tables at narrower widths, especially long addresses and category groups. These are proposed checks for a future interactive version.← Back to homepage",
+      "groups": [
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "16px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " &,-.:;ABCDEFGHIKLMNOPRSTYabcdefghijklmnopqrstuvwxyz—’←",
+          "examples": [
+            {
+              "tag": "SPAN",
+              "class": "",
+              "inline": null,
+              "text": "←"
+            },
+            {
+              "tag": "A",
+              "class": "back-link",
+              "inline": null,
+              "text": "Back to homepage"
+            },
+            {
+              "tag": "P",
+              "class": "subtitle",
+              "inline": null,
+              "text": "Bringing company records and everyday team tools into a shared workspace."
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "Accord is a modern CRM system for small teams, intended to simplify everyday work and collaboration."
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "13px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ,-.:;ADLSTVabcdefghiklmnoprstuvwxyz↗",
+          "examples": [
+            {
+              "tag": "P",
+              "class": "eyebrow",
+              "inline": null,
+              "text": "Selected work"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "A rounded geometric mark gives Accord a recognizable shape, from the opening artwork to its small wo"
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "inline": null,
+              "text": "View full-size image"
+            },
+            {
+              "tag": "SPAN",
+              "class": "",
+              "inline": null,
+              "text": "↗"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "32px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ACMRacdeflmorst—",
+          "examples": [
+            {
+              "tag": "H1",
+              "class": "",
+              "inline": null,
+              "text": "Accord — a CRM for small teams"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "18px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ADLMOTWabcdefghiklmnoprstuvwxyz",
+          "examples": [
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "A shared place for everyday work"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "The design challenge"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Organizing the workspace"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Making company information scannable"
+            }
+          ]
+        }
+      ],
+      "pseudo": [],
+      "preloads": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "faces": [
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "400",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "500",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        }
+      ],
+      "resources": [
+        {
+          "file": "/fonts/inter-regular.woff2",
+          "bytes": 111268,
+          "transferBytes": 111568
+        },
+        {
+          "file": "/fonts/inter-medium.woff2",
+          "bytes": 114348,
+          "transferBytes": 114648
+        }
+      ]
+    },
+    {
+      "route": "/work/pascal/",
+      "text": "← Back to homepageSelected workPascal — Markdown notes for macOSA personal space for Markdown notes, with optional team collaboration.Pascal’s opening artwork pairs a white geometric mark with a blue background, introducing the visual identity before the workspace.View full-size image ↗ A personal starting point Pascal is a note-taking application for macOS. All notes use Markdown, and personal use is its starting point: a place to collect ideas, develop a document, and return to work already in progress. Optional team collaboration extends that foundation. The design premise is to keep writing clear while making organization and navigation available when needed. A note needs space to breathe, but its surroundings must still answer practical questions: where am I, what else is open, and how do I shape this content? The interface gives each concern a visible place without asking every control to compete with the document. Finding your place My Space anchors the top of the sidebar. Search, References, Favorites, and Archives form a group above Notes, separating collection-level destinations from individual documents. Within Notes, Welcome to Pascal, Writing Ideas, and Research Brief pair names with distinct icons. The blue diamond beside Research Brief repeats in its open tab, connecting the two locations. Sidebar and tabs support different scales of movement. The sidebar offers a way to locate a document within the collection; tabs above the editor keep open notes nearby. Research Brief has a filled selection in both places, while Writing Ideas remains visible alongside it. This repeated state helps connect the current document to its wider context. Settings sits at the bottom, apart from everyday note navigation. The separation keeps configuration reachable while giving the document list a clearer boundary. Persistent navigation takes horizontal space, but also keeps orientation cues in view. The Light overview connects the selected Research Brief in the sidebar with its tab above the writing area; Writing Ideas stays visible as another open note.View full-size image ↗ Giving Markdown a readable surface Markdown is the common format beneath Pascal’s notes. The Research Brief example gives that foundation a structured visual surface: a document title, section headings, links, a bulleted list, a table, and tasks. Its research-related wording is sample note content. The title establishes the document before quieter supporting text introduces it. Space between sections separates reading into smaller units. Links form a recognizable group, bullets give individual points a regular rhythm, and table columns align related information for comparison. Tasks use checkboxes to distinguish work items from ordinary prose. These structures let one note hold several kinds of information. The tradeoff is keeping that variety readable without filling the writing area with formatting controls. Generous spacing and restrained dividers carry much of the hierarchy. The Dark overview preserves the same document structure: links, list items, table rows, and tasks remain distinct within a single note.View full-size image ↗ Making formatting discoverable The formatting menu names the available structures and groups them by purpose. Style contains Heading 1, Heading 2, and Heading 3. Blocks brings together Bullet List, Numbered List, Checklist, Code block, and Blockquote. Media contains Image, Bookmark, and File. For someone deciding how to organize a passage, these labels turn an abstract formatting choice into recognizable options. The grouping narrows the scan: headings establish hierarchy, blocks organize content, and media entries offer additional material. Icons reinforce the names without carrying the explanation alone. Keeping these options together leaves more room for the note. The tradeoff is discoverability: a compact menu is useful only when people can find it and recognize the appropriate action. Style, Blocks, and Media divide the formatting menu into three groups, with explicit labels for each available structure.View full-size image ↗ One place to find notes and actions The command palette combines a shared search field with separate Notes and Actions groups. Welcome to Pascal, Writing Ideas, and Research Brief retain their names and icons. Below them, Create New Note, Search Emoji, Settings, and Toggle Sidebar describe actions in plain language. This arrangement brings document lookup and workspace commands into one compact surface. Group labels preserve the distinction between going somewhere and doing something. The benefit depends on clear naming: combining both kinds of entry also creates more options to scan. An illustrative task is to locate Research Brief through the palette’s Notes group, open it, move to Writing Ideas through its document tab, then return through the Research Brief tab. The sidebar provides another visible entry to either note. This is a proposed sequence for an interactive walkthrough, using the entry points shown here. The Light palette separates note destinations from Create New Note, Search Emoji, Settings, and Toggle Sidebar beneath one search field.View full-size image ↗ The Dark palette retains the same order, labels, and icons, making its surface treatment directly comparable with the Light version.View full-size image ↗ Personal work with room for collaboration Pascal also supports team collaboration. That capability extends a product centered on an individual’s Markdown notes, so the design concern is continuity: adding team activity while retaining a clear personal workspace. My Space gives the personal foundation a visible name. A future design check should examine how someone distinguishes personal and shared work as they move between documents. Any boundaries between those contexts need to be understandable without making ordinary personal note-taking feel like workspace administration. Consistency across appearances Light and Dark views preserve the relationship between sidebar, document tabs, and writing area. Surface contrast separates navigation from the note, while filled selections identify Research Brief. Secondary text recedes beneath titles and labels; colored note icons remain small recognition cues in both appearances. The palettes follow the same hierarchy at a smaller scale. Their search field, group headings, separators, and action rows retain consistent positions. Subtle borders and muted text keep the surfaces quiet, but deserve close attention when checking readability. Rounded window edges, macOS window controls, and a compact toolbar place the workspace in its desktop context. The brand artwork’s blue field and white geometric mark provide a stronger visual introduction alongside the restrained interface views. Design outcome and next checks The artifacts bring Pascal’s personal focus into view through note navigation, open document tabs, structured note presentation, formatting options, and a command palette. Light and Dark treatments carry those decisions across appearances. The next validation work should use concrete tasks: Find and reopen a note. Move between open notes without losing orientation. Discover the appropriate formatting action. Check the Markdown representation of supported content structures. Evaluate how personal and shared work would remain distinguishable. These are proposed checks for a future interactive version, including how richer content is represented within Markdown notes.← Back to homepage",
+      "groups": [
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "16px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ,-.123:;?ABCDEFGHIKLMNOPRSTWabcdefghijklmnopqrstuvwxyz’←",
+          "examples": [
+            {
+              "tag": "SPAN",
+              "class": "",
+              "inline": null,
+              "text": "←"
+            },
+            {
+              "tag": "A",
+              "class": "back-link",
+              "inline": null,
+              "text": "Back to homepage"
+            },
+            {
+              "tag": "P",
+              "class": "subtitle",
+              "inline": null,
+              "text": "A personal space for Markdown notes, with optional team collaboration."
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "Pascal is a note-taking application for macOS. All notes use Markdown, and personal use is its start"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontSize": "13px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ,-.:;BCDEILMNPRSTVWabcdefghijklmnoprstuvwxyz’↗",
+          "examples": [
+            {
+              "tag": "P",
+              "class": "eyebrow",
+              "inline": null,
+              "text": "Selected work"
+            },
+            {
+              "tag": "P",
+              "class": "",
+              "inline": null,
+              "text": "Pascal’s opening artwork pairs a white geometric mark with a blue background, introducing the visual"
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "inline": null,
+              "text": "View full-size image"
+            },
+            {
+              "tag": "SPAN",
+              "class": "",
+              "inline": null,
+              "text": "↗"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "32px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " MOPSacdefklmnorstw—",
+          "examples": [
+            {
+              "tag": "H1",
+              "class": "",
+              "inline": null,
+              "text": "Pascal — Markdown notes for macOS"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontWeight": "500",
+            "fontStyle": "normal",
+            "fontSize": "18px",
+            "fontStretch": "100%",
+            "fontVariationSettings": "normal",
+            "fontFeatureSettings": "normal",
+            "fontVariant": "normal",
+            "fontKerning": "auto",
+            "fontOpticalSizing": "auto",
+            "fontSynthesis": "none",
+            "hyphens": "manual",
+            "textTransform": "none",
+            "letterSpacing": "-0.176px"
+          },
+          "characters": " ACDFGMOPabcdefghiklmnoprstuvwxy",
+          "examples": [
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "A personal starting point"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Finding your place"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Giving Markdown a readable surface"
+            },
+            {
+              "tag": "H2",
+              "class": "",
+              "inline": null,
+              "text": "Making formatting discoverable"
+            }
+          ]
+        }
+      ],
+      "pseudo": [],
+      "preloads": [
+        "/fonts/inter-regular.woff2",
+        "/fonts/inter-medium.woff2"
+      ],
+      "faces": [
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "400",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "style": "normal",
+          "weight": "500",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF",
+          "status": "loaded"
+        }
+      ],
+      "resources": [
+        {
+          "file": "/fonts/inter-regular.woff2",
+          "bytes": 111268,
+          "transferBytes": 111568
+        },
+        {
+          "file": "/fonts/inter-medium.woff2",
+          "bytes": 114348,
+          "transferBytes": 114648
+        }
+      ]
+    }
+  ]
+}

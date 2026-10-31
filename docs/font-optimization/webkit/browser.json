@@ -1,0 +1,4575 @@
+{
+  "engine": "webkit",
+  "browser": "26.5",
+  "comparisons": [
+    {
+      "id": "_-375-light-1x",
+      "before": "_-375-light-1x-before.webp",
+      "after": "_-375-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_-375-dark-1x",
+      "before": "_-375-dark-1x-before.webp",
+      "after": "_-375-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_-1200-light-1x",
+      "before": "_-1200-light-1x-before.webp",
+      "after": "_-1200-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_-1200-dark-1x",
+      "before": "_-1200-dark-1x-before.webp",
+      "after": "_-1200-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-light-1x",
+      "before": "_articles_design-the-second-attempt_-375-light-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-375-light-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-dark-1x",
+      "before": "_articles_design-the-second-attempt_-375-dark-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-375-dark-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-light-1x",
+      "before": "_articles_design-the-second-attempt_-1200-light-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-1200-light-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-dark-1x",
+      "before": "_articles_design-the-second-attempt_-1200-dark-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-1200-dark-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_accord_-375-light-1x",
+      "before": "_work_accord_-375-light-1x-before.webp",
+      "after": "_work_accord_-375-light-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_accord_-375-dark-1x",
+      "before": "_work_accord_-375-dark-1x-before.webp",
+      "after": "_work_accord_-375-dark-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_accord_-1200-light-1x",
+      "before": "_work_accord_-1200-light-1x-before.webp",
+      "after": "_work_accord_-1200-light-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_accord_-1200-dark-1x",
+      "before": "_work_accord_-1200-dark-1x-before.webp",
+      "after": "_work_accord_-1200-dark-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_pascal_-375-light-1x",
+      "before": "_work_pascal_-375-light-1x-before.webp",
+      "after": "_work_pascal_-375-light-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_pascal_-375-dark-1x",
+      "before": "_work_pascal_-375-dark-1x-before.webp",
+      "after": "_work_pascal_-375-dark-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_pascal_-1200-light-1x",
+      "before": "_work_pascal_-1200-light-1x-before.webp",
+      "after": "_work_pascal_-1200-light-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_work_pascal_-1200-dark-1x",
+      "before": "_work_pascal_-1200-dark-1x-before.webp",
+      "after": "_work_pascal_-1200-dark-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_selected-375-light-1x",
+      "before": "_selected-375-light-1x-before.webp",
+      "after": "_selected-375-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_selected-375-dark-1x",
+      "before": "_selected-375-dark-1x-before.webp",
+      "after": "_selected-375-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_selected-1200-light-1x",
+      "before": "_selected-1200-light-1x-before.webp",
+      "after": "_selected-1200-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "_selected-1200-dark-1x",
+      "before": "_selected-1200-dark-1x-before.webp",
+      "after": "_selected-1200-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-375-light-1x",
+      "before": "___font-proof_typography_-375-light-1x-before.webp",
+      "after": "___font-proof_typography_-375-light-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-375-light-2x",
+      "before": "___font-proof_typography_-375-light-2x-before.webp",
+      "after": "___font-proof_typography_-375-light-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-1x",
+      "before": "___font-proof_typography_-375-dark-1x-before.webp",
+      "after": "___font-proof_typography_-375-dark-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-2x",
+      "before": "___font-proof_typography_-375-dark-2x-before.webp",
+      "after": "___font-proof_typography_-375-dark-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-1x",
+      "before": "___font-proof_typography_-1200-light-1x-before.webp",
+      "after": "___font-proof_typography_-1200-light-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-2x",
+      "before": "___font-proof_typography_-1200-light-2x-before.webp",
+      "after": "___font-proof_typography_-1200-light-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-1x",
+      "before": "___font-proof_typography_-1200-dark-1x-before.webp",
+      "after": "___font-proof_typography_-1200-dark-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-2x",
+      "before": "___font-proof_typography_-1200-dark-2x-before.webp",
+      "after": "___font-proof_typography_-1200-dark-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true
+    }
+  ],
+  "network": [
+    {
+      "id": "_-375-light-1x",
+      "route": "/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_-375-dark-1x",
+      "route": "/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_-1200-light-1x",
+      "route": "/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_-1200-dark-1x",
+      "route": "/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-light-1x",
+      "route": "/articles/design-the-second-attempt/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-dark-1x",
+      "route": "/articles/design-the-second-attempt/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-light-1x",
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-dark-1x",
+      "route": "/articles/design-the-second-attempt/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_accord_-375-light-1x",
+      "route": "/work/accord/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 204
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 204
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_accord_-375-dark-1x",
+      "route": "/work/accord/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 204
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_1K0DMP.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_297tYx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 204
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_wSeM9.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_Z1HgqU2.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_1MIa96.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_ZjpJYc.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_accord_-1200-light-1x",
+      "route": "/work/accord/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 700
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 700
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_accord_-1200-dark-1x",
+      "route": "/work/accord/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 700
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/accord-brand-original.CBB_QDkV_Z20AHrl.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-application-shell-original.Bcfdr_u4_Z1NfOLf.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 700
+            },
+            {
+              "source": "/_astro/accord-companies-light-original.DulwFwjr_1KQB1W.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-companies-dark-original.yreRaMZP_a85t8.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-light-original.a5rN-3tT_Z1g60gv.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/accord-workspace-menu-dark-original.DmXKRlHq_Zy3VFQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_pascal_-375-light-1x",
+      "route": "/work/pascal/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_pascal_-375-dark-1x",
+      "route": "/work/pascal/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_Zqco1F.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_17OonM.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_Z1RcAJx.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1JKcp0.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_ZOkCuJ.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_Z1x3zKq.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 183
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_pascal_-1200-light-1x",
+      "route": "/work/pascal/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_work_pascal_-1200-dark-1x",
+      "route": "/work/pascal/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/pascal-brand-original.DFPourKL_1txRkY.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-light-original.DMDZeGGo_Z17uYsb.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-editor-dark-original.6WaFDPMC_1jIkJX.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-formatting-menu-light-original.D5YwH87K_Z1pM4Fo.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-light-original.B0wVPH-W_1OcVj4.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            },
+            {
+              "source": "/_astro/pascal-command-palette-dark-original.DBNBmhP1_1WNGGQ.webp",
+              "naturalWidth": 1120,
+              "naturalHeight": 630
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_selected-375-light-1x",
+      "route": "/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "selected": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_selected-375-dark-1x",
+      "route": "/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "selected": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_Z1pnLXX.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_1e1yFa.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Zr9pnW.webp",
+              "naturalWidth": 327,
+              "naturalHeight": 218
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_selected-1200-light-1x",
+      "route": "/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "selected": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "_selected-1200-dark-1x",
+      "route": "/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "selected": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [
+            {
+              "source": "/_astro/alex-lohinov-avatar-original.C2b72oz__Z2oqt7D.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/runnel-terminal-icon-original.BkjskB15_Z18K5it.webp",
+              "naturalWidth": 40,
+              "naturalHeight": 40
+            },
+            {
+              "source": "/_astro/selected-work-task-board-original.CxqfYTnw_gRGGn.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-company-table-original.CJq3a5Eg_wuEa9.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            },
+            {
+              "source": "/_astro/selected-work-vocabulary-app-original.BqsHrKbc_Z1yPg95.webp",
+              "naturalWidth": 600,
+              "naturalHeight": 400
+            }
+          ],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-375-light-1x",
+      "route": "/__font-proof/typography/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-375-light-2x",
+      "route": "/__font-proof/typography/",
+      "width": 375,
+      "colorScheme": "light",
+      "dpr": 2,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-1x",
+      "route": "/__font-proof/typography/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-2x",
+      "route": "/__font-proof/typography/",
+      "width": 375,
+      "colorScheme": "dark",
+      "dpr": 2,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-1x",
+      "route": "/__font-proof/typography/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-2x",
+      "route": "/__font-proof/typography/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 2,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-1x",
+      "route": "/__font-proof/typography/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 1,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-2x",
+      "route": "/__font-proof/typography/",
+      "width": 1200,
+      "colorScheme": "dark",
+      "dpr": 2,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            }
+          ],
+          "images": [],
+          "bytes": 44188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_core_-1200-light-1x",
+      "route": "/__font-proof/core/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "networkOnly": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_regular_-1200-light-1x",
+      "route": "/__font-proof/regular/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "networkOnly": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            },
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "unloaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-regular-extended.woff2",
+              "bytes": 4016,
+              "transferBytes": 4316
+            }
+          ],
+          "images": [],
+          "bytes": 40204,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_medium_-1200-light-1x",
+      "route": "/__font-proof/medium/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "networkOnly": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            },
+            {
+              "file": "/fonts/inter-medium-extended.woff2",
+              "bytes": 3984,
+              "transferBytes": 4284
+            }
+          ],
+          "images": [],
+          "bytes": 40172,
+          "platforms": {}
+        }
+      ]
+    },
+    {
+      "id": "___font-proof_cjk_-1200-light-1x",
+      "route": "/__font-proof/cjk/",
+      "width": 1200,
+      "colorScheme": "light",
+      "dpr": 1,
+      "networkOnly": true,
+      "samples": [
+        {
+          "label": "before",
+          "preloads": [
+            "/fonts/inter-regular.woff2",
+            "/fonts/inter-medium.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular.woff2",
+              "bytes": 111268,
+              "transferBytes": 111568
+            },
+            {
+              "file": "/fonts/inter-medium.woff2",
+              "bytes": 114348,
+              "transferBytes": 114648
+            }
+          ],
+          "images": [],
+          "bytes": 225616,
+          "platforms": {}
+        },
+        {
+          "label": "after",
+          "preloads": [
+            "/fonts/inter-regular-core.woff2",
+            "/fonts/inter-medium-core.woff2"
+          ],
+          "faces": [
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "400",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "loaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+a4, U+a6-a8, U+af, U+b2-b4, U+b8-b9",
+              "status": "unloaded"
+            },
+            {
+              "family": "Inter",
+              "style": "normal",
+              "weight": "500",
+              "display": "swap",
+              "unicodeRange": "U+0-10FFFF",
+              "status": "unloaded"
+            }
+          ],
+          "resources": [
+            {
+              "file": "/fonts/inter-regular-core.woff2",
+              "bytes": 17896,
+              "transferBytes": 18196
+            },
+            {
+              "file": "/fonts/inter-medium-core.woff2",
+              "bytes": 18292,
+              "transferBytes": 18592
+            }
+          ],
+          "images": [],
+          "bytes": 36188,
+          "platforms": {}
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

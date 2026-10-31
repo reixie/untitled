@@ -66,7 +66,9 @@ const articleBody = articleSource
   .replace(/\s+/g, ' ')
   .trim();
 // New evidence stays separate from the historical Stage 1/2 captures.
-const output = resolve('docs/pascal-verification');
+const output = resolve(
+  process.env.BROWSER_EVIDENCE_DIR ?? 'docs/pascal-verification',
+);
 await mkdir(output, { recursive: true });
 const report = {
   browser: browser.version(),
@@ -161,7 +163,8 @@ try {
   const page = await context.newPage();
   page.on('pageerror', (error) => report.errors.push(error.message));
   page.on('console', (message) => {
-    if (message.type() === 'error') report.errors.push(message.text());
+    if (message.type() === 'error')
+      report.errors.push(`${message.text()} (${message.location().url})`);
   });
   page.on('response', (response) => {
     if (response.status() >= 400)
@@ -235,6 +238,7 @@ try {
           family: f.family,
           weight: f.weight,
           status: f.status,
+          unicodeRange: f.unicodeRange,
         })),
         cls: window.__stage2LayoutShifts.reduce((sum, value) => sum + value, 0),
       }));
@@ -247,7 +251,17 @@ try {
         styles.arrow,
         theme === 'light' ? 'rgb(100, 100, 100)' : 'rgb(180, 180, 180)',
       );
-      assert.ok(styles.fonts.every((f) => f.status === 'loaded'));
+      // Only the core faces should load for these pages. Extended faces stay idle.
+      const coreFaces = styles.fonts.filter(
+        (f) => f.unicodeRange === 'U+0-10FFFF',
+      );
+      assert.equal(coreFaces.length, 2);
+      assert.ok(coreFaces.every((f) => f.status === 'loaded'));
+      assert.ok(
+        styles.fonts
+          .filter((f) => !coreFaces.includes(f))
+          .every((f) => f.status === 'unloaded'),
+      );
       assert.ok(styles.cls < 0.01, `Unexpected CLS: ${styles.cls}`);
       report.matrix.push({ theme, width, before, gallery, styles });
     }
@@ -858,7 +872,8 @@ try {
         const reading = await caseContext.newPage();
         reading.on('pageerror', (error) => report.errors.push(error.message));
         reading.on('console', (message) => {
-          if (message.type() === 'error') report.errors.push(message.text());
+          if (message.type() === 'error')
+            report.errors.push(`${message.text()} (${message.location().url})`);
         });
         reading.on('requestfailed', (request) => {
           if (request.failure()?.errorText !== 'net::ERR_ABORTED')

@@ -1,0 +1,481 @@
+{
+  "tolerance": 0,
+  "comparisons": [
+    {
+      "id": "_-375-light-1x",
+      "before": "_-375-light-1x-before.webp",
+      "after": "_-375-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_-375-light-1x-diff.png",
+      "size": [
+        375,
+        1340
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "e06a11fef1bc2a161f411793398287b39291be78597a50df28ba1abb43fd342e",
+      "afterRasterSha256": "e06a11fef1bc2a161f411793398287b39291be78597a50df28ba1abb43fd342e"
+    },
+    {
+      "id": "_-375-dark-1x",
+      "before": "_-375-dark-1x-before.webp",
+      "after": "_-375-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_-375-dark-1x-diff.png",
+      "size": [
+        375,
+        1340
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "f2a2981a91ae51df84c7701b3fe3fe0d941e238bbf386d24e722eb35a794afc6",
+      "afterRasterSha256": "f2a2981a91ae51df84c7701b3fe3fe0d941e238bbf386d24e722eb35a794afc6"
+    },
+    {
+      "id": "_-1200-light-1x",
+      "before": "_-1200-light-1x-before.webp",
+      "after": "_-1200-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        1260
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "094de6aab8783dfafb5d0b4ab7906935829834615af5c909e8cc33f4f217e707",
+      "afterRasterSha256": "094de6aab8783dfafb5d0b4ab7906935829834615af5c909e8cc33f4f217e707"
+    },
+    {
+      "id": "_-1200-dark-1x",
+      "before": "_-1200-dark-1x-before.webp",
+      "after": "_-1200-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        1260
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "9e22d289398fe0c9a77d55e9186e2ce2b511ba01a202a08c8d97ef223fb6f4c1",
+      "afterRasterSha256": "9e22d289398fe0c9a77d55e9186e2ce2b511ba01a202a08c8d97ef223fb6f4c1"
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-light-1x",
+      "before": "_articles_design-the-second-attempt_-375-light-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-375-light-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true,
+      "diff": "_articles_design-the-second-attempt_-375-light-1x-diff.png",
+      "size": [
+        375,
+        1745
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "5209e7d61123809b3857660ad26b4212ca4f3c4c6d029e704c72c33a043fad1f",
+      "afterRasterSha256": "5209e7d61123809b3857660ad26b4212ca4f3c4c6d029e704c72c33a043fad1f"
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-375-dark-1x",
+      "before": "_articles_design-the-second-attempt_-375-dark-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-375-dark-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true,
+      "diff": "_articles_design-the-second-attempt_-375-dark-1x-diff.png",
+      "size": [
+        375,
+        1745
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "50fc1b9572c123f899ad1a39f21be40161103b7207440d5ff535512178aa72d6",
+      "afterRasterSha256": "50fc1b9572c123f899ad1a39f21be40161103b7207440d5ff535512178aa72d6"
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-light-1x",
+      "before": "_articles_design-the-second-attempt_-1200-light-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-1200-light-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true,
+      "diff": "_articles_design-the-second-attempt_-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        1417
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "565ef1ed1998819d5103fda7ed25ad6ad425150157c25bd87a9ab36c8af68f1a",
+      "afterRasterSha256": "565ef1ed1998819d5103fda7ed25ad6ad425150157c25bd87a9ab36c8af68f1a"
+    },
+    {
+      "id": "_articles_design-the-second-attempt_-1200-dark-1x",
+      "before": "_articles_design-the-second-attempt_-1200-dark-1x-before.webp",
+      "after": "_articles_design-the-second-attempt_-1200-dark-1x-after.webp",
+      "textHash": "0b3212f09dc6263a1447b96f8c5f6a4091314ec2a406b4b7509ce68db8d3ffc1",
+      "geometryIdentical": true,
+      "diff": "_articles_design-the-second-attempt_-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        1417
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "edff405e98a2b42bed6f9146c6297717d512b4a49597de84de6f7cdf139c791c",
+      "afterRasterSha256": "edff405e98a2b42bed6f9146c6297717d512b4a49597de84de6f7cdf139c791c"
+    },
+    {
+      "id": "_work_accord_-375-light-1x",
+      "before": "_work_accord_-375-light-1x-before.webp",
+      "after": "_work_accord_-375-light-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true,
+      "diff": "_work_accord_-375-light-1x-diff.png",
+      "size": [
+        375,
+        8143
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "7154ef9539369eeed378ccc252291ae0f75be53088fae5038b572742ec731be7",
+      "afterRasterSha256": "7154ef9539369eeed378ccc252291ae0f75be53088fae5038b572742ec731be7"
+    },
+    {
+      "id": "_work_accord_-375-dark-1x",
+      "before": "_work_accord_-375-dark-1x-before.webp",
+      "after": "_work_accord_-375-dark-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true,
+      "diff": "_work_accord_-375-dark-1x-diff.png",
+      "size": [
+        375,
+        8143
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "81307b0d2093df3ec97ee961f36fe70e7edc8258d84b604b5289b18d337e3cc3",
+      "afterRasterSha256": "81307b0d2093df3ec97ee961f36fe70e7edc8258d84b604b5289b18d337e3cc3"
+    },
+    {
+      "id": "_work_accord_-1200-light-1x",
+      "before": "_work_accord_-1200-light-1x-before.webp",
+      "after": "_work_accord_-1200-light-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true,
+      "diff": "_work_accord_-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        8682
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "708c42da70f13ae4aed3e73ebfe5e9415893501cc8fb354833c6cd4cdfb5520f",
+      "afterRasterSha256": "708c42da70f13ae4aed3e73ebfe5e9415893501cc8fb354833c6cd4cdfb5520f"
+    },
+    {
+      "id": "_work_accord_-1200-dark-1x",
+      "before": "_work_accord_-1200-dark-1x-before.webp",
+      "after": "_work_accord_-1200-dark-1x-after.webp",
+      "textHash": "4460efd76a8da3e572ea054e7c3c90cc0d9aaf08e91fb3e0ff85b8c9eeb9dd19",
+      "geometryIdentical": true,
+      "diff": "_work_accord_-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        8682
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "a2a6a790ed32306f05a75e0f80ea1a95f13b2e03fd877a0fd69316b0b795c069",
+      "afterRasterSha256": "a2a6a790ed32306f05a75e0f80ea1a95f13b2e03fd877a0fd69316b0b795c069"
+    },
+    {
+      "id": "_work_pascal_-375-light-1x",
+      "before": "_work_pascal_-375-light-1x-before.webp",
+      "after": "_work_pascal_-375-light-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true,
+      "diff": "_work_pascal_-375-light-1x-diff.png",
+      "size": [
+        375,
+        8040
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "1a4c11660dc6c0f6b1c31486f2c3d08cbf7abc5a04a0793c2363983e4c8f57b7",
+      "afterRasterSha256": "1a4c11660dc6c0f6b1c31486f2c3d08cbf7abc5a04a0793c2363983e4c8f57b7"
+    },
+    {
+      "id": "_work_pascal_-375-dark-1x",
+      "before": "_work_pascal_-375-dark-1x-before.webp",
+      "after": "_work_pascal_-375-dark-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true,
+      "diff": "_work_pascal_-375-dark-1x-diff.png",
+      "size": [
+        375,
+        8040
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "3575f5c1dd6e2a07d5fcae21dc412ebb8ee6a6b6714713a52b24d0dc4e1988e4",
+      "afterRasterSha256": "3575f5c1dd6e2a07d5fcae21dc412ebb8ee6a6b6714713a52b24d0dc4e1988e4"
+    },
+    {
+      "id": "_work_pascal_-1200-light-1x",
+      "before": "_work_pascal_-1200-light-1x-before.webp",
+      "after": "_work_pascal_-1200-light-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true,
+      "diff": "_work_pascal_-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        8654
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "9eaa15b8e8802d6106a38dc2955eec7ef7e9df4a21cc10d0a72af5210ca976d9",
+      "afterRasterSha256": "9eaa15b8e8802d6106a38dc2955eec7ef7e9df4a21cc10d0a72af5210ca976d9"
+    },
+    {
+      "id": "_work_pascal_-1200-dark-1x",
+      "before": "_work_pascal_-1200-dark-1x-before.webp",
+      "after": "_work_pascal_-1200-dark-1x-after.webp",
+      "textHash": "b4e3ee9919f640b4cb9ed726b1515d95bd65dac096befe1c7e3e775ffecb7358",
+      "geometryIdentical": true,
+      "diff": "_work_pascal_-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        8654
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "2b5ed20ec7ca42765eaa8b9416e148102beaddea65befbe234595b5e6231cac3",
+      "afterRasterSha256": "2b5ed20ec7ca42765eaa8b9416e148102beaddea65befbe234595b5e6231cac3"
+    },
+    {
+      "id": "_selected-375-light-1x",
+      "before": "_selected-375-light-1x-before.webp",
+      "after": "_selected-375-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_selected-375-light-1x-diff.png",
+      "size": [
+        375,
+        1340
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "892f0ffb73c79c62bb16ea9a98444480d2e9de03936601994b0d2e57acca3a12",
+      "afterRasterSha256": "892f0ffb73c79c62bb16ea9a98444480d2e9de03936601994b0d2e57acca3a12"
+    },
+    {
+      "id": "_selected-375-dark-1x",
+      "before": "_selected-375-dark-1x-before.webp",
+      "after": "_selected-375-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_selected-375-dark-1x-diff.png",
+      "size": [
+        375,
+        1340
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "f08bac86dc9f4263333a1e8a32b4add662ab4c3696e9f049a0ec30dcd9127117",
+      "afterRasterSha256": "f08bac86dc9f4263333a1e8a32b4add662ab4c3696e9f049a0ec30dcd9127117"
+    },
+    {
+      "id": "_selected-1200-light-1x",
+      "before": "_selected-1200-light-1x-before.webp",
+      "after": "_selected-1200-light-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_selected-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        1260
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "c64ae64286e75f639b10a55101da10c75a2f0c03d5b309a787ac9ee3373f7828",
+      "afterRasterSha256": "c64ae64286e75f639b10a55101da10c75a2f0c03d5b309a787ac9ee3373f7828"
+    },
+    {
+      "id": "_selected-1200-dark-1x",
+      "before": "_selected-1200-dark-1x-before.webp",
+      "after": "_selected-1200-dark-1x-after.webp",
+      "textHash": "47f66d7ca6fc4cae0d2bb4498421a97499044f6bcf23fbda8fe31f920bf178a7",
+      "geometryIdentical": true,
+      "diff": "_selected-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        1260
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "8d98fd35f437395c4092d32f08cbffd684a03d23c72f44e53d968481f82e4a96",
+      "afterRasterSha256": "8d98fd35f437395c4092d32f08cbffd684a03d23c72f44e53d968481f82e4a96"
+    },
+    {
+      "id": "___font-proof_typography_-375-light-1x",
+      "before": "___font-proof_typography_-375-light-1x-before.webp",
+      "after": "___font-proof_typography_-375-light-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-375-light-1x-diff.png",
+      "size": [
+        375,
+        4000
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "03bac6c554f2c4f30411718bb654cf9fa05503832c8f5086dd2e5b10a9987e6a",
+      "afterRasterSha256": "03bac6c554f2c4f30411718bb654cf9fa05503832c8f5086dd2e5b10a9987e6a"
+    },
+    {
+      "id": "___font-proof_typography_-375-light-2x",
+      "before": "___font-proof_typography_-375-light-2x-before.webp",
+      "after": "___font-proof_typography_-375-light-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-375-light-2x-diff.png",
+      "size": [
+        750,
+        8000
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "3c92762d8a880f3914bad0d5bdad31e3e2a41c6feb0a7e475932354ca3fbe1c6",
+      "afterRasterSha256": "3c92762d8a880f3914bad0d5bdad31e3e2a41c6feb0a7e475932354ca3fbe1c6"
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-1x",
+      "before": "___font-proof_typography_-375-dark-1x-before.webp",
+      "after": "___font-proof_typography_-375-dark-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-375-dark-1x-diff.png",
+      "size": [
+        375,
+        4000
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "41c451d3d425236c71b11df716a4116369d55fe2cf5828fbcf42b59eac785ac7",
+      "afterRasterSha256": "41c451d3d425236c71b11df716a4116369d55fe2cf5828fbcf42b59eac785ac7"
+    },
+    {
+      "id": "___font-proof_typography_-375-dark-2x",
+      "before": "___font-proof_typography_-375-dark-2x-before.webp",
+      "after": "___font-proof_typography_-375-dark-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-375-dark-2x-diff.png",
+      "size": [
+        750,
+        8000
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "69b99833065547b3ba0386c6404325f6aca85921fd2292b08e23fd0bfdf4a4d2",
+      "afterRasterSha256": "69b99833065547b3ba0386c6404325f6aca85921fd2292b08e23fd0bfdf4a4d2"
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-1x",
+      "before": "___font-proof_typography_-1200-light-1x-before.webp",
+      "after": "___font-proof_typography_-1200-light-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-1200-light-1x-diff.png",
+      "size": [
+        1200,
+        2621
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "6ffff1f8a211893625e53f33cd65fcb0a6067118eac651798483b69f2ab24212",
+      "afterRasterSha256": "6ffff1f8a211893625e53f33cd65fcb0a6067118eac651798483b69f2ab24212"
+    },
+    {
+      "id": "___font-proof_typography_-1200-light-2x",
+      "before": "___font-proof_typography_-1200-light-2x-before.webp",
+      "after": "___font-proof_typography_-1200-light-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-1200-light-2x-diff.png",
+      "size": [
+        2400,
+        5242
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "dab58b21e55801d89240b926e77a75fd5d9737981d66c68ddc183d20a0fda6b2",
+      "afterRasterSha256": "dab58b21e55801d89240b926e77a75fd5d9737981d66c68ddc183d20a0fda6b2"
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-1x",
+      "before": "___font-proof_typography_-1200-dark-1x-before.webp",
+      "after": "___font-proof_typography_-1200-dark-1x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-1200-dark-1x-diff.png",
+      "size": [
+        1200,
+        2621
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "3083dfd70f7373cc9fa1583fd732eed783f8b8299cb6461e8bfea3189777567f",
+      "afterRasterSha256": "3083dfd70f7373cc9fa1583fd732eed783f8b8299cb6461e8bfea3189777567f"
+    },
+    {
+      "id": "___font-proof_typography_-1200-dark-2x",
+      "before": "___font-proof_typography_-1200-dark-2x-before.webp",
+      "after": "___font-proof_typography_-1200-dark-2x-after.webp",
+      "textHash": "f97b1749c8cc6d96d3325f3b720e0ec563d73d1ad6f789aca759750f3ab3fa44",
+      "geometryIdentical": true,
+      "diff": "___font-proof_typography_-1200-dark-2x-diff.png",
+      "size": [
+        2400,
+        5242
+      ],
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "bounds": null,
+      "beforeRasterSha256": "2b13f0d6846879bb7fe7aba634cc5d5b275a989e40099fab8c955b1d6e1d206b",
+      "afterRasterSha256": "2b13f0d6846879bb7fe7aba634cc5d5b275a989e40099fab8c955b1d6e1d206b"
+    }
+  ]
+}

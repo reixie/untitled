@@ -5,3 +5,5 @@ dist/
 .vercel/
 public/fonts/
 src/assets/
+# Deterministic machine-generated font inventories and browser evidence.
+docs/font-optimization/**/*.json
