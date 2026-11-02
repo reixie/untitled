@@ -423,7 +423,7 @@ try {
       'https://github.com/reixie',
       'https://x.com/reixxiie',
       'mailto:alex@lohinov.com',
-      'https://github.com/reixie/runnel',
+      'https://github.com/reixie/keeps',
       '/work/pascal/',
       '/work/accord/',
       'https://www.konexta.agency/',
@@ -506,7 +506,7 @@ try {
     () => getComputedStyle(document.body, '::after').opacity === '0',
   );
   report.interactions.push(
-    'Runnel pointer tilt/reset, animated canvas, reduced-motion still frame and disabled tilt; Writing hover fade/reset',
+    'Keeps pointer tilt/reset, animated canvas, reduced-motion still frame and disabled tilt; Writing hover fade/reset',
   );
   console.log(
     'PASS: existing pointer tilt, canvas animation, reduced motion and Writing hover.',

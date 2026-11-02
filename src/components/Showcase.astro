@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import icon from '../assets/images/runnel-terminal-icon-original.png';
-import { runnel, selectedWork } from '../data/homepage';
+import icon from '../assets/images/keeps-icon-original.png';
+import { keeps, selectedWork } from '../data/homepage';
 import PixelFlow from './PixelFlow.astro';
 ---
 
@@ -25,10 +25,10 @@ import PixelFlow from './PixelFlow.astro';
     </h2>
     <a
       class="project-link"
-      href={runnel.destination.href}
+      href={keeps.destination.href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-labelledby="runnel-title"
+      aria-labelledby="keeps-title"
       data-tilt-card
     >
       <article class="project-card" data-tilt-surface>
@@ -40,14 +40,14 @@ import PixelFlow from './PixelFlow.astro';
             height={40}
             densities={[1, 2, 3]}
             format="webp"
-            alt="A smiling retro computer with green stars on a black rounded square."
+            alt="A pastel ghost holding a star on a black rounded square."
           />
           <div>
-            <h3 id="runnel-title">{runnel.title}</h3>
-            <p class="subtitle">{runnel.subtitle}</p>
+            <h3 id="keeps-title">{keeps.title}</h3>
+            <p class="subtitle">{keeps.subtitle}</p>
           </div>
         </div>
-        <p>{runnel.description}</p>
+        <p>{keeps.description}</p>
       </article>
     </a>
   </section>

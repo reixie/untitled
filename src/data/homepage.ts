@@ -26,17 +26,15 @@ export const profile = {
   },
 };
 
-export const runnel = {
-  title: 'Runnel',
-  subtitle: 'Native terminal for MacOS',
+export const keeps = {
+  title: 'Keeps',
+  subtitle: 'Visual library for macOS',
   description:
-    'An intelligent feedback loop–so your product, marketing, and customer success teams stay ahead of the curve.',
+    'Collect images, videos, GIFs, and web links. Keep your inspiration organized in collections and stored locally on your Mac.',
   destination: {
-    href: 'https://github.com/reixie/runnel',
+    href: 'https://github.com/reixie/keeps',
     status: 'ready',
   },
-  editorialStatus:
-    'Description is inconsistent with the terminal subtitle; owner review needed.',
 };
 
 // Source order: 42:382, 42:378 (initial center), 42:393. IDs identify slots, not projects.
