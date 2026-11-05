@@ -575,16 +575,12 @@ try {
       assert.equal(await plain.locator('#projects').isVisible(), true);
       assert.equal(await plain.locator('#selected-work').isVisible(), true);
       assert.equal(await plain.getByRole('tab').count(), 0);
-      assert.ok(
-        await plain
-          .locator('body')
-          .innerText()
-          .then(
-            (text) =>
-              text.includes('An intelligent feedback loop') &&
-              text.includes('Design the second attempt'),
-          ),
-      );
+      await plain
+        .getByRole('link', { name: 'Keeps on GitHub', exact: true })
+        .waitFor({ state: 'visible' });
+      await plain
+        .getByRole('link', { name: 'Design the second attempt', exact: true })
+        .waitFor({ state: 'visible' });
       assert.equal(
         await plain.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,

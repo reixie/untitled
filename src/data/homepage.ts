@@ -14,9 +14,9 @@ export const profile = {
   name: 'Alex L.',
   role: 'Design Engineer',
   introduction:
-    'I’m a product designer based in Lithuania with 4 years of experience across B2B SaaS, mobile apps, and websites.',
+    'I’m a product designer based in Lithuania. I’ve designed B2B SaaS products, mobile apps, and websites.',
   expertise:
-    'I design complex workflows and design systems, and build working prototypes with React and AI tools. Available for Product Designer roles.',
+    'I make complex workflows easier to use, build design systems, and prototype in React with AI tools. I’m open to product design roles.',
   // Hyperlink values read from Figma 1:32, not inferred from the labels.
   contacts: {
     linkedin: 'https://www.linkedin.com/in/alex-lohinov-b503683b4',
@@ -30,7 +30,7 @@ export const keeps = {
   title: 'Keeps',
   subtitle: 'Visual library for macOS',
   description:
-    'Collect images, videos, GIFs, and web links. Keep your inspiration organized in collections and stored locally on your Mac.',
+    'Organize images, videos, GIFs, and links into collections that stay on your Mac.',
   destination: {
     href: 'https://github.com/reixie/keeps',
     status: 'ready',

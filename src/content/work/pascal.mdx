@@ -1,7 +1,7 @@
 ---
 title: Pascal — Markdown notes for macOS
-subtitle: A personal space for Markdown notes, with optional team collaboration.
-description: A macOS note-taking design that gives personal Markdown notes a clear home through collection navigation, document tabs, readable content, and a shared palette for notes and actions.
+subtitle: A personal workspace for writing and finding Markdown notes, with room for team collaboration.
+description: A macOS note-taking design with a Markdown editor, tabs for open notes, and one command palette for finding notes and actions.
 ---
 
 import CaseFigure from '../../components/CaseFigure.astro';
@@ -16,107 +16,83 @@ import paletteDark from '../../assets/images/pascal/pascal-command-palette-dark-
   src={brand}
   label="Pascal brand artwork"
   alt="Pascal’s white geometric mark, formed from rounded angular shapes, centered on a textured blue and deep navy background."
-  caption="Pascal’s opening artwork pairs a white geometric mark with a blue background, introducing the visual identity before the workspace."
+  caption="A white mark with rounded corners sits against a textured blue field."
   opening
 />
 
-## A personal starting point
+## Design around the note
 
-Pascal is a note-taking application for macOS. All notes use Markdown, and personal use is its starting point: a place to collect ideas, develop a document, and return to work already in progress. Optional team collaboration extends that foundation.
+Pascal starts with a personal writing task. Someone opens a draft, adds to it, and switches to a reference before returning to the draft. The editor gives the note most of the window, while the sidebar and tabs keep those moves close at hand.
 
-The design premise is to keep writing clear while making organization and navigation available when needed. A note needs space to breathe, but its surroundings must still answer practical questions: where am I, what else is open, and how do I shape this content? The interface gives each concern a visible place without asking every control to compete with the document.
+## Find a note and return to it
 
-## Finding your place
+The sidebar separates collection destinations such as Favorites and Archives from individual notes. Tabs above the editor give open notes a predictable place to return to. The active note is highlighted in both places, so its location in the collection stays visible while someone writes.
 
-My Space anchors the top of the sidebar. Search, References, Favorites, and Archives form a group above Notes, separating collection-level destinations from individual documents. Within Notes, Welcome to Pascal, Writing Ideas, and Research Brief pair names with distinct icons. The blue diamond beside Research Brief repeats in its open tab, connecting the two locations.
-
-Sidebar and tabs support different scales of movement. The sidebar offers a way to locate a document within the collection; tabs above the editor keep open notes nearby. Research Brief has a filled selection in both places, while Writing Ideas remains visible alongside it. This repeated state helps connect the current document to its wider context.
-
-Settings sits at the bottom, apart from everyday note navigation. The separation keeps configuration reachable while giving the document list a clearer boundary. Persistent navigation takes horizontal space, but also keeps orientation cues in view.
+Settings sits at the bottom of the sidebar, away from the notes someone opens every day. Keeping the sidebar in view uses horizontal space but makes it easier to see where a note belongs.
 
 <CaseFigure
   src={editorLight}
   label="Notes workspace — Light"
   alt="Pascal in Light appearance: My Space, collection navigation, three notes, Settings at the bottom, and Research Brief selected in the sidebar and document tabs above the editor."
-  caption="The Light overview connects the selected Research Brief in the sidebar with its tab above the writing area; Writing Ideas stays visible as another open note."
+  caption="The blue diamond identifies Research Brief in both the sidebar and its open tab."
 />
 
-## Giving Markdown a readable surface
+## Make structured notes easy to read
 
-Markdown is the common format beneath Pascal’s notes. The Research Brief example gives that foundation a structured visual surface: a document title, section headings, links, a bulleted list, a table, and tasks. Its research-related wording is sample note content.
-
-The title establishes the document before quieter supporting text introduces it. Space between sections separates reading into smaller units. Links form a recognizable group, bullets give individual points a regular rhythm, and table columns align related information for comparison. Tasks use checkboxes to distinguish work items from ordinary prose.
-
-These structures let one note hold several kinds of information. The tradeoff is keeping that variety readable without filling the writing area with formatting controls. Generous spacing and restrained dividers carry much of the hierarchy.
+The sample Research Brief brings links, a method, an evidence table, and tasks into one Markdown note. Headings and spacing separate those sections. Aligned table columns support comparison, while checkboxes distinguish tasks from the rest of the note.
 
 <CaseFigure
   src={editorDark}
   label="Notes workspace — Dark"
   alt="Pascal’s Dark workspace showing the Research Brief title, supporting text, Research Links, a Method list, an Evidence Tracker table with colored status labels, and Tasks with checkboxes."
-  caption="The Dark overview preserves the same document structure: links, list items, table rows, and tasks remain distinct within a single note."
+  caption="The Evidence Tracker keeps status labels in one column so they can be compared across rows."
 />
 
-## Making formatting discoverable
+## Group formatting options by purpose
 
-The formatting menu names the available structures and groups them by purpose. Style contains Heading 1, Heading 2, and Heading 3. Blocks brings together Bullet List, Numbered List, Checklist, Code block, and Blockquote. Media contains Image, Bookmark, and File.
-
-For someone deciding how to organize a passage, these labels turn an abstract formatting choice into recognizable options. The grouping narrows the scan: headings establish hierarchy, blocks organize content, and media entries offer additional material. Icons reinforce the names without carrying the explanation alone.
-
-Keeping these options together leaves more room for the note. The tradeoff is discoverability: a compact menu is useful only when people can find it and recognize the appropriate action.
+The formatting menu gives each kind of change a place. Style sets heading levels, Blocks organizes text into structures such as lists, and Media adds images, bookmarks, or files. The groups shorten the scan once someone opens the menu. Finding the menu itself is a task to test.
 
 <CaseFigure
   src={formatting}
   label="Formatting menu — Light"
   alt="Light formatting menu grouped into Style with three heading levels; Blocks with lists, checklist, code block, and blockquote; and Media with Image, Bookmark, and File."
-  caption="Style, Blocks, and Media divide the formatting menu into three groups, with explicit labels for each available structure."
+  caption="Checklist sits with the other list options, between Numbered List and Code block."
 />
 
-## One place to find notes and actions
+## Search for notes and commands together
 
-The command palette combines a shared search field with separate Notes and Actions groups. Welcome to Pascal, Writing Ideas, and Research Brief retain their names and icons. Below them, Create New Note, Search Emoji, Settings, and Toggle Sidebar describe actions in plain language.
+The command palette uses one search field for Notes and Actions. Notes keep the names and icons people already see in the sidebar. The Actions group gives workspace commands their own place in the results.
 
-This arrangement brings document lookup and workspace commands into one compact surface. Group labels preserve the distinction between going somewhere and doing something. The benefit depends on clear naming: combining both kinds of entry also creates more options to scan.
-
-An illustrative task is to locate Research Brief through the palette’s Notes group, open it, move to Writing Ideas through its document tab, then return through the Research Brief tab. The sidebar provides another visible entry to either note. This is a proposed sequence for an interactive walkthrough, using the entry points shown here.
+The mockups show the palette and tabs. An interactive walkthrough could test the handoff between them by asking someone to open Research Brief from the palette, switch to Writing Ideas, then return to Research Brief.
 
 <CaseFigure
   src={paletteLight}
   label="Command palette — Light"
   alt="Pascal’s Light command palette with a shared search field, Notes entries for Welcome to Pascal, Writing Ideas, and Research Brief, then four labeled Actions."
-  caption="The Light palette separates note destinations from Create New Note, Search Emoji, Settings, and Toggle Sidebar beneath one search field."
+  caption="Create New Note leads the Actions group below the three existing notes."
 />
 
 <CaseFigure
   src={paletteDark}
   label="Command palette — Dark"
   alt="Pascal’s Dark command palette with the same Notes and Actions groups, colored note icons, and light action labels on dark surfaces."
-  caption="The Dark palette retains the same order, labels, and icons, making its surface treatment directly comparable with the Light version."
+  caption="The blue diamond beside Research Brief carries over from the sidebar to the Dark palette."
 />
 
-## Personal work with room for collaboration
+## Keep personal work easy to recognize
 
-Pascal also supports team collaboration. That capability extends a product centered on an individual’s Markdown notes, so the design concern is continuity: adding team activity while retaining a clear personal workspace.
+My Space names the personal workspace shown here. Team collaboration is part of the concept. A future prototype should show how people recognize a shared note and return to their personal workspace.
 
-My Space gives the personal foundation a visible name. A future design check should examine how someone distinguishes personal and shared work as they move between documents. Any boundaries between those contexts need to be understandable without making ordinary personal note-taking feel like workspace administration.
+## Keep orientation cues in Light and Dark
 
-## Consistency across appearances
+Both appearances use surface contrast to separate navigation from the editor and filled selections to mark the open note. The palette keeps its groups and actions in the same order. Muted borders and secondary labels are the details to check for readability in both appearances.
 
-Light and Dark views preserve the relationship between sidebar, document tabs, and writing area. Surface contrast separates navigation from the note, while filled selections identify Research Brief. Secondary text recedes beneath titles and labels; colored note icons remain small recognition cues in both appearances.
+## What to test next
 
-The palettes follow the same hierarchy at a smaller scale. Their search field, group headings, separators, and action rows retain consistent positions. Subtle borders and muted text keep the surfaces quiet, but deserve close attention when checking readability.
+Use an interactive prototype to check whether people can do the following.
 
-Rounded window edges, macOS window controls, and a compact toolbar place the workspace in its desktop context. The brand artwork’s blue field and white geometric mark provide a stronger visual introduction alongside the restrained interface views.
-
-## Design outcome and next checks
-
-The artifacts bring Pascal’s personal focus into view through note navigation, open document tabs, structured note presentation, formatting options, and a command palette. Light and Dark treatments carry those decisions across appearances.
-
-The next validation work should use concrete tasks:
-
-- Find and reopen a note.
-- Move between open notes without losing orientation.
-- Discover the appropriate formatting action.
-- Check the Markdown representation of supported content structures.
-- Evaluate how personal and shared work would remain distinguishable.
-
-These are proposed checks for a future interactive version, including how richer content is represented within Markdown notes.
+- Find and reopen a note through the command palette.
+- Switch between tabs and identify the active note.
+- Find the formatting menu and insert a checklist.
+- Open the Markdown source and see how the checklist is stored.
+- Tell whether a note is personal or shared.

@@ -28,7 +28,7 @@ import PixelFlow from './PixelFlow.astro';
       href={keeps.destination.href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-labelledby="keeps-title"
+      aria-label={`${keeps.title} on GitHub`}
       data-tilt-card
     >
       <article class="project-card" data-tilt-surface>
@@ -43,7 +43,7 @@ import PixelFlow from './PixelFlow.astro';
             alt="A black cat beneath stars on a blue rounded square."
           />
           <div>
-            <h3 id="keeps-title">{keeps.title}</h3>
+            <h3>{keeps.title}</h3>
             <p class="subtitle">{keeps.subtitle}</p>
           </div>
         </div>
@@ -61,8 +61,7 @@ import PixelFlow from './PixelFlow.astro';
       Selected work
     </h2>
     <p id="gallery-help" class="visually-hidden">
-      Scroll or swipe horizontally to explore the work. With the gallery
-      focused, use Left and Right arrows, Home, or End.
+      Scroll or swipe sideways. Use the Left or Right Arrow keys, Home, or End.
     </p>
     <div
       class="gallery"
