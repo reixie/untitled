@@ -1,4 +1,4 @@
-/** Measure the stationary link so the rotated card cannot feed back into pointer coordinates. */
+/** Measure the stationary preview so its tilted surface cannot feed back into pointer coordinates. */
 export function enhanceCardTilt(root: HTMLElement) {
   const surface = root.querySelector<HTMLElement>('[data-tilt-surface]');
   if (!surface) return;

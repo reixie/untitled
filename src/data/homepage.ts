@@ -28,7 +28,6 @@ export const profile = {
 
 export const keeps = {
   title: 'Keeps',
-  subtitle: 'Visual library for macOS',
   description:
     'Organize images, videos, GIFs, and links into collections that stay on your Mac.',
   destination: {

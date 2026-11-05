@@ -1,0 +1,71 @@
+---
+import { keepsFrame, keepsStage, keepsStillMs } from '../scripts/keeps-scene';
+
+const {
+  width,
+  height,
+  left,
+  baseline,
+  cellWidth,
+  cellHeight,
+  fontSize,
+  fontFamily,
+} = keepsStage;
+---
+
+<div class="keeps-ascii" aria-hidden="true">
+  <canvas data-keeps-ascii></canvas>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    font-size={fontSize}
+    font-family={fontFamily}
+  >
+    {keepsFrame(keepsStillMs).map(({ x, y, text, ink }) => (
+      <text
+        x={left + x * cellWidth}
+        y={baseline + y * cellHeight}
+        fill={`var(--ascii-${ink})`}
+        textLength={text.length * cellWidth}
+        lengthAdjust="spacingAndGlyphs"
+      >
+        {text}
+      </text>
+    ))}
+  </svg>
+</div>
+
+<script>
+  import { enhanceKeepsAscii } from '../scripts/keeps-ascii';
+
+  document
+    .querySelectorAll<HTMLCanvasElement>('[data-keeps-ascii]')
+    .forEach(enhanceKeepsAscii);
+</script>
+
+<style>
+  .keeps-ascii {
+    --ascii-frame: #697889;
+    --ascii-text: var(--color-text-primary);
+    --ascii-detail: #485f74;
+    --ascii-accent: #2459b8;
+  }
+  @media (prefers-color-scheme: dark) {
+    .keeps-ascii {
+      --ascii-frame: #8795a6;
+      --ascii-detail: #a3b9cf;
+      --ascii-accent: #91b9ff;
+    }
+  }
+  .keeps-ascii,
+  canvas,
+  svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  canvas:not([data-ready]),
+  canvas[data-ready] + svg {
+    visibility: hidden;
+  }
+</style>

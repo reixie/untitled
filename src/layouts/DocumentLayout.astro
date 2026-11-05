@@ -5,9 +5,10 @@ import CoastalFooter from '../components/CoastalFooter.astro';
 interface Props {
   title: string;
   description: string;
+  homepage?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, homepage = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -35,7 +36,7 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <main>
+    <main class:list={{ homepage }}>
       <slot />
     </main>
     <CoastalFooter />
@@ -51,6 +52,11 @@ const { title, description } = Astro.props;
     row-gap: 4rem;
     padding-block: var(--page-padding-block);
     overflow-wrap: anywhere;
+  }
+  main.homepage {
+    row-gap: 2rem;
+    font-size: 0.875rem;
+    letter-spacing: var(--letter-spacing);
   }
   main > :global(*) {
     grid-column: 2;

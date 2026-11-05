@@ -177,6 +177,9 @@ const geometry = (page) =>
       experience: rect('[aria-labelledby="experience-heading"]'),
       writing: rect('[aria-labelledby="writing-heading"]'),
       card: rect('.project-card'),
+      preview: rect('.project-preview'),
+      caption: rect('.project-caption'),
+      tabs: rect('.tabs'),
     };
   });
 
@@ -233,11 +236,16 @@ try {
       closeTo(before.profile.width, Math.min(600, width - 48));
       closeTo(before.profile.x, Math.max(24, (width - 600) / 2));
       closeTo(before.card.width, Math.min(300, width - 48));
+      closeTo(before.preview.height, 200);
+      closeTo(before.caption.y - before.preview.y - before.preview.height, 12);
+      closeTo(before.tabs.height, 32);
+      closeTo(before.tabs.y - before.profile.y - before.profile.height, 32);
+      closeTo(before.experience.y - before.card.y - before.card.height, 32);
       if (width === 1200) {
         closeTo(before.profile.y, 64);
-        closeTo(before.card.y, 376);
-        closeTo(before.experience.y, 840);
-        closeTo(before.writing.y, 1116);
+        closeTo(before.card.y, 340);
+        closeTo(before.experience.y, 644);
+        closeTo(before.writing.y, 888);
       }
       await capture(page, `${output}/${theme}-projects-${width}.png`);
       await work.click();
@@ -246,15 +254,27 @@ try {
       const after = await geometry(page);
       assert.ok(after.pageWidth <= width);
       assert.deepEqual(after.profile, before.profile);
-      assert.deepEqual(after.experience, before.experience);
-      assert.deepEqual(after.writing, before.writing);
       const gallery = await page.locator('[data-gallery]').evaluate((el) => {
         const items = [...el.querySelectorAll('[data-work]')].map((item) => {
           const r = item.getBoundingClientRect();
           return { x: r.x, width: r.width, height: r.height };
         });
-        return { scrollLeft: el.scrollLeft, width: el.clientWidth, items };
+        return {
+          scrollLeft: el.scrollLeft,
+          width: el.clientWidth,
+          bottom: el.getBoundingClientRect().bottom + window.scrollY,
+          items,
+        };
       });
+      closeTo(after.experience.y - gallery.bottom, 32);
+      closeTo(
+        after.writing.y - after.experience.y - after.experience.height,
+        32,
+      );
+      if (width === 1200) {
+        closeTo(after.experience.y, 772);
+        closeTo(after.writing.y, 1016);
+      }
       closeTo(gallery.items[1].x, Math.max(24, (width - 600) / 2));
       closeTo(gallery.items[1].width, Math.min(600, width - 48));
       closeTo(gallery.items[1].height, (gallery.items[1].width * 2) / 3);
@@ -265,6 +285,9 @@ try {
       await capture(page, `${output}/${theme}-selected-work-${width}.png`);
       const styles = await page.evaluate(() => ({
         fontSize: getComputedStyle(document.querySelector('h1')).fontSize,
+        tracking: getComputedStyle(document.querySelector('h1')).letterSpacing,
+        tabSize: getComputedStyle(document.querySelector('#projects-tab'))
+          .fontSize,
         primary: getComputedStyle(document.querySelector('h1')).color,
         arrow: getComputedStyle(document.querySelector('.arrow'))
           .backgroundColor,
@@ -276,7 +299,9 @@ try {
         })),
         cls: window.__stage2LayoutShifts.reduce((sum, value) => sum + value, 0),
       }));
-      assert.equal(styles.fontSize, '16px');
+      assert.equal(styles.fontSize, '14px');
+      assert.equal(styles.tracking, '-0.154px');
+      assert.equal(styles.tabSize, '13px');
       assert.equal(
         styles.primary,
         theme === 'light' ? 'rgb(32, 32, 32)' : 'rgb(238, 238, 238)',
@@ -338,6 +363,13 @@ try {
       .locator('#projects')
       .evaluate((el) => getComputedStyle(el).outlineStyle),
     'solid',
+  );
+  await page.keyboard.press('Tab');
+  assert.equal(
+    await page
+      .getByRole('link', { name: 'Keeps on GitHub' })
+      .evaluate((el) => el === document.activeElement),
+    true,
   );
   await work.click();
   await work.press('Tab');
@@ -492,7 +524,7 @@ try {
   );
   console.log('PASS: wheel, reduced motion and verified destinations.');
 
-  // Retain the existing card and hover behavior as Writing becomes a real link.
+  // Tilt follows the preview and resets when the pointer reaches the caption.
   await page.goto(baseURL);
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   const card = page.locator('[data-tilt-card]');
@@ -505,14 +537,7 @@ try {
         .querySelector('[data-tilt-surface]')
         .style.getPropertyValue('--tilt-x') !== '',
   );
-  const canvas = page.locator('[data-pixel-flow]');
-  const frame = await canvas.evaluate((el) => el.toDataURL());
-  await page.waitForFunction(
-    (previous) =>
-      document.querySelector('[data-pixel-flow]').toDataURL() !== previous,
-    frame,
-  );
-  await page.mouse.move(0, 0);
+  await page.locator('.project-caption').hover();
   assert.equal(
     await page
       .locator('[data-tilt-surface]')
@@ -520,10 +545,6 @@ try {
     '',
   );
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await settle(page);
-  const stillFrame = await canvas.evaluate((el) => el.toDataURL());
-  await page.waitForTimeout(150);
-  assert.equal(await canvas.evaluate((el) => el.toDataURL()), stillFrame);
   await page.mouse.move(cardBounds.x + 30, cardBounds.y + 30);
   assert.equal(
     await page
@@ -540,11 +561,111 @@ try {
     () => getComputedStyle(document.body, '::after').opacity === '0',
   );
   report.interactions.push(
-    'Keeps pointer tilt/reset, animated canvas, reduced-motion still frame and disabled tilt; Writing hover fade/reset',
+    'Keeps preview-only tilt/reset and reduced-motion disabled tilt; Writing hover fade/reset',
   );
-  console.log(
-    'PASS: existing pointer tilt, canvas animation, reduced motion and Writing hover.',
+
+  // Drive the real renderer with an external RAF clock, without production test hooks.
+  const clock = await browser.newContext({
+    viewport: { width: 1200, height: 900 },
+  });
+  await clock.addInitScript(() => {
+    window.__keepsTime = 0;
+    const nativeRAF = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = (callback) =>
+      nativeRAF(() => callback(window.__keepsTime));
+  });
+  const timed = await clock.newPage();
+  const canvas = timed.locator('[data-keeps-ascii]');
+  const sample = (ms) =>
+    timed.evaluate(async (time) => {
+      window.__keepsTime = time;
+      await new Promise((done) =>
+        requestAnimationFrame(() => requestAnimationFrame(done)),
+      );
+      return document.querySelector('[data-keeps-ascii]').toDataURL();
+    }, ms);
+  const completed = {};
+  for (const theme of ['light', 'dark']) {
+    await timed.emulateMedia({
+      colorScheme: theme,
+      reducedMotion: 'no-preference',
+    });
+    await timed.goto(baseURL);
+    await timed.locator('[data-keeps-ascii][data-ready]').waitFor();
+    const opening = await sample(0);
+    const transfers = [];
+    for (const time of [2_650, 3_900, 5_150, 6_400]) {
+      transfers.push(await sample(time));
+    }
+    completed[theme] = await sample(8_500);
+    assert.equal(new Set([opening, ...transfers, completed[theme]]).size, 6);
+    assert.equal(await sample(11_999), opening);
+    assert.equal(await sample(12_000), opening);
+    await timed.emulateMedia({ reducedMotion: 'reduce' });
+    await timed.waitForFunction(
+      (still) =>
+        document.querySelector('[data-keeps-ascii]').toDataURL() === still,
+      completed[theme],
+    );
+    assert.equal(await sample(16_000), completed[theme]);
+  }
+  assert.notEqual(completed.light, completed.dark);
+
+  await timed.emulateMedia({
+    reducedMotion: 'no-preference',
+    colorScheme: 'light',
+  });
+  await timed.goto(baseURL);
+  await timed.locator('[data-keeps-ascii][data-ready]').waitFor();
+  let moving = await sample(2_650);
+  await timed.getByRole('tab', { name: 'Selected work' }).click();
+  assert.equal(await sample(6_000), moving);
+  await timed.getByRole('tab', { name: 'Projects' }).click();
+  assert.equal(await sample(6_000), moving);
+  const resumed = await sample(6_200);
+  assert.notEqual(resumed, moving);
+  moving = resumed;
+  await timed.evaluate(() =>
+    window.scrollTo(0, document.documentElement.scrollHeight),
   );
+  await timed.waitForTimeout(100);
+  assert.equal(await sample(8_000), moving);
+  await canvas.scrollIntoViewIfNeeded();
+  assert.equal(await sample(8_000), moving);
+  await timed.evaluate(() => {
+    Object.defineProperty(document, 'hidden', {
+      value: true,
+      configurable: true,
+    });
+    document.dispatchEvent(new window.Event('visibilitychange'));
+  });
+  assert.equal(await sample(10_000), moving);
+  await timed.evaluate(() => {
+    Reflect.deleteProperty(document, 'hidden');
+    document.dispatchEvent(new window.Event('visibilitychange'));
+  });
+  assert.equal(await sample(10_000), moving);
+  assert.notEqual(await sample(10_200), moving);
+  await timed.emulateMedia({ colorScheme: 'dark', reducedMotion: 'reduce' });
+  await timed.waitForFunction(
+    (still) =>
+      document.querySelector('[data-keeps-ascii]').toDataURL() === still,
+    completed.dark,
+  );
+  await clock.close();
+
+  const fallback = await browser.newPage();
+  await fallback.addInitScript(() => {
+    window.HTMLCanvasElement.prototype.getContext = () => null;
+  });
+  await fallback.goto(baseURL);
+  assert.equal(await fallback.locator('.keeps-ascii svg').isVisible(), true);
+  assert.equal(await fallback.locator('[data-keeps-ascii]').isVisible(), false);
+  await fallback.close();
+  report.interactions.push(
+    'Keeps: four transfers, seamless 12s loop, pause/resume when hidden, live theme and reduced motion, static SVG without Canvas',
+  );
+  console.log('PASS: Keeps animation, playback and static fallback.');
 
   // Chromium's touch input protocol drives an actual swipe; no synthetic DOM scroll.
   const touchContext = await browser.newContext({
@@ -612,6 +733,11 @@ try {
       await plain
         .getByRole('link', { name: 'Keeps on GitHub', exact: true })
         .waitFor({ state: 'visible' });
+      assert.equal(await plain.locator('.keeps-ascii svg').isVisible(), true);
+      assert.equal(
+        await plain.locator('[data-keeps-ascii]').isVisible(),
+        false,
+      );
       await plain
         .getByRole('link', { name: 'Design the second attempt', exact: true })
         .waitFor({ state: 'visible' });
@@ -629,6 +755,12 @@ try {
       });
     }
     await capture(plain, `${output}/${theme}-no-javascript-1440.png`);
+    await plain
+      .getByRole('link', { name: 'Selected work', exact: true })
+      .click();
+    assert.equal(new URL(plain.url()).hash, '#selected-work');
+    await plain.getByRole('link', { name: 'Projects', exact: true }).click();
+    assert.equal(new URL(plain.url()).hash, '#projects');
     await noJS.close();
   }
 
@@ -1154,26 +1286,31 @@ try {
     );
   }
   // Enlarged text and long roles must wrap within the same gutters.
-  await page.setViewportSize({ width: 320, height: 1000 });
-  await page.goto(baseURL);
-  await page
-    .locator('.role')
-    .first()
-    .evaluate((el) => {
-      el.textContent =
-        'Product Designer of complex workflows and design systems';
+  for (const width of [320, 375]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto(baseURL);
+    await page
+      .locator('.role')
+      .first()
+      .evaluate((el) => {
+        el.textContent =
+          'Product Designer of complex workflows and design systems';
+      });
+    await page.locator('html').evaluate((el) => {
+      el.style.fontSize = '200%';
     });
-  await page.locator('html').evaluate((el) => {
-    el.style.fontSize = '200%';
-  });
-  assert.equal(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= innerWidth,
-    ),
-    true,
-  );
+    assert.equal(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+      true,
+    );
+    const enlarged = await geometry(page);
+    assert.ok(enlarged.caption.height > 120);
+    closeTo(enlarged.experience.y - enlarged.card.y - enlarged.card.height, 64);
+  }
   report.interactions.push(
-    '320px: long role and 200% root font size wrap without page overflow',
+    '320px and 375px: long role and Keeps caption wrap at 200% root font size without page overflow',
   );
   assert.deepEqual(report.errors, []);
   await context.close();
