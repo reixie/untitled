@@ -28,8 +28,9 @@ const caseStudies = await Promise.all(
       node: '42:378',
       title: 'Accord — a CRM for small teams',
       headings: 8,
-      bulletItems: 9,
-      orderedLists: [3, 3, 3, 3],
+      bulletItems: 8,
+      orderedLists: [3, 3, 3],
+      flowCount: 2,
       figures: [
         'Companies directory — Light',
         'Workspace and appearance menus — Light styling',
@@ -40,9 +41,10 @@ const caseStudies = await Promise.all(
       id: 'pascal',
       node: '42:382',
       title: 'Pascal — Markdown notes for macOS',
-      headings: 10,
-      bulletItems: 5,
-      orderedLists: [3, 3],
+      headings: 4,
+      bulletItems: 2,
+      orderedLists: [3, 4],
+      flowCount: 1,
       figures: [
         'Pascal brand artwork',
         'Notes workspace — Light',
@@ -57,7 +59,7 @@ const caseStudies = await Promise.all(
     const paragraphs = source
       .replace(/^---\n[\s\S]*?\n---\n/, '')
       .replace(/^import .*;\n/gm, '')
-      .replace(/<CaseFigure[\s\S]*?\/>/g, '')
+      .replace(/<(?:CaseFigure|CaseFlow|AccordHeadcount)\b[\s\S]*?\/>/g, '')
       .replace(/<\/?a\b[^>]*>/g, '')
       .trim()
       .split(/\n\s*\n/)
@@ -852,19 +854,63 @@ try {
       assert.equal(response.status(), 200);
       assert.match(response.headers()['content-type'], /image\/webp/);
     }
-    // Follow a real original image with the keyboard, then return through browser history.
-    const original = originals.nth(2);
+    const original = originals.first();
     await original.focus();
     const originalURL = new URL(await original.getAttribute('href'), baseURL)
       .href;
     await original.press('Enter');
-    assert.equal(page.url(), originalURL);
-    await page.goBack();
+    const viewer = page.getByRole('dialog');
+    const enlarged = viewer.locator('img');
+    await enlarged.waitFor({ state: 'visible' });
     assert.equal(page.url(), study.url);
+    assert.equal(await enlarged.getAttribute('src'), originalURL);
+    const close = viewer.getByRole('button', { name: 'Close image viewer' });
+    assert.equal(
+      await close.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    const zoom = viewer.getByRole('button', { name: 'Show actual size' });
+    await close.press('Shift+Tab');
+    assert.equal(
+      await zoom.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    await zoom.press('Enter');
+    assert.ok(
+      await enlarged.evaluate((el) => el.clientWidth === el.naturalWidth),
+    );
+    assert.ok(
+      await viewer
+        .getByRole('region', { name: 'Image viewport' })
+        .evaluate((el) => el.scrollLeft > 0 && el.scrollTop > 0),
+    );
+    await viewer.getByRole('button', { name: 'Fit to screen' }).press('Enter');
+    assert.ok(
+      await enlarged.evaluate((el) => el.clientWidth < el.naturalWidth),
+    );
+    await page.keyboard.press('Escape');
+    await viewer.waitFor({ state: 'hidden' });
+    assert.equal(
+      await original.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    const lastOriginal = originals.last();
+    await lastOriginal.click();
+    await enlarged.waitFor({ state: 'visible' });
+    assert.equal(
+      await enlarged.getAttribute('src'),
+      new URL(await lastOriginal.getAttribute('href'), baseURL).href,
+    );
+    await viewer.click({ position: { x: 4, y: 4 } });
+    await viewer.waitFor({ state: 'hidden' });
+    assert.equal(
+      await lastOriginal.evaluate((el) => el === document.activeElement),
+      true,
+    );
     await page.getByRole('link', { name: 'Back to homepage' }).last().click();
     assert.equal(page.url(), new URL('/', baseURL).href);
     report.interactions.push(
-      `${study.id}: gallery image → same-tab case → refresh → browser Back → pointer link → keyboard image links/full-size original → browser Back → homepage link`,
+      `${study.id}: gallery → case → original-size lightbox via keyboard and pointer → Escape/backdrop close with focus return → homepage`,
     );
 
     for (const theme of ['light', 'dark']) {
@@ -912,6 +958,16 @@ try {
             study.orderedLists,
           );
           assert.equal(
+            await reading.locator('[data-case-flow]').count(),
+            study.flowCount,
+          );
+          if (study.id === 'accord') {
+            const chart = (
+              await reading.locator('[data-case-chart]').innerText()
+            ).replace(/\s+/g, ' ');
+            assert.match(chart, /Ramp 1,200 Stripe 8,500/);
+          }
+          assert.equal(
             await reading.locator('article time, article script').count(),
             0,
           );
@@ -950,14 +1006,11 @@ try {
                     src: img.currentSrc,
                     naturalWidth: img.naturalWidth,
                     naturalHeight: img.naturalHeight,
-                    width:
-                      rect.width -
-                      parseFloat(style.borderLeftWidth) -
-                      parseFloat(style.borderRightWidth),
-                    height:
-                      rect.height -
-                      parseFloat(style.borderTopWidth) -
-                      parseFloat(style.borderBottomWidth),
+                    width: rect.width,
+                    height: rect.height,
+                    x: rect.x,
+                    outline: style.outlineColor,
+                    outlineWidth: style.outlineWidth,
                     attrWidth: img.getAttribute('width'),
                     attrHeight: img.getAttribute('height'),
                     loading: img.loading,
@@ -995,6 +1048,15 @@ try {
               img.complete && img.naturalWidth > 0 && img.alt.length > 30,
             );
             assert.ok(img.src.startsWith(baseURL));
+            closeTo(img.width, layout.textWidth);
+            closeTo(img.x, layout.textX);
+            assert.equal(img.outlineWidth, '1px');
+            assert.equal(
+              img.outline,
+              theme === 'light'
+                ? 'rgba(0, 0, 0, 0.1)'
+                : 'rgba(255, 255, 255, 0.1)',
+            );
             closeTo(
               img.width / img.height,
               Number(img.attrWidth) / Number(img.attrHeight),
@@ -1020,8 +1082,43 @@ try {
               reading,
               `${output}/${theme}-${study.id}-${width}.png`,
             );
-            if (study.id === 'accord') await verifyCaseTabOrder(reading);
+            await verifyCaseTabOrder(reading);
+            await reading
+              .locator('figure [data-case-lightbox]')
+              .first()
+              .click();
+            const modal = reading.getByRole('dialog');
+            const modalImage = modal.locator('img');
+            await modalImage.waitFor({ state: 'visible' });
+            assert.ok(
+              await modalImage.evaluate((el) => {
+                const box = el.getBoundingClientRect();
+                return (
+                  box.left >= 0 &&
+                  box.right <= innerWidth &&
+                  box.top >= 0 &&
+                  box.bottom <= innerHeight
+                );
+              }),
+            );
+            await reading.screenshot({
+              path: `${output}/${theme}-${study.id}-lightbox-${width}.png`,
+            });
+            await modal
+              .getByRole('button', { name: 'Close image viewer' })
+              .click();
+            await modal.waitFor({ state: 'hidden' });
           }
+        }
+        if (!javaScriptEnabled) {
+          const fallback = reading
+            .locator('figure [data-case-lightbox]')
+            .first();
+          const href = new URL(await fallback.getAttribute('href'), baseURL)
+            .href;
+          await fallback.click();
+          assert.equal(reading.url(), href);
+          await reading.goBack();
         }
         await reading
           .getByRole('link', { name: 'Back to homepage' })

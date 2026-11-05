@@ -166,7 +166,7 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
       const body = source
         .replace(/^---\n[\s\S]*?\n---\n/, '')
         .replace(/^import .*;\n/gm, '')
-        .replace(/<CaseFigure[\s\S]*?\/>/g, '')
+        .replace(/<(?:CaseFigure|CaseFlow|AccordHeadcount)\b[\s\S]*?\/>/g, '')
         .replace(/<\/?a\b[^>]*>/g, '');
       const rendered = content
         .replace(/<\/?a\b[^>]*>/g, '')
@@ -191,8 +191,17 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
       for (const [, caption] of source.matchAll(/caption="([^"]+)"/g))
         assert.ok(rendered.includes(caption));
       const figureCount = id === 'accord' ? 3 : 6;
-      assert.equal([...content.matchAll(/<figure\b/g)].length, figureCount);
-      const images = [...content.matchAll(/<img\b([^>]+)>/g)];
+      assert.equal(
+        [...content.matchAll(/\bdata-case-image="/g)].length,
+        figureCount,
+      );
+      assert.equal([...content.matchAll(/<dialog\b/g)].length, 1);
+      assert.doesNotMatch(content, /View full-size image/);
+      const images = [
+        ...(/<article\b[\s\S]*?<\/article>/.exec(content)?.[0] ?? '').matchAll(
+          /<img\b([^>]+)>/g,
+        ),
+      ];
       assert.equal(images.length, figureCount);
       for (const [i, [, attributes]] of images.entries()) {
         assert.match(attributes, /width="(?:3840|3456)"/);

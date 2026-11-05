@@ -1,0 +1,234 @@
+<dialog class="case-lightbox" aria-label="Image viewer">
+  <div class="controls">
+    <button type="button" data-zoom aria-label="Show actual size" disabled>
+      <svg
+        aria-hidden="true"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <circle
+          cx="8.5"
+          cy="8.5"
+          r="5.25"
+          stroke="currentColor"
+          stroke-width="1.5"
+        />
+        <path
+          d="m12.5 12.5 4 4M6 8.5h5"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <path
+          class="zoom-plus"
+          d="M8.5 6v5"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+    <button type="button" data-close aria-label="Close image viewer">
+      <svg
+        aria-hidden="true"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="m5 5 10 10M15 5 5 15"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="viewport" role="region" aria-label="Image viewport">
+    <img alt="" hidden />
+    <p role="status"></p>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('.case-lightbox');
+
+  if (dialog && typeof dialog.showModal === 'function') {
+    const article = document.querySelector('.case-study')!;
+    const controls = dialog.querySelector('.controls')!;
+    const viewport = dialog.querySelector<HTMLElement>('.viewport')!;
+    const image = dialog.querySelector('img')!;
+    const status = dialog.querySelector('p')!;
+    const zoom = dialog.querySelector<HTMLButtonElement>('[data-zoom]')!;
+    const close = dialog.querySelector<HTMLButtonElement>('[data-close]')!;
+    let opener: HTMLAnchorElement | undefined;
+    let backdropPressed = false;
+
+    function setActualSize(actual: boolean) {
+      viewport.toggleAttribute('data-actual-size', actual);
+      viewport.tabIndex = actual ? 0 : -1;
+      zoom.setAttribute(
+        'aria-label',
+        actual ? 'Fit to screen' : 'Show actual size',
+      );
+      viewport.scrollTo(
+        actual ? (viewport.scrollWidth - viewport.clientWidth) / 2 : 0,
+        actual ? (viewport.scrollHeight - viewport.clientHeight) / 2 : 0,
+      );
+    }
+
+    article.addEventListener('click', (event) => {
+      if (
+        !(event instanceof MouseEvent) ||
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        dialog.open
+      )
+        return;
+
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>('a[data-case-lightbox]')
+          : null;
+      if (!link) return;
+
+      const label =
+        link.dataset.caseLightbox || link.textContent?.trim() || 'Image viewer';
+      dialog.setAttribute('aria-label', label);
+      image.alt = link.querySelector('img')?.alt || label;
+      opener = link;
+      backdropPressed = false;
+      status.textContent = 'Loading image…';
+      dialog.showModal();
+      event.preventDefault();
+      close.focus();
+      image.src = link.href;
+    });
+
+    image.addEventListener('load', () => {
+      if (!dialog.open) return;
+      status.textContent = '';
+      image.hidden = false;
+      zoom.disabled = false;
+    });
+    image.addEventListener('error', () => {
+      if (dialog.open) status.textContent = 'Could not load the image.';
+    });
+    zoom.addEventListener('click', () => {
+      setActualSize(!viewport.hasAttribute('data-actual-size'));
+    });
+    close.addEventListener('click', () => dialog.close());
+
+    const isBackdrop = (target: EventTarget | null) =>
+      target === dialog || target === controls || target === viewport;
+    dialog.addEventListener('pointerdown', (event) => {
+      backdropPressed = isBackdrop(event.target);
+    });
+    dialog.addEventListener('click', (event) => {
+      if (backdropPressed && isBackdrop(event.target)) dialog.close();
+      backdropPressed = false;
+    });
+    dialog.addEventListener('close', () => {
+      if (dialog.open) return;
+      image.hidden = true;
+      image.removeAttribute('src');
+      status.textContent = '';
+      zoom.disabled = true;
+      setActualSize(false);
+      opener?.focus({ preventScroll: true });
+      opener = undefined;
+    });
+  }
+</script>
+
+<style>
+  :global(html:has(.case-lightbox[open])) {
+    overflow: hidden;
+  }
+  dialog {
+    position: fixed;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100dvh;
+    max-inline-size: none;
+    max-block-size: none;
+    margin: 0;
+    padding: clamp(0.75rem, 2vw, 1.5rem);
+    border: 0;
+    overflow: hidden;
+    color: var(--color-text-primary);
+    background: transparent;
+  }
+  dialog[open] {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  dialog::backdrop {
+    background: rgb(0 0 0 / 72%);
+  }
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  button {
+    display: grid;
+    place-items: center;
+    min-inline-size: 2.75rem;
+    min-block-size: 2.75rem;
+    padding: 0;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border-1);
+    background: var(--color-background-2);
+    color: inherit;
+    cursor: pointer;
+  }
+  button:disabled {
+    color: var(--color-text-tertiary);
+    cursor: default;
+  }
+  button:focus-visible,
+  .viewport:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+  .viewport {
+    display: flex;
+    min-inline-size: 0;
+    min-block-size: 0;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  .viewport img {
+    flex: none;
+    margin: auto;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    outline: 1px solid var(--color-image-border);
+    outline-offset: -1px;
+  }
+  .viewport[data-actual-size] img {
+    max-inline-size: none;
+    max-block-size: none;
+  }
+  dialog:has([data-actual-size]) .zoom-plus {
+    display: none;
+  }
+  [role='status'] {
+    margin: auto;
+    color: white;
+  }
+  [role='status']:empty {
+    position: absolute;
+  }
+</style>

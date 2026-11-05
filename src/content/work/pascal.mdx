@@ -5,6 +5,7 @@ description: A macOS note-taking design with a Markdown editor, tabs for open no
 ---
 
 import CaseFigure from '../../components/CaseFigure.astro';
+import CaseFlow from '../../components/CaseFlow.astro';
 import brand from '../../assets/images/pascal/pascal-brand-original.webp';
 import editorLight from '../../assets/images/pascal/pascal-editor-light-original.webp';
 import editorDark from '../../assets/images/pascal/pascal-editor-dark-original.webp';
@@ -22,13 +23,7 @@ import paletteDark from '../../assets/images/pascal/pascal-command-palette-dark-
 
 ## Design around the note
 
-Pascal starts with a personal writing task. Someone opens a draft, adds to it, and switches to a reference before returning to the draft. The editor gives the note most of the window, while the sidebar and tabs keep those moves close at hand.
-
-## Find a note and return to it
-
-The sidebar separates collection destinations such as Favorites and Archives from individual notes. Tabs above the editor give open notes a predictable place to return to. The active note is highlighted in both places, so its location in the collection stays visible while someone writes.
-
-Settings sits at the bottom of the sidebar, away from the notes someone opens every day. Keeping the sidebar in view uses horizontal space but makes it easier to see where a note belongs.
+Pascal keeps the editor in focus while a writer switches between a draft and a reference.
 
 <CaseFigure
   src={editorLight}
@@ -37,9 +32,11 @@ Settings sits at the bottom of the sidebar, away from the notes someone opens ev
   caption="The blue diamond identifies Research Brief in both the sidebar and its open tab."
 />
 
-## Make structured notes easy to read
+## Design process
 
-The sample Research Brief brings links, a method, an evidence table, and tasks into one Markdown note. Headings and spacing separate those sections. Aligned table columns support comparison, while checkboxes distinguish tasks from the rest of the note.
+1. Keep the active note visible in both the sidebar and its tab.
+2. Group formatting actions by style, block, and media.
+3. Give the command palette one field with separate groups for Notes and Actions.
 
 <CaseFigure
   src={editorDark}
@@ -48,10 +45,6 @@ The sample Research Brief brings links, a method, an evidence table, and tasks i
   caption="The Evidence Tracker keeps status labels in one column so they can be compared across rows."
 />
 
-## Group formatting options by purpose
-
-The formatting menu gives each kind of change a place. Style sets heading levels, Blocks organizes text into structures such as lists, and Media adds images, bookmarks, or files. The groups shorten the scan once someone opens the menu. Finding the menu itself is a task to test.
-
 <CaseFigure
   src={formatting}
   label="Formatting menu — Light"
@@ -59,9 +52,17 @@ The formatting menu gives each kind of change a place. Style sets heading levels
   caption="Checklist sits with the other list options, between Numbered List and Code block."
 />
 
-## Search for notes and commands together
+## User flow for finding and revisiting a note
 
-The command palette uses one search field for Notes and Actions. Notes keep the names and icons people already see in the sidebar. The Actions group gives workspace commands their own place in the results.
+<CaseFlow
+  label="Find and revisit a note"
+  steps={[
+    { title: 'Command palette', detail: 'Search under Notes' },
+    { title: 'Research Brief', detail: 'Open the note' },
+    { title: 'Writing Ideas', detail: 'Switch tabs' },
+    { title: 'Research Brief', detail: 'Return to the open tab' },
+  ]}
+/>
 
 <CaseFigure
   src={paletteLight}
@@ -77,34 +78,7 @@ The command palette uses one search field for Notes and Actions. Notes keep the 
   caption="The blue diamond beside Research Brief carries over from the sidebar to the Dark palette."
 />
 
-## User flow for finding and revisiting a note
-
-The mockups show the palette and open tabs. This walkthrough connects those states.
-
-1. Open the command palette and find Research Brief under Notes.
-2. Select Research Brief and find its active tab above the editor.
-3. Switch to the Writing Ideas tab, then select Research Brief to return to it.
-
-## Keep personal work easy to recognize
-
-My Space names the personal workspace shown here. Team collaboration is part of the concept. A future prototype should show how people recognize a shared note and return to their personal workspace.
-
-## Keep orientation cues in Light and Dark
-
-Both appearances use surface contrast to separate navigation from the editor and filled selections to mark the open note. The palette keeps its groups and actions in the same order. Muted borders and secondary labels are the details to check for readability in both appearances.
-
-## Design process
-
-1. Give the editor most of the window. Use the sidebar to find a note and keep open notes in tabs so they are easy to return to.
-2. Group formatting by what it changes. Put headings under Style, lists and checklists under Blocks, and images and files under Media.
-3. Give notes and commands one search field. Keep Notes and Actions in separate result groups so someone can tell whether a result opens a document or runs a command.
-
 ## What to test next
 
-Use an interactive prototype to check whether people can do the following.
-
-- Find and reopen a note through the command palette.
-- Switch between tabs and identify the active note.
-- Find the formatting menu and insert a checklist.
-- Open the Markdown source and see how the checklist is stored.
-- Tell whether a note is personal or shared.
+- Find a note through the palette, switch tabs, and return to it.
+- Insert a checklist and find it in the Markdown source.

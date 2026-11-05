@@ -5,6 +5,8 @@ description: A small-team CRM concept with a company directory, an expert walkth
 ---
 
 import CaseFigure from '../../components/CaseFigure.astro';
+import CaseFlow from '../../components/CaseFlow.astro';
+import AccordHeadcount from '../../components/AccordHeadcount.astro';
 import brand from '../../assets/images/accord/accord-brand-original.webp';
 import shell from '../../assets/images/accord/accord-application-shell-original.webp';
 import companiesLight from '../../assets/images/accord/accord-companies-light-original.webp';
@@ -22,43 +24,50 @@ import menuDark from '../../assets/images/accord/accord-workspace-menu-dark-orig
 
 ## Start with the company directory
 
-Before a call, someone on a small team may need to confirm which companies they’re looking at, how large they are, and what they have in common. Accord gives that comparison a place in the directory. Tasks, Meetings, and Notes have their own destinations for the work that follows.
+Before a call, a small team can use the directory to compare companies in one view.
 
 ## Design process
 
-1. Separate records from tools. Companies, People, and Opportunities sit under Records. Tasks, Meetings, and Notes sit under Tools. The Active state of the sidebar item keeps the selected destination visible.
-2. Build the directory from reusable cells. The Figma components give names, domains, and category badges distinct layouts and place employee counts and revenue in consistent columns. Seventeen sample rows fit on screen, though some tags and addresses are cut off at the edges of their columns.
-3. Keep the structure across appearances. Figma variables handle Light and Dark while the navigation, columns, and menu groups stay in the same places.
+1. Separate records from tools so the company directory stays easy to find alongside tasks, meetings, and notes.
+2. Reuse cells with stable columns for names, domains, categories, and headcount.
+3. Use Figma variables to keep the same layout in Light and Dark.
 
 ## User flow for comparing companies
 
-1. Open Companies under Records and start in All Companies.
-2. Find Ramp and Stripe by name and use their domains to confirm the rows.
-3. Compare the values in Employees, then check Categories for a tag the two companies share.
+<CaseFlow
+  label="Compare two companies"
+  steps={[
+    { title: 'Companies', detail: 'Open All Companies' },
+    { title: 'Ramp and Stripe', detail: 'Find and confirm both rows' },
+    { title: 'Compare details', detail: 'Read Employees and Categories' },
+  ]}
+/>
 
 ## Expert walkthrough
 
-This expert walkthrough of a static mockup used the Light Companies screen. The task was to compare Ramp and Stripe before a call. The names, tags, and figures below are sample data shown in the design.
+<AccordHeadcount />
 
-1. Find the rows. The scan started in Company. Ramp was first and Stripe eighth. The domains, ramp.com and stripe.com, confirmed the rows.
-2. Compare headcount. Stripe shows 8,500 employees and Ramp shows 1,200. Both values sit in the same column. Reading them means tracking across from the company names and between rows separated by six others.
-3. Match the category. Both rows show Fintech. It’s the first tag and blue for Ramp, and the second tag and violet for Stripe. The label confirms the match even though the color and position differ.
-
-For the next iteration, give each category a consistent color within each theme and keep its text label visible. A prototype can then test whether filtering by category makes two rows quicker to compare.
+In the static Light mockup, Ramp is in row one and Stripe is in row eight. Both show Fintech. The tag is first and blue for Ramp, second and violet for Stripe. Keep the text label and use a consistent color for each category.
 
 ## Competitive analysis
 
-The documentation for three CRMs suggests ways to support the same task in Accord.
-
-- Attio lets people configure and filter spreadsheet-style views, then log activity on a record. Accord can start with names, domains, categories, and headcount visible by default for a quick comparison. See [table views](https://attio.com/help/reference/managing-your-data/views/create-and-manage-table-views) and [record activities](https://attio.com/help/reference/managing-your-data/records/add-record-activities).
-- HubSpot saves filtered sets of records as views and supports activity on each record. A saved view in Accord could help teams repeat the same comparison before recurring calls. See [saved views](https://knowledge.hubspot.com/records/create-and-manage-saved-views) and [record activities](https://knowledge.hubspot.com/records/manually-log-activities-on-records).
-- Pipedrive groups organizations under Contacts and surfaces linked people, notes, and activities in the organization detail. A company detail prototype for Accord could bring recent tasks, meetings, and notes together after someone has identified the right record. See [how Pipedrive organizes data](https://support.pipedrive.com/en/article/how-is-pipedrive-data-organized) and the [detail view](https://support.pipedrive.com/en/article/detail-view).
+- Attio’s configurable columns suggest keeping comparison fields visible by default. See [table views](https://attio.com/help/reference/managing-your-data/views/create-and-manage-table-views) and [record activities](https://attio.com/help/reference/managing-your-data/records/add-record-activities).
+- HubSpot’s saved filters suggest a way to repeat the same comparison before recurring calls. See [saved views](https://knowledge.hubspot.com/records/create-and-manage-saved-views) and [record activities](https://knowledge.hubspot.com/records/manually-log-activities-on-records).
+- Pipedrive’s organization detail suggests grouping related tasks, meetings, and notes in an Accord company view. See [data organization](https://support.pipedrive.com/en/article/how-is-pipedrive-data-organized) and [detail views](https://support.pipedrive.com/en/article/detail-view).
 
 ## User flow for finding workspace controls
 
-1. From Companies, open the Accord selector at the top of the sidebar.
-2. Check which workspace is active. Find Invite people or Settings below the workspace list.
-3. For appearance preferences, open Theme to see Light, Dark, and System.
+<CaseFlow
+  label="Find workspace controls"
+  steps={[
+    { title: 'Companies', detail: 'Go to the top of the sidebar' },
+    { title: 'Workspace selector', detail: 'Open the Accord menu' },
+    {
+      title: 'Workspace controls',
+      detail: 'Invite people, Settings, or Theme',
+    },
+  ]}
+/>
 
 <CaseFigure
   src={menuLight}
@@ -69,8 +78,6 @@ The documentation for three CRMs suggests ways to support the same task in Accor
 
 ## Visual system
 
-The Dark mockup uses a lighter surface for the table to distinguish it from the sidebar and toolbar. The workspace selector uses the same rounded mark as the brand artwork.
-
 <CaseFigure
   src={companiesDark}
   label="Companies directory — Dark"
@@ -78,12 +85,20 @@ The Dark mockup uses a lighter surface for the table to distinguish it from the 
   caption="The table and navigation keep their positions in Dark."
 />
 
-- <a href={brand.src}>Accord brand artwork</a>
-- <a href={shell.src}>Application shell and workspace menu</a>
-- <a href={menuDark.src}>Workspace and appearance menus in Dark</a>
+- <a href={brand.src} data-case-lightbox="Accord brand artwork">
+    Accord brand artwork
+  </a>
+- <a href={shell.src} data-case-lightbox="Application shell and workspace menu">
+    Application shell and workspace menu
+  </a>
+- <a
+    href={menuDark.src}
+    data-case-lightbox="Workspace and appearance menus in Dark"
+  >
+    Workspace and appearance menus in Dark
+  </a>
 
 ## What to test next
 
-- Compare two companies with and without a category filter. Note how long it takes to reach the correct answer and whether the filter helps people stay on the right rows.
-- Find a company through Search companies and use its detail view to identify the latest task, meeting, or note before a call.
-- Start in Companies and look for Invite people or Settings. See whether the workspace selector is the first place people look.
+- Compare two companies with and without a category filter. Record time and accuracy.
+- Find the latest activity from a company detail view, then check where people look for workspace settings.

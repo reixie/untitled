@@ -1,0 +1,112 @@
+---
+interface Step {
+  title: string;
+  detail?: string;
+}
+
+interface Props {
+  label: string;
+  steps: readonly Step[];
+}
+
+const { label, steps } = Astro.props;
+---
+
+<div class="flow" data-case-flow>
+  <ol class="steps" role="list" aria-label={label}>
+    {steps.map(({ title, detail }, index) => (
+      <li>
+        <span class="number" aria-hidden="true">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <div>
+          <strong>{title}</strong>
+          {detail && <span class="detail">{detail}</span>}
+        </div>
+        {index < steps.length - 1 && (
+          <svg
+            class="arrow"
+            aria-hidden="true"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M2.5 8h10m-4-4 4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        )}
+      </li>
+    ))}
+  </ol>
+</div>
+
+<style>
+  .flow {
+    container-type: inline-size;
+    margin-block-end: 1.25rem;
+  }
+  .steps {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .steps li {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border-1);
+    border-radius: 0.75rem;
+    background: var(--color-background-2);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .number,
+  .detail {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-label);
+  }
+  .number {
+    font-variant-numeric: tabular-nums;
+  }
+  .detail {
+    display: block;
+    margin-block-start: 0.25rem;
+  }
+  .arrow {
+    position: absolute;
+    inset-block-start: calc(100% + 0.25rem);
+    inset-inline-start: calc(50% - 0.5rem);
+    color: var(--color-text-secondary);
+    transform: rotate(90deg);
+  }
+  @container (min-width: 34rem) {
+    .steps {
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+    }
+    .steps li {
+      display: grid;
+      align-content: start;
+      gap: 0.5rem;
+    }
+    .arrow {
+      inset-block-start: calc(50% - 0.5rem);
+      inset-inline-start: calc(100% + 0.25rem);
+      transform: none;
+    }
+    .arrow:dir(rtl) {
+      transform: scaleX(-1);
+    }
+  }
+</style>

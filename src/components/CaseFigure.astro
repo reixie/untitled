@@ -14,52 +14,69 @@ const { src, alt, caption, label, opening = false } = Astro.props;
 ---
 
 <figure class="case-visual" data-case-image={label}>
-  <Image
-    src={src}
-    widths={[320, 640, 960, 1120, 1600, 2240]}
-    sizes="(max-width: 1168px) calc(100vw - 48px), 1120px"
-    format="webp"
-    quality={90}
-    alt={alt}
-    loading={opening ? 'eager' : 'lazy'}
-    decoding="async"
-  />
-  <figcaption>
-    <p>{caption}</p>
-    <a
-      href={src.src}
-      aria-label={`View full-size image: ${label} (${src.width} × ${src.height})`}
-    >
-      View full-size image <span aria-hidden="true">↗</span>
-    </a>
-  </figcaption>
+  <a
+    class="image-link"
+    href={src.src}
+    data-case-lightbox={label}
+    aria-label={`Open image: ${label}`}
+  >
+    <Image
+      src={src}
+      widths={[320, 600, 960, 1200, 1800]}
+      sizes="(max-width: 40.5rem) calc(100vw - 3rem), 37.5rem"
+      format="webp"
+      quality={90}
+      alt={alt}
+      loading={opening ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+    <span class="expand" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M10 3h3v3M13 3l-4 4M6 13H3v-3m0 3 4-4"
+          stroke="currentColor"
+          stroke-width="1.25"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </span>
+  </a>
+  <figcaption>{caption}</figcaption>
 </figure>
 
 <style>
   figure {
-    margin: 2rem 0 0.75rem;
+    margin: 1.25rem 0;
+  }
+  .image-link {
+    position: relative;
+    display: block;
+    border-radius: 0.75rem;
+    cursor: zoom-in;
   }
   img {
     width: 100%;
-    height: auto;
-    border-radius: 0.75rem;
-    border: 1px solid var(--color-image-border);
+    border-radius: inherit;
+    outline: 1px solid var(--color-image-border);
+    outline-offset: -1px;
+  }
+  .expand {
+    position: absolute;
+    inset-block-end: 0.5rem;
+    inset-inline-end: 0.5rem;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border-1);
+    background: var(--color-background-2);
   }
   figcaption {
-    max-width: var(--content-max-width);
-    margin: 1rem auto 0;
+    margin-block-start: 0.625rem;
     color: var(--color-text-secondary);
     font-size: var(--font-size-label);
     line-height: 1.5;
-  }
-  figcaption p {
-    margin: 0;
-  }
-  figcaption a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    min-height: 2.75rem;
-    color: inherit;
   }
 </style>

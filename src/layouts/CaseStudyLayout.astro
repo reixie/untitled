@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import DocumentLayout from './DocumentLayout.astro';
 import BackLink from '../components/BackLink.astro';
+import CaseLightbox from '../components/CaseLightbox.astro';
 import '../styles/prose.css';
 
 interface Props {
@@ -28,6 +29,7 @@ const { title, subtitle, description } = work.data;
       <BackLink />
     </footer>
   </article>
+  <CaseLightbox />
 </DocumentLayout>
 
 <style>
@@ -42,11 +44,6 @@ const { title, subtitle, description } = work.data;
   }
   .case-body {
     display: contents;
-  }
-  .case-study :global(.case-body > .case-visual) {
-    grid-column: 1 / -1;
-    width: min(calc(100% - 2 * var(--page-gutter)), 70rem);
-    justify-self: center;
   }
   header {
     margin-bottom: 0.5rem;
