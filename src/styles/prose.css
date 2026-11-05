@@ -2,7 +2,8 @@
   line-height: 1.625;
 }
 .prose p,
-.prose ul {
+.prose ul,
+.prose ol {
   margin-block: 0 1.25rem;
 }
 .prose h2 {
@@ -10,8 +11,9 @@
   font-size: 1.125rem;
   line-height: 1.5;
 }
-.prose ul {
-  padding-left: 1.5rem;
+.prose ul,
+.prose ol {
+  padding-inline-start: 1.5rem;
 }
 .prose li + li {
   margin-top: 0.5rem;

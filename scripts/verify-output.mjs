@@ -168,19 +168,24 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
         .replace(/^import .*;\n/gm, '')
         .replace(/<CaseFigure[\s\S]*?\/>/g, '');
       const rendered = content
+        .replace(/<\/?a\b[^>]*>/g, '')
         .replace(/<[^>]+>/g, ' ')
         .replace(/&#39;|&#x27;/g, "'")
         .replace(/&amp;/g, '&')
         .replace(/\s+/g, ' ');
       for (const paragraph of body.trim().split(/\n\s*\n/)) {
         const expected = paragraph
-          .replace(/^## |^- /gm, '')
+          .replace(/^(?:##|-|\d+\.) /gm, '')
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
           .replace(/\s+/g, ' ')
           .trim();
         assert.ok(
           rendered.includes(expected),
           `Missing case copy: ${expected}`,
         );
+      }
+      for (const [, href] of body.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)) {
+        assert.ok(content.includes(`href="${href}"`), `Missing link: ${href}`);
       }
       for (const [, caption] of source.matchAll(/caption="([^"]+)"/g))
         assert.ok(rendered.includes(caption));

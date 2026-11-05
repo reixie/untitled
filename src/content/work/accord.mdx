@@ -63,6 +63,12 @@ Seventeen sample records fit on screen. That density helps with comparison, thou
   caption="In Dark, the table sits on a slightly lighter surface than the sidebar and toolbar."
 />
 
+## User flow for comparing companies
+
+1. Open Companies under Records and start in All Companies.
+2. Find Ramp and Stripe by name and use their domains to confirm the rows.
+3. Compare the values in Employees, then check Categories for a tag the two companies share.
+
 ## Keep workspace actions together
 
 The selector shows the current workspace at the top of the sidebar. Open it to see Accord and My Space, with a check beside the active workspace. Invite people, Settings, Theme, and Log out sit below the workspace choices.
@@ -87,15 +93,40 @@ The Light and Dark mockups keep the selected Companies item, table columns, and 
   caption="The Theme submenu keeps Light, Dark, and System together beside the Dark workspace menu."
 />
 
+## User flow for finding workspace controls
+
+1. From Companies, open the Accord selector at the top of the sidebar.
+2. Check which workspace is active. Find Invite people or Settings below the workspace list.
+3. For appearance preferences, open Theme to see Light, Dark, and System.
+
+The walkthrough ends when the control is visible in the menu.
+
 ## Use the same mark at both scales
 
 The geometric mark from the opening artwork reappears beside Accord in the workspace selector. Its silhouette carries the identity into the interface, where the icon has to work at a much smaller size.
 
+## Design process
+
+1. Group destinations by what someone came to do. Records and Tools give the sidebar two clear starting points. The Sidebar Item component has Default, Hover, and Active states, so the selected destination can stay visible while someone scans the rest of the sidebar.
+2. Build the directory from reusable cells. The Table Cell variants give company names, domains, badges, and plain text their own layouts. Numeric values sit in consistent columns for comparison across rows.
+3. Apply Light and Dark through Figma variables. Both appearances use the same layout, with the selected sidebar item and the open menu in the same places.
+
+## Competitive analysis
+
+The comparison follows three steps in each CRM’s documentation. Find a company, read its details, and get to related work.
+
+- Attio uses spreadsheet-style views with configurable columns and filters. A record is also a place to log calls or meetings. See [table views](https://attio.com/help/reference/managing-your-data/views/create-and-manage-table-views) and [record activities](https://attio.com/help/reference/managing-your-data/records/add-record-activities).
+- HubSpot uses saved views to return to a filtered set of records. Opening a record gives someone a place to log a call or meeting or add a note. See [saved views](https://knowledge.hubspot.com/records/create-and-manage-saved-views) and [record activities](https://knowledge.hubspot.com/records/manually-log-activities-on-records).
+- Pipedrive lists organizations under Contacts. Opening an organization brings together details such as its website and address, linked people, and related notes and activities. See [how Pipedrive organizes data](https://support.pipedrive.com/en/article/how-is-pipedrive-data-organized) and the [detail view](https://support.pipedrive.com/en/article/detail-view).
+
+For Accord, keep names and domains visible for identification and keep categories, employee counts, and revenue in the table for comparison. A company detail prototype can test whether showing related tasks, meetings, and notes together helps someone prepare for a call.
+
 ## What to test next
+
+The first planned test uses the static Companies screen. Three people will look up the same two companies, compare employee counts, and identify a category they share.
 
 An interactive prototype would let us check whether people can do the following.
 
-- Find a named company and compare its details with another record.
-- Identify a company’s categories from the tag labels.
+- Find a company using Search companies and reach its related work.
 - Locate the current workspace, Invite people, and Settings.
 - Read long addresses and category groups at narrower widths.

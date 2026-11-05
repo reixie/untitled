@@ -27,13 +27,17 @@ const caseStudies = await Promise.all(
       id: 'accord',
       node: '42:378',
       title: 'Accord — a CRM for small teams',
-      listItems: 4,
+      headings: 12,
+      bulletItems: 6,
+      orderedLists: [3, 3, 3],
     },
     {
       id: 'pascal',
       node: '42:382',
       title: 'Pascal — Markdown notes for macOS',
-      listItems: 5,
+      headings: 10,
+      bulletItems: 5,
+      orderedLists: [3, 3],
     },
   ].map(async (study) => {
     const source = await readFile(`src/content/work/${study.id}.mdx`, 'utf8');
@@ -45,7 +49,8 @@ const caseStudies = await Promise.all(
       .split(/\n\s*\n/)
       .map((paragraph) =>
         paragraph
-          .replace(/^## |^- /gm, '')
+          .replace(/^(?:##|-|\d+\.) /gm, '')
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
           .replace(/\s+/g, ' ')
           .trim(),
       );
@@ -887,10 +892,21 @@ try {
           assert.equal((await reading.goto(study.url)).status(), 200);
           await reading.evaluate(() => document.fonts.ready);
           assert.equal(await reading.locator('h1').innerText(), study.title);
-          assert.equal(await reading.locator('article h2').count(), 8);
           assert.equal(
-            await reading.locator('article li').count(),
-            study.listItems,
+            await reading.locator('article h2').count(),
+            study.headings,
+          );
+          assert.equal(
+            await reading.locator('article ul > li').count(),
+            study.bulletItems,
+          );
+          assert.deepEqual(
+            await reading
+              .locator('article ol')
+              .evaluateAll((lists) =>
+                lists.map((list) => list.children.length),
+              ),
+            study.orderedLists,
           );
           assert.equal(
             await reading.locator('article time, article script').count(),
