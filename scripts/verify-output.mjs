@@ -166,7 +166,8 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
       const body = source
         .replace(/^---\n[\s\S]*?\n---\n/, '')
         .replace(/^import .*;\n/gm, '')
-        .replace(/<CaseFigure[\s\S]*?\/>/g, '');
+        .replace(/<CaseFigure[\s\S]*?\/>/g, '')
+        .replace(/<\/?a\b[^>]*>/g, '');
       const rendered = content
         .replace(/<\/?a\b[^>]*>/g, '')
         .replace(/<[^>]+>/g, ' ')
@@ -189,9 +190,10 @@ for (const file of files.filter((path) => /\.(html|css|json)$/.test(path))) {
       }
       for (const [, caption] of source.matchAll(/caption="([^"]+)"/g))
         assert.ok(rendered.includes(caption));
-      assert.equal([...content.matchAll(/<figure\b/g)].length, 6);
+      const figureCount = id === 'accord' ? 3 : 6;
+      assert.equal([...content.matchAll(/<figure\b/g)].length, figureCount);
       const images = [...content.matchAll(/<img\b([^>]+)>/g)];
-      assert.equal(images.length, 6);
+      assert.equal(images.length, figureCount);
       for (const [i, [, attributes]] of images.entries()) {
         assert.match(attributes, /width="(?:3840|3456)"/);
         assert.match(attributes, /height="2160"/);
@@ -258,5 +260,5 @@ assert.ok(
   `${gzipBytes} gzip bytes exceeds the 30 KiB budget`,
 );
 console.log(
-  `PASS: static homepage + article + Accord/Pascal cases, one Writing entry, complete static article/case content and one shared coastal footer per page, six responsive images per case with unchanged local originals, Pascal deduplication, both gallery destinations/order; no placeholders, islands, temporary URLs, original PNGs or verification routes. JS: ${rawBytes} raw bytes / ${gzipBytes} gzip bytes (level 9), budget 30720 bytes.`,
+  `PASS: static homepage + article + Accord/Pascal cases, one Writing entry, complete static article/case content and one shared coastal footer per page, responsive case images with six unchanged linked originals per case, Pascal deduplication, both gallery destinations/order; no placeholders, islands, temporary URLs, original PNGs or verification routes. JS: ${rawBytes} raw bytes / ${gzipBytes} gzip bytes (level 9), budget 30720 bytes.`,
 );

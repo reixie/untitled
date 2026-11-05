@@ -1,7 +1,7 @@
 ---
 title: Accord — a CRM for small teams
-subtitle: One workspace for small teams to look up companies and find their tasks, meetings, and notes.
-description: A CRM design for small teams, with a company directory, grouped navigation, and quick access to workspace settings.
+subtitle: A company directory for small teams to compare accounts before a call.
+description: A small-team CRM concept with a company directory, an expert walkthrough of a comparison task, and a workspace menu.
 ---
 
 import CaseFigure from '../../components/CaseFigure.astro';
@@ -13,55 +13,22 @@ import menuLight from '../../assets/images/accord/accord-workspace-menu-light-or
 import menuDark from '../../assets/images/accord/accord-workspace-menu-dark-original.webp';
 
 <CaseFigure
-  src={brand}
-  label="Accord brand artwork"
-  alt="A white geometric mark with rounded stepped edges and a cross-shaped opening over a blurred green, gold, and pale pink background."
-  caption="Rounded steps frame the cross-shaped opening at the center of the Accord mark."
+  src={companiesLight}
+  label="Companies directory — Light"
+  alt="Light mockup of the Accord directory, showing the Records and Tools sidebar and seventeen sample company rows. Ramp appears first and Stripe eighth."
+  caption="All Companies shows names, domains, categories, employee counts, revenue, and addresses in one view."
   opening
 />
 
 ## Start with the company directory
 
-The design starts with a common task. Someone looks up a company, scans its record for context, then may need to find a related task, meeting, or note. The directory gives the record most of the screen and keeps those other destinations within reach.
+Before a call, someone on a small team may need to confirm which companies they’re looking at, how large they are, and what they have in common. Accord gives that comparison a place in the directory. Tasks, Meetings, and Notes have their own destinations for the work that follows.
 
-## Give the current task more space
+## Design process
 
-A directory needs room for detailed records. Accord puts actions that affect the table beside it and places workspace-wide controls in the sidebar. Someone comparing companies can focus on the rows and still see where they are in the workspace.
-
-## Group records and tools
-
-The sidebar groups Companies, People, and Opportunities under Records. Tasks, Meetings, and Notes sit under Tools. A filled selection connects Companies in the sidebar to the table on screen.
-
-Search, Home, and Inbox sit above both groups. Integrations and Help & Support sit near the bottom, with Partners under List. These destinations give the workspace its shape. The case study focuses on the Companies view.
-
-<CaseFigure
-  src={shell}
-  label="Application shell and workspace menu"
-  alt="Accord application shell in dark styling, with the workspace and Theme menus expanded above sidebar destinations and a blank main content area."
-  caption="The workspace menu opens directly below the Accord selector at the top of the sidebar."
-/>
-
-## Make company records easy to scan
-
-Search companies, Filter, and Display sit above the rows in All Companies. New sits in the page header. The mockups show where these actions start. A future prototype could explore search results and company details.
-
-Names and domains give people two ways to recognize a company. Consistent columns make it easier to compare employee counts and revenue across rows. Category tags carry text labels, with color as a second cue.
-
-Seventeen sample records fit on screen. That density helps with comparison, though long addresses and some groups of tags already reach the edges of their columns. The records are sample data.
-
-<CaseFigure
-  src={companiesLight}
-  label="Companies directory — Light"
-  alt="Accord Companies directory in light styling, showing Records and Tools navigation, All Companies, search, Filter, Display, New, and seventeen sample company rows."
-  caption="Fine dividers separate the rows, and color draws attention to company logos and category tags."
-/>
-
-<CaseFigure
-  src={companiesDark}
-  label="Companies directory — Dark"
-  alt="The same Accord Companies directory in dark styling, with a highlighted Companies destination, colored category tags, and the same table columns and sample rows."
-  caption="In Dark, the table sits on a slightly lighter surface than the sidebar and toolbar."
-/>
+1. Separate records from tools. Companies, People, and Opportunities sit under Records. Tasks, Meetings, and Notes sit under Tools. The Active state of the sidebar item keeps the selected destination visible.
+2. Build the directory from reusable cells. The Figma components give names, domains, and category badges distinct layouts and place employee counts and revenue in consistent columns. Seventeen sample rows fit on screen, though some tags and addresses are cut off at the edges of their columns.
+3. Keep the structure across appearances. Figma variables handle Light and Dark while the navigation, columns, and menu groups stay in the same places.
 
 ## User flow for comparing companies
 
@@ -69,29 +36,23 @@ Seventeen sample records fit on screen. That density helps with comparison, thou
 2. Find Ramp and Stripe by name and use their domains to confirm the rows.
 3. Compare the values in Employees, then check Categories for a tag the two companies share.
 
-## Keep workspace actions together
+## Expert walkthrough
 
-The selector shows the current workspace at the top of the sidebar. Open it to see Accord and My Space, with a check beside the active workspace. Invite people, Settings, Theme, and Log out sit below the workspace choices.
+This expert walkthrough of a static mockup used the Light Companies screen. The task was to compare Ramp and Stripe before a call. The names, tags, and figures below are sample data shown in the design.
 
-Grouping these actions frees up space around the directory. People need to open the selector to find them, so discovering Invite people and Settings is worth testing in a prototype.
+1. Find the rows. The scan started in Company. Ramp was first and Stripe eighth. The domains, ramp.com and stripe.com, confirmed the rows.
+2. Compare headcount. Stripe shows 8,500 employees and Ramp shows 1,200. Both values sit in the same column. Reading them means tracking across from the company names and between rows separated by six others.
+3. Match the category. Both rows show Fintech. It’s the first tag and blue for Ramp, and the second tag and violet for Stripe. The label confirms the match even though the color and position differ.
 
-## Keep the hierarchy in both appearances
+For the next iteration, give each category a consistent color within each theme and keep its text label visible. A prototype can then test whether filtering by category makes two rows quicker to compare.
 
-The Light and Dark mockups keep the selected Companies item, table columns, and menu groups in the same positions. The Theme submenu shows three choices for a future implementation. Theme switching and saved preferences still need to be defined.
+## Competitive analysis
 
-<CaseFigure
-  src={menuLight}
-  label="Workspace and appearance menus — Light styling"
-  alt="Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked."
-  caption="Dividers separate workspace choices from team and account actions in the Light menu."
-/>
+The documentation for three CRMs suggests ways to support the same task in Accord.
 
-<CaseFigure
-  src={menuDark}
-  label="Workspace and appearance menus — Dark styling"
-  alt="Workspace and appearance menus on dark surfaces, with Accord checked and a check beside Light in the Light, Dark, System submenu."
-  caption="The Theme submenu keeps Light, Dark, and System together beside the Dark workspace menu."
-/>
+- Attio lets people configure and filter spreadsheet-style views, then log activity on a record. Accord can start with names, domains, categories, and headcount visible by default for a quick comparison. See [table views](https://attio.com/help/reference/managing-your-data/views/create-and-manage-table-views) and [record activities](https://attio.com/help/reference/managing-your-data/records/add-record-activities).
+- HubSpot saves filtered sets of records as views and supports activity on each record. A saved view in Accord could help teams repeat the same comparison before recurring calls. See [saved views](https://knowledge.hubspot.com/records/create-and-manage-saved-views) and [record activities](https://knowledge.hubspot.com/records/manually-log-activities-on-records).
+- Pipedrive groups organizations under Contacts and surfaces linked people, notes, and activities in the organization detail. A company detail prototype for Accord could bring recent tasks, meetings, and notes together after someone has identified the right record. See [how Pipedrive organizes data](https://support.pipedrive.com/en/article/how-is-pipedrive-data-organized) and the [detail view](https://support.pipedrive.com/en/article/detail-view).
 
 ## User flow for finding workspace controls
 
@@ -99,34 +60,30 @@ The Light and Dark mockups keep the selected Companies item, table columns, and 
 2. Check which workspace is active. Find Invite people or Settings below the workspace list.
 3. For appearance preferences, open Theme to see Light, Dark, and System.
 
-The walkthrough ends when the control is visible in the menu.
+<CaseFigure
+  src={menuLight}
+  label="Workspace and appearance menus — Light styling"
+  alt="Workspace menu in light styling, listing Accord, My Space, Invite people, Settings, Theme, and Log out; the submenu lists Light, Dark, and System, with Light checked."
+  caption="The workspace selector opens the menu for team actions and appearance preferences."
+/>
 
-## Use the same mark at both scales
+## Visual system
 
-The geometric mark from the opening artwork reappears beside Accord in the workspace selector. Its silhouette carries the identity into the interface, where the icon has to work at a much smaller size.
+The Dark mockup uses a lighter surface for the table to distinguish it from the sidebar and toolbar. The workspace selector uses the same rounded mark as the brand artwork.
 
-## Design process
+<CaseFigure
+  src={companiesDark}
+  label="Companies directory — Dark"
+  alt="Dark mockup of the Accord directory with the same rows and columns as Light and a highlighted Companies item in the sidebar."
+  caption="The table and navigation keep their positions in Dark."
+/>
 
-1. Group destinations by what someone came to do. Records and Tools give the sidebar two clear starting points. The Sidebar Item component has Default, Hover, and Active states, so the selected destination can stay visible while someone scans the rest of the sidebar.
-2. Build the directory from reusable cells. The Table Cell variants give company names, domains, badges, and plain text their own layouts. Numeric values sit in consistent columns for comparison across rows.
-3. Apply Light and Dark through Figma variables. Both appearances use the same layout, with the selected sidebar item and the open menu in the same places.
-
-## Competitive analysis
-
-The comparison follows three steps in each CRM’s documentation. Find a company, read its details, and get to related work.
-
-- Attio uses spreadsheet-style views with configurable columns and filters. A record is also a place to log calls or meetings. See [table views](https://attio.com/help/reference/managing-your-data/views/create-and-manage-table-views) and [record activities](https://attio.com/help/reference/managing-your-data/records/add-record-activities).
-- HubSpot uses saved views to return to a filtered set of records. Opening a record gives someone a place to log a call or meeting or add a note. See [saved views](https://knowledge.hubspot.com/records/create-and-manage-saved-views) and [record activities](https://knowledge.hubspot.com/records/manually-log-activities-on-records).
-- Pipedrive lists organizations under Contacts. Opening an organization brings together details such as its website and address, linked people, and related notes and activities. See [how Pipedrive organizes data](https://support.pipedrive.com/en/article/how-is-pipedrive-data-organized) and the [detail view](https://support.pipedrive.com/en/article/detail-view).
-
-For Accord, keep names and domains visible for identification and keep categories, employee counts, and revenue in the table for comparison. A company detail prototype can test whether showing related tasks, meetings, and notes together helps someone prepare for a call.
+- <a href={brand.src}>Accord brand artwork</a>
+- <a href={shell.src}>Application shell and workspace menu</a>
+- <a href={menuDark.src}>Workspace and appearance menus in Dark</a>
 
 ## What to test next
 
-The first planned test uses the static Companies screen. Three people will look up the same two companies, compare employee counts, and identify a category they share.
-
-An interactive prototype would let us check whether people can do the following.
-
-- Find a company using Search companies and reach its related work.
-- Locate the current workspace, Invite people, and Settings.
-- Read long addresses and category groups at narrower widths.
+- Compare two companies with and without a category filter. Note how long it takes to reach the correct answer and whether the filter helps people stay on the right rows.
+- Find a company through Search companies and use its detail view to identify the latest task, meeting, or note before a call.
+- Start in Companies and look for Invite people or Settings. See whether the workspace selector is the first place people look.

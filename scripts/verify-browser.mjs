@@ -27,9 +27,14 @@ const caseStudies = await Promise.all(
       id: 'accord',
       node: '42:378',
       title: 'Accord — a CRM for small teams',
-      headings: 12,
-      bulletItems: 6,
-      orderedLists: [3, 3, 3],
+      headings: 8,
+      bulletItems: 9,
+      orderedLists: [3, 3, 3, 3],
+      figures: [
+        'Companies directory — Light',
+        'Workspace and appearance menus — Light styling',
+        'Companies directory — Dark',
+      ],
     },
     {
       id: 'pascal',
@@ -38,6 +43,14 @@ const caseStudies = await Promise.all(
       headings: 10,
       bulletItems: 5,
       orderedLists: [3, 3],
+      figures: [
+        'Pascal brand artwork',
+        'Notes workspace — Light',
+        'Notes workspace — Dark',
+        'Formatting menu — Light',
+        'Command palette — Light',
+        'Command palette — Dark',
+      ],
     },
   ].map(async (study) => {
     const source = await readFile(`src/content/work/${study.id}.mdx`, 'utf8');
@@ -45,6 +58,7 @@ const caseStudies = await Promise.all(
       .replace(/^---\n[\s\S]*?\n---\n/, '')
       .replace(/^import .*;\n/gm, '')
       .replace(/<CaseFigure[\s\S]*?\/>/g, '')
+      .replace(/<\/?a\b[^>]*>/g, '')
       .trim()
       .split(/\n\s*\n/)
       .map((paragraph) =>
@@ -90,6 +104,19 @@ const closeTo = (actual, expected, tolerance = 1) =>
     Math.abs(actual - expected) <= tolerance,
     `${actual} ≠ ${expected}`,
   );
+async function verifyCaseTabOrder(page) {
+  for (const link of await page.locator('main a').all()) {
+    await page.keyboard.press('Tab');
+    assert.equal(
+      await link.evaluate((el) => el === document.activeElement),
+      true,
+    );
+    assert.equal(
+      await link.evaluate((el) => getComputedStyle(el).outlineStyle),
+      'solid',
+    );
+  }
+}
 const settle = async (page) => {
   await page.evaluate(() => document.fonts.ready);
   await page.locator('img').evaluateAll((images) =>
@@ -815,46 +842,22 @@ try {
     await page.getByRole('tab', { name: 'Selected work', exact: true }).click();
     await caseLink.click();
     assert.equal(page.url(), study.url);
-    await page.keyboard.press('Tab');
-    const caseHome = page
-      .getByRole('link', { name: 'Back to homepage' })
-      .first();
-    assert.equal(
-      await caseHome.evaluate((el) => el === document.activeElement),
-      true,
-    );
-    assert.equal(
-      await caseHome.evaluate((el) => getComputedStyle(el).outlineStyle),
-      'solid',
-    );
-    await page.keyboard.press('Tab');
-    const imageLinks = page.getByRole('link', {
-      name: /^View full-size image:/,
-    });
-    assert.equal(await imageLinks.count(), 6);
-    for (const link of await imageLinks.all()) {
-      assert.equal(
-        await link.evaluate((el) => el === document.activeElement),
-        true,
-      );
-      assert.equal(
-        await link.evaluate((el) => getComputedStyle(el).outlineStyle),
-        'solid',
-      );
+    await verifyCaseTabOrder(page);
+    const originals = page.locator('article a[href$=".webp"]');
+    assert.equal(await originals.count(), 6);
+    for (const link of await originals.all()) {
       const response = await context.request.get(
         new URL(await link.getAttribute('href'), baseURL).href,
       );
       assert.equal(response.status(), 200);
       assert.match(response.headers()['content-type'], /image\/webp/);
-      await page.keyboard.press('Tab');
     }
     // Follow a real original image with the keyboard, then return through browser history.
-    await imageLinks.nth(2).focus();
-    const originalURL = new URL(
-      await imageLinks.nth(2).getAttribute('href'),
-      baseURL,
-    ).href;
-    await imageLinks.nth(2).press('Enter');
+    const original = originals.nth(2);
+    await original.focus();
+    const originalURL = new URL(await original.getAttribute('href'), baseURL)
+      .href;
+    await original.press('Enter');
     assert.equal(page.url(), originalURL);
     await page.goBack();
     assert.equal(page.url(), study.url);
@@ -974,15 +977,18 @@ try {
             layout.color,
             theme === 'light' ? 'rgb(32, 32, 32)' : 'rgb(238, 238, 238)',
           );
-          assert.equal(layout.images.length, 6);
-          assert.equal(new Set(layout.images.map((img) => img.src)).size, 6);
+          assert.equal(layout.images.length, study.figures.length);
           assert.equal(
-            await reading.locator('[data-case-image$="— Light"]').count(),
-            study.id === 'pascal' ? 3 : 1,
+            new Set(layout.images.map((img) => img.src)).size,
+            study.figures.length,
           );
-          assert.equal(
-            await reading.locator('[data-case-image$="— Dark"]').count(),
-            study.id === 'pascal' ? 2 : 1,
+          assert.deepEqual(
+            await reading
+              .locator('[data-case-image]')
+              .evaluateAll((figures) =>
+                figures.map((figure) => figure.dataset.caseImage),
+              ),
+            study.figures,
           );
           for (const [i, img] of layout.images.entries()) {
             assert.ok(
@@ -1014,6 +1020,7 @@ try {
               reading,
               `${output}/${theme}-${study.id}-${width}.png`,
             );
+            if (study.id === 'accord') await verifyCaseTabOrder(reading);
           }
         }
         await reading
@@ -1043,7 +1050,7 @@ try {
       true,
     );
     report.interactions.push(
-      `${study.id}: complete static text, six local proportional images, both screenshot variants visible in both site themes, five widths with/without JS, live system themes, 320px at 200% text`,
+      `${study.id}: complete static text, ${study.figures.length} local proportional images in order and six linked originals, five widths with/without JS, live system themes, 320px at 200% text`,
     );
     console.log(
       `PASS: ${study.id} route, full copy, local images/originals, keyboard/history, themes/mobile/no-JS matrix.`,
