@@ -1,14 +1,18 @@
 ---
 import '../styles/global.css';
+import { site } from '../data/site';
 import CoastalFooter from '../components/CoastalFooter.astro';
 
 interface Props {
-  title: string;
+  title?: string;
   description: string;
-  homepage?: boolean;
+  mainClass?: string;
 }
 
-const { title, description, homepage = false } = Astro.props;
+const { title, description, mainClass } = Astro.props;
+const documentTitle = title
+  ? `${title} — ${site.name}`
+  : `${site.name} — ${site.role}`;
 ---
 
 <!doctype html>
@@ -33,10 +37,10 @@ const { title, description, homepage = false } = Astro.props;
       type="font/woff2"
       crossorigin
     />
-    <title>{title}</title>
+    <title>{documentTitle}</title>
   </head>
   <body>
-    <main class:list={{ homepage }}>
+    <main class={mainClass}>
       <slot />
     </main>
     <CoastalFooter />
@@ -47,23 +51,18 @@ const { title, description, homepage = false } = Astro.props;
   main {
     display: grid;
     grid-template-columns:
-      minmax(var(--page-gutter), 1fr) minmax(0, var(--content-max-width))
-      minmax(var(--page-gutter), 1fr);
-    row-gap: 4rem;
+      [full-start] minmax(var(--page-gutter), 1fr)
+      [content-start] minmax(0, var(--content-max-width))
+      [content-end] minmax(var(--page-gutter), 1fr) [full-end];
+    row-gap: var(--main-gap, 4rem);
     padding-block: var(--page-padding-block);
     overflow-wrap: anywhere;
   }
-  main.homepage {
-    row-gap: 2rem;
-    font-size: 0.875rem;
-    letter-spacing: var(--letter-spacing);
-  }
   main > :global(*) {
-    grid-column: 2;
+    grid-column: content;
     min-width: 0;
   }
-  main > :global(.showcase),
-  main > :global(.case-study) {
-    grid-column: 1 / -1;
+  main > :global([data-full-width]) {
+    grid-column: full;
   }
 </style>

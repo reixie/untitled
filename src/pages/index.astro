@@ -1,17 +1,35 @@
 ---
 import DocumentLayout from '../layouts/DocumentLayout.astro';
 import Profile from '../components/Profile.astro';
-import Showcase from '../components/Showcase.astro';
+import Showcase from '../components/showcase/Showcase.astro';
 import ContentRow from '../components/ContentRow.astro';
-import { experience } from '../data/homepage';
 import { getPublishedArticles } from '../lib/articles';
+
+const experience = [
+  // Owner-approved editorial correction: Figma says “Koncepta Agency”. Roles are unchanged.
+  {
+    company: 'Konexta Agency',
+    role: 'Product Designer',
+    href: 'https://www.konexta.agency/',
+  },
+  {
+    company: 'Valorx',
+    role: 'Product Designer',
+    href: 'https://www.valorx.com/',
+  },
+  { company: 'Roxfit', role: 'UI/UX Designer', href: 'https://roxfit.app/' },
+  {
+    company: 'OptiHint',
+    role: 'UI/UX Designer',
+    href: 'https://optihint.com/',
+  },
+];
 
 const articles = await getPublishedArticles();
 ---
 
 <DocumentLayout
-  homepage
-  title="Alex L. — Design Engineer"
+  mainClass="homepage"
   description="Alex L. is a product designer based in Lithuania with experience designing B2B SaaS products, mobile apps, and websites."
 >
   <Profile />
@@ -42,6 +60,44 @@ const articles = await getPublishedArticles();
 </DocumentLayout>
 
 <style>
+  :global(.homepage) {
+    --main-gap: 2rem;
+    font-size: 0.875rem;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  :global(body:has(.homepage))::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: var(--color-background-1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+
+  :global(.homepage [data-focus-region]) {
+    position: relative;
+    z-index: 0;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    :global(body:has(.homepage [data-focus-region]:hover))::after {
+      opacity: 0.5;
+    }
+
+    :global(.homepage [data-focus-region]:hover) {
+      z-index: 2;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(body:has(.homepage))::after {
+      transition: none;
+    }
+  }
+
   h2 {
     margin-bottom: 1rem;
   }

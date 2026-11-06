@@ -11,16 +11,21 @@ export const keepsStage = {
   baseline: 23,
 } as const;
 
-export const keepsInks = ['frame', 'text', 'detail', 'accent'] as const;
-export const keepsLoopMs = 12_000;
-export const keepsStillMs = 8_500;
+export const keepsInkProperties = {
+  frame: '--ascii-frame',
+  text: '--ascii-text',
+  detail: '--ascii-detail',
+  accent: '--ascii-accent',
+} as const;
 
-type Ink = (typeof keepsInks)[number];
+type Ink = keyof typeof keepsInkProperties;
 type Cell = { glyph: string; ink: Ink };
 type Grid = (Cell | undefined)[];
 
 const { columns, rows } = keepsStage;
+const loopMs = 12_000;
 const tileWidth = 15;
+const collectionName = 'Inspiration';
 const collectionRow = 11;
 const transferStart = 2_000;
 const transferDuration = 1_250;
@@ -63,6 +68,14 @@ const tiles = [
   },
 ] as const;
 
+function countLabel(count: number) {
+  return String(count).padStart(2, '0');
+}
+
+function itemCount(count: number) {
+  return `${countLabel(count)} ITEMS`;
+}
+
 function write(grid: Grid, x: number, y: number, text: string, ink: Ink) {
   for (const glyph of text) {
     grid[y * columns + x] = glyph === ' ' ? undefined : { glyph, ink };
@@ -87,6 +100,10 @@ function box(
   write(grid, x, y + height - 1, edge, ink);
 }
 
+function tileOutline(grid: Grid, tile: (typeof tiles)[number], ink: Ink) {
+  box(grid, tile.x, tile.y, tileWidth, tile.art.length + 3, ink);
+}
+
 function scene(collection: boolean): Grid {
   const grid: Grid = Array(columns * rows).fill(undefined);
   box(grid, 0, 0, columns, rows, 'frame');
@@ -108,22 +125,22 @@ function scene(collection: boolean): Grid {
     grid,
     2,
     collectionRow,
-    collection ? '> Inspiration' : '+ Inspiration',
+    `${collection ? '>' : '+'} ${collectionName}`,
     collection ? 'accent' : 'text',
   );
   write(
     grid,
     4,
     collectionRow + 1,
-    collection ? '04 ITEMS' : '00 ITEMS',
+    itemCount(collection ? tiles.length : 0),
     collection ? 'accent' : 'frame',
   );
   write(grid, 2, 19, '------------', 'frame');
   write(grid, 2, 21, 'On this Mac', 'frame');
-  write(grid, 19, 4, collection ? 'Inspiration' : 'Library', 'text');
-  write(grid, 43, 4, '[::]  04', 'frame');
+  write(grid, 19, 4, collection ? collectionName : 'Library', 'text');
+  write(grid, 43, 4, `[::]  ${countLabel(tiles.length)}`, 'frame');
   for (const tile of tiles) {
-    box(grid, tile.x, tile.y, tileWidth, tile.art.length + 3, 'frame');
+    tileOutline(grid, tile, 'frame');
     tile.art.forEach((line, row) =>
       write(grid, tile.x + 1, tile.y + row + 1, line, 'detail'),
     );
@@ -146,12 +163,12 @@ function transferFrame(phase: number): Grid {
     grid,
     4,
     collectionRow + 1,
-    `0${index + Number(arrived)} ITEMS`,
+    itemCount(index + Number(arrived)),
     'accent',
   );
-  box(grid, tile.x, tile.y, tileWidth, tile.art.length + 3, 'accent');
+  tileOutline(grid, tile, 'accent');
   if (arrived) {
-    write(grid, 2, collectionRow, '+ Inspiration', 'accent');
+    write(grid, 2, collectionRow, `+ ${collectionName}`, 'accent');
   } else if (step >= 0.16) {
     const travel = (step - 0.16) / 0.64;
     const eased = travel * travel * (3 - 2 * travel);
@@ -188,15 +205,15 @@ function glyphRuns(grid: Grid) {
 }
 
 const libraryRuns = glyphRuns(library);
-const collectionRuns = glyphRuns(collection);
+export const keepsStillFrame = glyphRuns(collection);
 
 export function keepsFrame(elapsed: number) {
-  const phase = elapsed % keepsLoopMs;
+  const phase = elapsed % loopMs;
   if (phase < transferStart) return libraryRuns;
   if (phase < transferStart + transferDuration * tiles.length) {
     return glyphRuns(transferFrame(phase));
   }
-  if (phase < returnStart) return collectionRuns;
+  if (phase < returnStart) return keepsStillFrame;
 
   // A fixed reveal order dissolves the changed characters back into Library.
   const reveal = (phase - returnStart) / 1_850;

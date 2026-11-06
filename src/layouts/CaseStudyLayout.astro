@@ -10,16 +10,19 @@ interface Props {
 }
 const { work } = Astro.props;
 const { title, subtitle, description } = work.data;
+const caseStudyId = 'case-study';
 ---
 
-<DocumentLayout title={`${title} — Alex L.`} description={description}>
+<DocumentLayout title={title} description={description}>
   <nav aria-label="Case study navigation">
     <BackLink />
   </nav>
-  <article class="case-study" aria-labelledby="case-title">
+  <article id={caseStudyId} class="case-study" aria-labelledby="case-title">
     <header>
       <p class="eyebrow">Selected work</p>
-      <h1 id="case-title">{title}</h1>
+      <h1 class="reading-title" id="case-title">
+        {title}
+      </h1>
       <p class="subtitle">{subtitle}</p>
     </header>
     <div class="prose case-body">
@@ -29,17 +32,16 @@ const { title, subtitle, description } = work.data;
       <BackLink />
     </footer>
   </article>
-  <CaseLightbox />
+  <CaseLightbox for={caseStudyId} />
 </DocumentLayout>
 
 <style>
   .case-study {
     display: grid;
-    grid-template-columns: subgrid;
+    grid-template-columns: minmax(0, 1fr);
   }
   .case-study > *,
   .case-study :global(.case-body > *) {
-    grid-column: 2;
     min-width: 0;
   }
   .case-body {
@@ -52,11 +54,6 @@ const { title, subtitle, description } = work.data;
     margin-bottom: 1rem;
     color: var(--color-text-secondary);
     font-size: var(--font-size-label);
-  }
-  h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    line-height: 1.25;
-    text-wrap: balance;
   }
   .subtitle {
     margin-top: 1.25rem;

@@ -1,4 +1,4 @@
-/* global document, getComputedStyle, NodeFilter, requestAnimationFrame, performance */
+/* global document, getComputedStyle, NodeFilter, performance */
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile, stat } from 'node:fs/promises';
@@ -7,39 +7,19 @@ import { extname, resolve, sep } from 'node:path';
 import process from 'node:process';
 import console from 'node:console';
 import { spawnSync } from 'node:child_process';
-import { pathToFileURL, URL } from 'node:url';
+import { URL } from 'node:url';
+import { decodePageImages, launchBrowser } from './verification/browser.mjs';
+import { article, portfolioRoutes } from './verification/portfolio.mjs';
 
-// Run by hand; tooling is deliberately external to package.json and the build.
-assert.ok(
-  process.env.PLAYWRIGHT_MODULE,
-  'Set PLAYWRIGHT_MODULE to an external Playwright index.mjs',
-);
 assert.ok(
   process.env.FONT_BEFORE_DIR,
   'Set FONT_BEFORE_DIR to an unchanged production build',
 );
 const engine = process.env.FONT_BROWSER ?? 'chromium';
-const playwright = await import(
-  pathToFileURL(resolve(process.env.PLAYWRIGHT_MODULE)).href
-);
-const launchBrowser = () =>
-  playwright[engine].launch({
-    ...(process.env.BROWSER_EXECUTABLE
-      ? { executablePath: process.env.BROWSER_EXECUTABLE }
-      : {}),
-    headless: true,
-  });
-const browser = await launchBrowser();
 const output = resolve(
   process.env.FONT_EVIDENCE_DIR ?? 'docs/font-optimization',
 );
 await mkdir(output, { recursive: true });
-const routes = [
-  '/',
-  '/articles/design-the-second-attempt/',
-  '/work/accord/',
-  '/work/pascal/',
-];
 const sha = (s) => createHash('sha256').update(s).digest('hex');
 
 function fixture(head, kind) {
@@ -85,11 +65,11 @@ function fixture(head, kind) {
 
 async function serve(root) {
   root = resolve(root);
-  const article = await readFile(
-    resolve(root, 'articles/design-the-second-attempt/index.html'),
+  const articleHtml = await readFile(
+    resolve(root, '.' + article.path, 'index.html'),
     'utf8',
   );
-  const head = article.match(/<head>[\s\S]*?<\/head>/)[0];
+  const head = articleHtml.match(/<head>[\s\S]*?<\/head>/)[0];
   const server = createServer(async (req, res) => {
     try {
       const url = new URL(req.url, 'http://localhost');
@@ -128,27 +108,11 @@ async function serve(root) {
 }
 
 const settle = async (page) => {
-  await page.evaluate(async () => {
-    await document.fonts.ready;
-    await Promise.all(
-      [...document.images].map(async (img) => {
-        img.loading = 'eager';
-        await img.decode();
-      }),
-    );
-    await new Promise((done) =>
-      requestAnimationFrame(() => requestAnimationFrame(done)),
-    );
-  });
+  await decodePageImages(page, true);
   // Responsive image candidate changes and native scroll snap can complete
   // after decode()/layout. Give the compositor its final paint in both builds.
   await page.waitForTimeout(250);
-  await page.evaluate(async () => {
-    await Promise.all([...document.images].map((img) => img.decode()));
-    await new Promise((done) =>
-      requestAnimationFrame(() => requestAnimationFrame(done)),
-    );
-  });
+  await decodePageImages(page, true);
 };
 
 // All text nodes, including hidden tabs; computed style catches local and inline
@@ -240,11 +204,13 @@ const census = (page) =>
           bytes: r.decodedBodySize,
           transferBytes: r.transferSize,
         })),
-      images: [...document.images].map((img) => ({
-        source: new URL(img.currentSrc).pathname,
-        naturalWidth: img.naturalWidth,
-        naturalHeight: img.naturalHeight,
-      })),
+      images: [...document.images]
+        .filter((img) => img.currentSrc)
+        .map((img) => ({
+          source: new URL(img.currentSrc).pathname,
+          naturalWidth: img.naturalWidth,
+          naturalHeight: img.naturalHeight,
+        })),
     };
   });
 
@@ -278,15 +244,17 @@ const geometry = (page) =>
   });
 
 const before = await serve(process.env.FONT_BEFORE_DIR);
+let browser;
 let after;
 try {
+  browser = await launchBrowser(engine);
   if (process.env.FONT_AUDIT_ONLY === '1') {
     const context = await browser.newContext({
       viewport: { width: 1200, height: 900 },
       reducedMotion: 'reduce',
     });
     const pages = [];
-    for (const route of routes) {
+    for (const route of portfolioRoutes) {
       const page = await context.newPage();
       await page.goto(before.url + route);
       await settle(page);
@@ -317,10 +285,11 @@ try {
       errors: [],
     };
     await browser.close();
+    browser = undefined;
     const shots = resolve(output, 'screenshots');
     await mkdir(shots, { recursive: true });
     const cases = [];
-    for (const route of routes)
+    for (const route of portfolioRoutes)
       for (const width of [375, 1200])
         for (const colorScheme of ['light', 'dark'])
           cases.push({ route, width, colorScheme, dpr: 1 });
@@ -355,7 +324,7 @@ try {
       const samples = [];
       // Isolate native glyph/compositor caches between DPR/theme cases. HTTP
       // caches are also cold: both samples use separate contexts and origins.
-      const caseBrowser = await launchBrowser();
+      const caseBrowser = await launchBrowser(engine);
       try {
         for (const [label, server] of [
           ['before', before],
@@ -509,7 +478,7 @@ try {
     );
   }
 } finally {
-  await browser.close();
   before.server.close();
   after?.server.close();
+  await browser?.close();
 }

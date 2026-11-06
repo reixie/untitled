@@ -1,20 +1,21 @@
-/** Load the renderer only when the shared footer approaches the viewport. */
-const footers = document.querySelectorAll<HTMLCanvasElement>(
-  '[data-coastal-footer]',
-);
-
 const loader = new IntersectionObserver(
   (entries) => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      loader.unobserve(entry.target);
-      const canvas = entry.target as HTMLCanvasElement;
+    for (const { isIntersecting, target } of entries) {
+      if (!isIntersecting) continue;
+      loader.unobserve(target);
+      const holder = target as HTMLElement;
+      const canvas = holder.querySelector<HTMLCanvasElement>(
+        '[data-coastal-footer]',
+      );
+      if (!canvas) continue;
       void import('./coastal-world.js').then(({ enhanceCoastalFooter }) => {
-        if (canvas.isConnected) enhanceCoastalFooter(canvas);
+        if (canvas.isConnected) enhanceCoastalFooter(holder, canvas);
       });
     }
   },
   { rootMargin: '240px' },
 );
 
-footers.forEach((canvas) => loader.observe(canvas));
+document
+  .querySelectorAll<HTMLElement>('[data-coastal-scene]')
+  .forEach((holder) => loader.observe(holder));

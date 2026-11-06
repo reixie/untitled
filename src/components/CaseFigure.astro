@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import CaseImageLink from './CaseImageLink.astro';
 
 interface Props {
   src: ImageMetadata;
@@ -14,10 +15,10 @@ const { src, alt, caption, label, opening = false } = Astro.props;
 ---
 
 <figure class="case-visual" data-case-image={label}>
-  <a
+  <CaseImageLink
+    {src}
+    {label}
     class="image-link"
-    href={src.src}
-    data-case-lightbox={label}
     aria-label={`Open image: ${label}`}
   >
     <Image
@@ -41,7 +42,7 @@ const { src, alt, caption, label, opening = false } = Astro.props;
         />
       </svg>
     </span>
-  </a>
+  </CaseImageLink>
   <figcaption>{caption}</figcaption>
 </figure>
 

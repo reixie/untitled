@@ -25,7 +25,6 @@ const articles = defineCollection({
   ]),
 });
 
-// Selected work has its own editorial contract; project dates are not required.
 const work = defineCollection({
   loader: glob({ base: './src/content/work', pattern: '**/*.mdx' }),
   schema: z.object({ title: text, subtitle: text, description: text }),

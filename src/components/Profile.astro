@@ -1,7 +1,21 @@
 ---
 import { Image } from 'astro:assets';
 import avatar from '../assets/images/alex-lohinov-avatar-original.png';
-import { profile } from '../data/homepage';
+import { site } from '../data/site';
+
+const profile = {
+  introduction:
+    'I’m a product designer based in Lithuania. I’ve designed B2B SaaS products, mobile apps, and websites.',
+  expertise:
+    'I make complex workflows easier to use, build design systems, and prototype in React with AI tools. I’m open to product design roles.',
+  // Hyperlink values read from Figma 1:32, not inferred from the labels.
+  contacts: {
+    linkedin: 'https://www.linkedin.com/in/alex-lohinov-b503683b4',
+    github: 'https://github.com/reixie',
+    x: 'https://x.com/reixxiie',
+    email: 'alex@lohinov.com',
+  },
+};
 ---
 
 <header>
@@ -18,8 +32,8 @@ import { profile } from '../data/homepage';
       />
     </span>
     <div>
-      <h1>{profile.name}</h1>
-      <p>{profile.role}</p>
+      <h1>{site.name}</h1>
+      <p>{site.role}</p>
     </div>
   </div>
   <div class="biography">
@@ -55,12 +69,12 @@ import { profile } from '../data/homepage';
       </a>
       , or email me at{' '}
       <a
-        href={profile.contacts.email}
+        href={`mailto:${profile.contacts.email}`}
         target="_blank"
         rel="noopener noreferrer"
         data-focus-region
       >
-        alex@lohinov.com
+        {profile.contacts.email}
       </a>
       .
     </p>

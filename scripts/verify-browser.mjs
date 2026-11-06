@@ -2,95 +2,36 @@
 import assert from 'node:assert/strict';
 import console from 'node:console';
 import process from 'node:process';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { pathToFileURL, URL } from 'node:url';
+import { URL } from 'node:url';
+import { decodePageImages, launchBrowser } from './verification/browser.mjs';
+import {
+  article,
+  caseStudies,
+  galleryOrder,
+  readArticleBody,
+  readCaseCopy,
+  vocabularyNode,
+} from './verification/portfolio.mjs';
 
-// Tooling stays outside package.json: point this at a temporary Playwright install.
-assert.ok(
-  process.env.PLAYWRIGHT_MODULE,
-  'Set PLAYWRIGHT_MODULE to an external Playwright index.mjs',
-);
-const { chromium } = await import(
-  pathToFileURL(resolve(process.env.PLAYWRIGHT_MODULE)).href
-);
-const browser = await chromium.launch({
-  executablePath: process.env.BROWSER_EXECUTABLE,
-  headless: true,
-});
 const baseURL = process.env.VERIFY_URL ?? 'http://127.0.0.1:4321';
-const articlePath = '/articles/design-the-second-attempt/';
-const articleURL = new URL(articlePath, baseURL).href;
-const caseStudies = await Promise.all(
-  [
-    {
-      id: 'accord',
-      node: '42:378',
-      title: 'Accord — a CRM for small teams',
-      headings: 8,
-      bulletItems: 8,
-      orderedLists: [3, 3, 3],
-      flowCount: 2,
-      figures: [
-        'Companies directory — Light',
-        'Workspace and appearance menus — Light styling',
-        'Companies directory — Dark',
-      ],
-    },
-    {
-      id: 'pascal',
-      node: '42:382',
-      title: 'Pascal — Markdown notes for macOS',
-      headings: 4,
-      bulletItems: 2,
-      orderedLists: [3, 4],
-      flowCount: 1,
-      figures: [
-        'Pascal brand artwork',
-        'Notes workspace — Light',
-        'Notes workspace — Dark',
-        'Formatting menu — Light',
-        'Command palette — Light',
-        'Command palette — Dark',
-      ],
-    },
-  ].map(async (study) => {
-    const source = await readFile(`src/content/work/${study.id}.mdx`, 'utf8');
-    const paragraphs = source
-      .replace(/^---\n[\s\S]*?\n---\n/, '')
-      .replace(/^import .*;\n/gm, '')
-      .replace(/<(?:CaseFigure|CaseFlow|AccordHeadcount)\b[\s\S]*?\/>/g, '')
-      .replace(/<\/?a\b[^>]*>/g, '')
-      .trim()
-      .split(/\n\s*\n/)
-      .map((paragraph) =>
-        paragraph
-          .replace(/^(?:##|-|\d+\.) /gm, '')
-          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-          .replace(/\s+/g, ' ')
-          .trim(),
-      );
-    return {
+const articleURL = new URL(article.path, baseURL).href;
+const [articleBody, studies] = await Promise.all([
+  readArticleBody(),
+  Promise.all(
+    caseStudies.map(async (study) => ({
       ...study,
-      paragraphs,
-      url: new URL(`/work/${study.id}/`, baseURL).href,
-    };
-  }),
-);
-const articleSource = await readFile(
-  'src/content/articles/design-the-second-attempt.md',
-  'utf8',
-);
-const articleBody = articleSource
-  .replace(/^---\n[\s\S]*?\n---\n/, '')
-  .replace(/^## |^- /gm, '')
-  .replace(/\s+/g, ' ')
-  .trim();
-// New evidence stays separate from the historical Stage 1/2 captures.
+      ...(await readCaseCopy(study)),
+      url: new URL(study.path, baseURL).href,
+    })),
+  ),
+]);
 const output = resolve(
   process.env.BROWSER_EVIDENCE_DIR ?? 'docs/pascal-verification',
 );
 await mkdir(output, { recursive: true });
+const browser = await launchBrowser();
 const report = {
   browser: browser.version(),
   matrix: [],
@@ -101,6 +42,10 @@ const report = {
   errors: [],
   cancelledRequests: [],
 };
+const writingLinks = (page) =>
+  page.locator('[aria-labelledby="writing-heading"] a');
+const knownArticleLink = (page) =>
+  writingLinks(page).and(page.locator(`a[href="${article.path}"]`));
 const closeTo = (actual, expected, tolerance = 1) =>
   assert.ok(
     Math.abs(actual - expected) <= tolerance,
@@ -119,28 +64,6 @@ async function verifyCaseTabOrder(page) {
     );
   }
 }
-const settle = async (page) => {
-  await page.evaluate(() => document.fonts.ready);
-  await page.locator('img').evaluateAll((images) =>
-    Promise.all(
-      images
-        .filter((img) => {
-          const rect = img.getBoundingClientRect();
-          return (
-            img.loading === 'eager' ||
-            (rect.width && rect.top < innerHeight && rect.bottom > 0)
-          );
-        })
-        .map((img) => img.decode()),
-    ),
-  );
-  await page.evaluate(
-    () =>
-      new Promise((done) =>
-        requestAnimationFrame(() => requestAnimationFrame(done)),
-      ),
-  );
-};
 const capture = async (page, path) => {
   // Capture a page-height viewport after layout settles. This avoids the browser's
   // temporary width reset during a fullPage capture changing native scroll snap.
@@ -223,7 +146,7 @@ try {
       await page.setViewportSize({ width, height: 1000 });
       await page.goto(baseURL);
       await page.getByRole('tab', { name: 'Projects', exact: true }).waitFor();
-      await settle(page);
+      await decodePageImages(page);
       const projects = page.getByRole('tab', { name: 'Projects', exact: true });
       const work = page.getByRole('tab', {
         name: 'Selected work',
@@ -249,7 +172,7 @@ try {
       }
       await capture(page, `${output}/${theme}-projects-${width}.png`);
       await work.click();
-      await settle(page);
+      await decodePageImages(page);
       assert.equal(await work.getAttribute('aria-selected'), 'true');
       const after = await geometry(page);
       assert.ok(after.pageWidth <= width);
@@ -310,17 +233,11 @@ try {
         styles.arrow,
         theme === 'light' ? 'rgb(100, 100, 100)' : 'rgb(180, 180, 180)',
       );
-      // Only the core faces should load for these pages. Extended faces stay idle.
       const coreFaces = styles.fonts.filter(
         (f) => f.unicodeRange === 'U+0-10FFFF',
       );
       assert.equal(coreFaces.length, 2);
       assert.ok(coreFaces.every((f) => f.status === 'loaded'));
-      assert.ok(
-        styles.fonts
-          .filter((f) => !coreFaces.includes(f))
-          .every((f) => f.status === 'unloaded'),
-      );
       assert.ok(styles.cls < 0.01, `Unexpected CLS: ${styles.cls}`);
       report.matrix.push({ theme, width, before, gallery, styles });
     }
@@ -392,12 +309,12 @@ try {
   await work.click();
   closeTo(await scroll(), 1232);
   await page.setViewportSize({ width: 375, height: 900 });
-  await settle(page);
+  await decodePageImages(page);
   closeTo(await scroll(), (327 + 16) * 2);
   await projects.click();
   await page.setViewportSize({ width: 320, height: 900 });
   await work.click();
-  await settle(page);
+  await decodePageImages(page);
   closeTo(await scroll(), (272 + 16) * 2);
   await gallery.press('Home');
   closeTo(await scroll(), 0);
@@ -408,11 +325,14 @@ try {
   await gallery.press('ArrowLeft');
   closeTo(await scroll(), 288);
   // Verify fractional position retention, rather than only snapped endpoints.
-  await gallery.evaluate((el) => {
+  await gallery.evaluate(async (el) => {
     el.style.scrollSnapType = 'none';
+    const scrolled = new Promise((done) =>
+      el.addEventListener('scroll', done, { once: true }),
+    );
     el.scrollLeft = 350;
+    await scrolled;
   });
-  await page.waitForTimeout(60);
   await projects.click();
   await work.click();
   closeTo(await scroll(), 350);
@@ -449,13 +369,19 @@ try {
   await gallery.hover();
   const previousY = await page.evaluate(() => window.scrollY);
   await page.mouse.wheel(0, 250);
-  await page.waitForTimeout(150);
-  assert.ok((await page.evaluate(() => window.scrollY)) > previousY);
+  await page.waitForFunction(
+    (previous) => window.scrollY > previous,
+    previousY,
+  );
   const previousX = await scroll();
   await gallery.hover();
   await page.mouse.wheel(-400, 0);
-  await page.waitForTimeout(150);
-  assert.ok(Math.abs((await scroll()) - previousX) > 10);
+  await page.waitForFunction(
+    (previous) =>
+      Math.abs(document.querySelector('[data-gallery]').scrollLeft - previous) >
+      10,
+    previousX,
+  );
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await gallery.focus();
   await gallery.press('End');
@@ -480,33 +406,37 @@ try {
       .map((el) => ({
         text: el.textContent.trim(),
         href: el.getAttribute('href'),
+        writing: el.closest('[aria-labelledby="writing-heading"]') !== null,
       })),
   );
   assert.deepEqual(
-    links.map((link) => link.href),
+    links.filter((link) => !link.writing).map((link) => link.href),
     [
       'https://www.linkedin.com/in/alex-lohinov-b503683b4',
       'https://github.com/reixie',
       'https://x.com/reixxiie',
       'mailto:alex@lohinov.com',
       'https://github.com/reixie/keeps',
-      '/work/pascal/',
-      '/work/accord/',
+      ...galleryOrder
+        .map((node) => caseStudies.find((study) => study.node === node)?.path)
+        .filter(Boolean),
       'https://www.konexta.agency/',
       'https://www.valorx.com/',
       'https://roxfit.app/',
       'https://optihint.com/',
-      '/articles/design-the-second-attempt/',
     ],
   );
-  const writingLink = page.locator('[aria-labelledby="writing-heading"] a');
-  assert.equal(await writingLink.count(), 1);
-  assert.equal(await writingLink.getAttribute('target'), null);
+  assert.equal(await knownArticleLink(page).innerText(), article.title);
+  for (const link of await writingLinks(page).all()) {
+    assert.match(await link.getAttribute('href'), /^\/articles\/(?:[^/]+\/)+$/);
+    assert.equal(await link.getAttribute('target'), null);
+    assert.equal(await link.getAttribute('rel'), null);
+  }
   for (const link of await page.locator('.row[href^="https://"]').all()) {
     assert.equal(await link.getAttribute('target'), '_blank');
     assert.equal(await link.getAttribute('rel'), 'noopener noreferrer');
   }
-  report.links = links;
+  report.links = links.map(({ text, href }) => ({ text, href }));
   assert.ok(
     [...resources].every((url) => url.startsWith(baseURL)),
     'All loaded resources must be local',
@@ -552,7 +482,7 @@ try {
       .evaluate((el) => el.style.getPropertyValue('--tilt-x')),
     '',
   );
-  await page.locator('[aria-labelledby="writing-heading"] a').hover();
+  await knownArticleLink(page).hover();
   await page.waitForFunction(
     () => getComputedStyle(document.body, '::after').opacity === '0.5',
   );
@@ -573,6 +503,19 @@ try {
     const nativeRAF = window.requestAnimationFrame.bind(window);
     window.requestAnimationFrame = (callback) =>
       nativeRAF(() => callback(window.__keepsTime));
+    const NativeObserver = window.IntersectionObserver;
+    window.IntersectionObserver = class extends NativeObserver {
+      constructor(callback, options) {
+        super((entries, observer) => {
+          callback(entries, observer);
+          for (const entry of entries) {
+            if (entry.target.matches('[data-keeps-ascii]')) {
+              window.__keepsVisible = entry.isIntersecting;
+            }
+          }
+        }, options);
+      }
+    };
   });
   const timed = await clock.newPage();
   const canvas = timed.locator('[data-keeps-ascii]');
@@ -584,6 +527,11 @@ try {
       );
       return document.querySelector('[data-keeps-ascii]').toDataURL();
     }, ms);
+  const waitForKeepsVisibility = (visible) =>
+    timed.waitForFunction(
+      (visible) => window.__keepsVisible === visible,
+      visible,
+    );
   const completed = {};
   for (const theme of ['light', 'dark']) {
     await timed.emulateMedia({
@@ -591,7 +539,7 @@ try {
       reducedMotion: 'no-preference',
     });
     await timed.goto(baseURL);
-    await timed.locator('[data-keeps-ascii][data-ready]').waitFor();
+    await waitForKeepsVisibility(true);
     const opening = await sample(0);
     const transfers = [];
     for (const time of [2_650, 3_900, 5_150, 6_400]) {
@@ -599,15 +547,24 @@ try {
     }
     completed[theme] = await sample(8_500);
     assert.equal(new Set([opening, ...transfers, completed[theme]]).size, 6);
-    assert.equal(await sample(11_999), opening);
-    assert.equal(await sample(12_000), opening);
+    assert.ok(
+      (await sample(11_999)) === opening,
+      'Keeps ends on its opening frame',
+    );
+    assert.ok(
+      (await sample(12_000)) === opening,
+      'Keeps loops to its opening frame',
+    );
     await timed.emulateMedia({ reducedMotion: 'reduce' });
     await timed.waitForFunction(
       (still) =>
         document.querySelector('[data-keeps-ascii]').toDataURL() === still,
       completed[theme],
     );
-    assert.equal(await sample(16_000), completed[theme]);
+    assert.ok(
+      (await sample(16_000)) === completed[theme],
+      'Reduced motion keeps the completed frame',
+    );
   }
   assert.notEqual(completed.light, completed.dark);
 
@@ -616,22 +573,32 @@ try {
     colorScheme: 'light',
   });
   await timed.goto(baseURL);
-  await timed.locator('[data-keeps-ascii][data-ready]').waitFor();
+  await waitForKeepsVisibility(true);
+  await sample(0);
   let moving = await sample(2_650);
   await timed.getByRole('tab', { name: 'Selected work' }).click();
-  assert.equal(await sample(6_000), moving);
+  await waitForKeepsVisibility(false);
+  assert.ok((await sample(6_000)) === moving, 'Keeps pauses in a hidden tab');
   await timed.getByRole('tab', { name: 'Projects' }).click();
-  assert.equal(await sample(6_000), moving);
+  await waitForKeepsVisibility(true);
+  assert.ok(
+    (await sample(6_000)) === moving,
+    'Keeps resumes from the hidden tab frame',
+  );
   const resumed = await sample(6_200);
-  assert.notEqual(resumed, moving);
+  assert.ok(resumed !== moving, 'Keeps advances after reopening its tab');
   moving = resumed;
   await timed.evaluate(() =>
     window.scrollTo(0, document.documentElement.scrollHeight),
   );
-  await timed.waitForTimeout(100);
-  assert.equal(await sample(8_000), moving);
+  await waitForKeepsVisibility(false);
+  assert.ok((await sample(8_000)) === moving, 'Keeps pauses offscreen');
   await canvas.scrollIntoViewIfNeeded();
-  assert.equal(await sample(8_000), moving);
+  await waitForKeepsVisibility(true);
+  assert.ok(
+    (await sample(8_000)) === moving,
+    'Keeps resumes from the offscreen frame',
+  );
   await timed.evaluate(() => {
     Object.defineProperty(document, 'hidden', {
       value: true,
@@ -639,13 +606,22 @@ try {
     });
     document.dispatchEvent(new window.Event('visibilitychange'));
   });
-  assert.equal(await sample(10_000), moving);
+  assert.ok(
+    (await sample(10_000)) === moving,
+    'Document visibility preserves the current frame',
+  );
   await timed.evaluate(() => {
     Reflect.deleteProperty(document, 'hidden');
     document.dispatchEvent(new window.Event('visibilitychange'));
   });
-  assert.equal(await sample(10_000), moving);
-  assert.notEqual(await sample(10_200), moving);
+  assert.ok(
+    (await sample(10_000)) === moving,
+    'Document visibility preserves the current frame',
+  );
+  assert.ok(
+    (await sample(10_200)) !== moving,
+    'Keeps advances after document visibility returns',
+  );
   await timed.emulateMedia({ colorScheme: 'dark', reducedMotion: 'reduce' });
   await timed.waitForFunction(
     (still) =>
@@ -676,7 +652,7 @@ try {
   });
   const touchPage = await touchContext.newPage();
   await touchPage.goto(baseURL);
-  await settle(touchPage);
+  await decodePageImages(touchPage);
   await touchPage
     .getByRole('tab', { name: 'Selected work', exact: true })
     .tap();
@@ -738,9 +714,7 @@ try {
         await plain.locator('[data-keeps-ascii]').isVisible(),
         false,
       );
-      await plain
-        .getByRole('link', { name: 'Design the second attempt', exact: true })
-        .waitFor({ state: 'visible' });
+      await knownArticleLink(plain).waitFor({ state: 'visible' });
       assert.equal(
         await plain.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,
@@ -764,10 +738,9 @@ try {
     await noJS.close();
   }
 
-  // Follow the real article link with the keyboard, refresh, then return home.
   await page.setViewportSize({ width: 1200, height: 1000 });
   await page.goto(baseURL);
-  const articleLink = page.locator('[aria-labelledby="writing-heading"] a');
+  const articleLink = knownArticleLink(page);
   await articleLink.focus();
   await articleLink.press('Shift+Tab');
   await page.keyboard.press('Tab');
@@ -818,20 +791,16 @@ try {
       for (const width of [320, 375, 768, 1200, 1440]) {
         await reading.setViewportSize({ width, height: 1000 });
         assert.equal((await reading.goto(articleURL)).status(), 200);
-        // A no-JS page does not run animation-frame callbacks. Article layout
-        // only needs its fonts; it has no controllers or animated content.
+        // Font readiness also works when the page cannot run animation frames.
         await reading.evaluate(() => document.fonts.ready);
-        assert.equal(
-          await reading.locator('h1').innerText(),
-          'Design the second attempt',
-        );
+        assert.equal(await reading.locator('h1').innerText(), article.title);
         assert.equal(
           await reading.locator('time').getAttribute('datetime'),
-          '2026-10-23',
+          article.date,
         );
         assert.equal(
           await reading.locator('time').innerText(),
-          '23 October 2026',
+          article.dateLabel,
         );
         assert.equal(await reading.locator('article h2').count(), 3);
         assert.equal(await reading.locator('article li').count(), 4);
@@ -840,10 +809,6 @@ try {
             .replace(/\s+/g, ' ')
             .trim(),
           articleBody,
-        );
-        assert.doesNotMatch(
-          await reading.locator('body').innerText(),
-          /Using AI as a design engineer|Less is more, more or less/,
         );
         const layout = await reading.evaluate(() => {
           const article = document.querySelector('article');
@@ -891,18 +856,9 @@ try {
           await capture(reading, `${output}/${theme}-article-${width}.png`);
         }
       }
-      // Even with scripting disabled, the return link loads the real homepage.
       await reading.getByRole('link', { name: 'Back to homepage' }).click();
       assert.equal(reading.url(), new URL('/', baseURL).href);
-      assert.equal(
-        await reading.locator('[aria-labelledby="writing-heading"] li').count(),
-        1,
-      );
-      assert.doesNotMatch(
-        await reading.locator('body').innerText(),
-        /Using AI as a design engineer|Less is more, more or less/,
-      );
-      await reading.locator('[aria-labelledby="writing-heading"] a').click();
+      await knownArticleLink(reading).click();
       assert.equal(reading.url(), articleURL);
       await readingContext.close();
     }
@@ -933,36 +889,38 @@ try {
     'PASS: article themes/mobile/no-JS matrix, same-tab navigation, refresh and keyboard return.',
   );
 
-  for (const study of caseStudies) {
-    // Each Selected work route retains the shared checks; Writing assertions stay above.
+  for (const study of studies) {
     await page.goto(baseURL);
     await page.getByRole('tab', { name: 'Selected work', exact: true }).click();
     assert.deepEqual(
       await page
         .locator('[data-work]')
         .evaluateAll((items) => items.map((item) => item.dataset.work)),
-      ['42:382', '42:378', '42:393'],
+      galleryOrder,
     );
     assert.equal(await page.locator('[data-gallery] button').count(), 0);
-    assert.equal(await page.locator('[data-work] a').count(), 2);
-    assert.equal(await page.locator('[data-work="42:393"] a').count(), 0);
+    assert.equal(await page.locator('[data-work] a').count(), studies.length);
+    assert.equal(
+      await page.locator(`[data-work="${vocabularyNode}"] a`).count(),
+      0,
+    );
     const caseLink = page.locator(`[data-work="${study.node}"] a`);
-    assert.equal(await caseLink.getAttribute('href'), `/work/${study.id}/`);
+    assert.equal(await caseLink.getAttribute('href'), study.path);
     assert.equal(await caseLink.getAttribute('aria-label'), study.title);
     assert.equal(await caseLink.getAttribute('target'), null);
     await page.locator('[data-gallery]').focus();
-    await page.keyboard.press('Tab');
-    assert.equal(
-      await page
-        .locator('[data-work="42:382"] a')
-        .evaluate((el) => el === document.activeElement),
-      true,
-    );
-    if (study.id === 'accord') await page.keyboard.press('Tab');
-    assert.equal(
-      await caseLink.evaluate((el) => el === document.activeElement),
-      true,
-    );
+    for (const node of galleryOrder.slice(
+      0,
+      galleryOrder.indexOf(study.node) + 1,
+    )) {
+      await page.keyboard.press('Tab');
+      assert.equal(
+        await page
+          .locator(`[data-work="${node}"] a`)
+          .evaluate((el) => el === document.activeElement),
+        true,
+      );
+    }
     assert.equal(
       await caseLink.evaluate((el) => getComputedStyle(el).outlineStyle),
       'solid',
@@ -978,7 +936,7 @@ try {
     assert.equal(page.url(), study.url);
     await verifyCaseTabOrder(page);
     const originals = page.locator('article a[href$=".webp"]');
-    assert.equal(await originals.count(), 6);
+    assert.equal(await originals.count(), study.originalCount);
     for (const link of await originals.all()) {
       const response = await context.request.get(
         new URL(await link.getAttribute('href'), baseURL).href,
@@ -1033,11 +991,31 @@ try {
       await enlarged.getAttribute('src'),
       new URL(await lastOriginal.getAttribute('href'), baseURL).href,
     );
+    await viewer.getByRole('button', { name: 'Show actual size' }).click();
+    // Reopen before the native close event is delivered to exercise the pending state.
+    const reopened = await original.evaluate((link) => {
+      const dialog = document.querySelector('dialog');
+      dialog.close();
+      link.click();
+      return {
+        loading: dialog.querySelector('[role="status"]').textContent,
+        imageHidden: dialog.querySelector('img').hidden,
+        zoomDisabled: dialog.querySelector('[aria-label="Show actual size"]')
+          ?.disabled,
+      };
+    });
+    assert.deepEqual(reopened, {
+      loading: 'Loading image…',
+      imageHidden: true,
+      zoomDisabled: true,
+    });
+    await enlarged.waitFor({ state: 'visible' });
+    assert.equal(await enlarged.getAttribute('src'), originalURL);
     await viewer.click({ position: { x: 4, y: 4 } });
     await viewer.waitFor({ state: 'hidden' });
-    assert.equal(
-      await lastOriginal.evaluate((el) => el === document.activeElement),
-      true,
+    await page.waitForFunction(
+      (url) => document.activeElement?.href === url,
+      originalURL,
     );
     await page.getByRole('link', { name: 'Back to homepage' }).last().click();
     assert.equal(page.url(), new URL('/', baseURL).href);
@@ -1279,7 +1257,7 @@ try {
       true,
     );
     report.interactions.push(
-      `${study.id}: complete static text, ${study.figures.length} local proportional images in order and six linked originals, five widths with/without JS, live system themes, 320px at 200% text`,
+      `${study.id}: complete static text, ${study.figures.length} local proportional images in order and ${study.originalCount} linked originals, five widths with/without JS, live system themes, 320px at 200% text`,
     );
     console.log(
       `PASS: ${study.id} route, full copy, local images/originals, keyboard/history, themes/mobile/no-JS matrix.`,

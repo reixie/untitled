@@ -26,40 +26,6 @@ body {
   letter-spacing: var(--letter-spacing);
 }
 
-/* Fade other content toward the page background while preserving the hovered item. */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  background: var(--color-background-1);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 200ms ease;
-}
-
-[data-focus-region] {
-  position: relative;
-  z-index: 0;
-}
-
-/* Touch input retains the normal page without a latched hover state. */
-@media (hover: hover) and (pointer: fine) {
-  body:has([data-focus-region]:hover)::after {
-    opacity: 0.5;
-  }
-
-  [data-focus-region]:hover {
-    z-index: 2;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body::after {
-    transition: none;
-  }
-}
-
 h1,
 h2,
 h3,

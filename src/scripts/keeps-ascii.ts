@@ -1,9 +1,8 @@
 import {
   keepsFrame,
-  keepsInks,
-  keepsLoopMs,
+  keepsInkProperties,
   keepsStage,
-  keepsStillMs,
+  keepsStillFrame,
 } from './keeps-scene';
 
 export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
@@ -28,8 +27,8 @@ export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
   let palette = readPalette();
   let visible = false;
   let frameId = 0;
-  let phase = 0;
-  let resumePhase = 0;
+  let elapsed = 0;
+  let resumeElapsed = 0;
   let startTime: number | undefined;
   let lastFrame = -1;
   let drawn: ReturnType<typeof keepsFrame> | undefined;
@@ -37,15 +36,14 @@ export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
   function readPalette() {
     const style = getComputedStyle(canvas);
     return Object.fromEntries(
-      keepsInks.map((ink) => [
+      Object.entries(keepsInkProperties).map(([ink, property]) => [
         ink,
-        style.getPropertyValue(`--ascii-${ink}`).trim(),
+        style.getPropertyValue(property).trim(),
       ]),
     );
   }
 
-  function draw(elapsed: number, repaint = false) {
-    const runs = keepsFrame(elapsed);
+  function draw(runs: ReturnType<typeof keepsFrame>, repaint = false) {
     if (!repaint && runs === drawn) return;
     drawn = runs;
     const scale = Math.min(canvas.width / width, canvas.height / height);
@@ -74,7 +72,7 @@ export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
     const pixelHeight = Math.round(clientHeight * ratio);
     if (canvas.width !== pixelWidth) canvas.width = pixelWidth;
     if (canvas.height !== pixelHeight) canvas.height = pixelHeight;
-    draw(motion.matches ? keepsStillMs : phase, true);
+    draw(motion.matches ? keepsStillFrame : keepsFrame(elapsed), true);
     canvas.dataset.ready ??= '';
   }
 
@@ -82,12 +80,12 @@ export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
     frameId = 0;
     if (document.hidden || !canvas.clientWidth) return;
     startTime ??= now;
-    const elapsed = now - startTime;
-    const frame = Math.floor((elapsed * 24) / 1000);
+    const sinceResume = now - startTime;
+    const frame = Math.floor((sinceResume * 24) / 1000);
     if (frame !== lastFrame) {
       lastFrame = frame;
-      phase = (resumePhase + elapsed) % keepsLoopMs;
-      draw(phase);
+      elapsed = resumeElapsed + sinceResume;
+      draw(keepsFrame(elapsed));
     }
     frameId = requestAnimationFrame(animate);
   }
@@ -98,7 +96,7 @@ export function enhanceKeepsAscii(canvas: HTMLCanvasElement) {
     if (!visible || document.hidden || !canvas.clientWidth) return;
     render();
     if (motion.matches) return;
-    resumePhase = phase;
+    resumeElapsed = elapsed;
     startTime = undefined;
     lastFrame = -1;
     frameId = requestAnimationFrame(animate);

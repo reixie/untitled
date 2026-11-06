@@ -5,7 +5,6 @@ export type PublishedArticle = Article & {
   data: Extract<Article['data'], { status: 'published' }>;
 };
 
-/** Use for both future route generation and listings. Draft source remains public. */
 export async function getPublishedArticles(): Promise<PublishedArticle[]> {
   const articles = await getCollection('articles');
 

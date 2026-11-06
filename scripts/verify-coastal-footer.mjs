@@ -4,24 +4,17 @@ import console from 'node:console';
 import process from 'node:process';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { pathToFileURL, URL } from 'node:url';
+import { URL } from 'node:url';
+import { launchBrowser } from './verification/browser.mjs';
+import { portfolioRoutes } from './verification/portfolio.mjs';
 
-assert.ok(process.env.PLAYWRIGHT_MODULE, 'Set PLAYWRIGHT_MODULE');
-const { chromium, webkit } = await import(
-  pathToFileURL(resolve(process.env.PLAYWRIGHT_MODULE)).href
-);
 const engine = process.env.COAST_BROWSER ?? 'chromium';
-const browser = await (engine === 'webkit' ? webkit : chromium).launch({
-  headless: true,
-  ...(process.env.BROWSER_EXECUTABLE
-    ? { executablePath: process.env.BROWSER_EXECUTABLE }
-    : {}),
-});
 const base = process.env.VERIFY_URL ?? 'http://127.0.0.1:4321';
 const output = resolve(
   process.env.COAST_EVIDENCE_DIR ?? 'docs/coastal-footer-verification',
 );
 await mkdir(output, { recursive: true });
+const browser = await launchBrowser(engine);
 const report = {
   engine,
   browser: browser.version(),
@@ -29,12 +22,6 @@ const report = {
   boundaries: [],
   errors: [],
 };
-const routes = [
-  '/',
-  '/articles/design-the-second-attempt/',
-  '/work/accord/',
-  '/work/pascal/',
-];
 const twoFrames = (page) =>
   page.evaluate(
     () =>
@@ -78,7 +65,7 @@ try {
 
   for (const theme of ['light', 'dark']) {
     await page.emulateMedia({ colorScheme: theme, reducedMotion: 'reduce' });
-    for (const route of routes) {
+    for (const route of portfolioRoutes) {
       await page.goto(new URL(route, base).href);
       for (const width of [320, 375, 700, 701, 1440, 1944]) {
         await page.setViewportSize({ width, height: 900 });
@@ -176,6 +163,22 @@ try {
   );
   report.liveThemeSwitch = true;
 
+  // A one-pixel width change can leave the canvas and grid dimensions unchanged.
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 321, height: 900 });
+  await page.goto(base);
+  await showFooter(page);
+  await page.setViewportSize({ width: 322, height: 900 });
+  await showFooter(page);
+  const resized = await hash(page);
+  await page.reload();
+  await showFooter(page);
+  assert.equal(
+    await hash(page),
+    resized,
+    'Resize must rebuild the same scene as a fresh load',
+  );
+
   // Control browser time externally; no test interface is shipped in the app.
   const clock = await browser.newContext({
     viewport: { width: 1440, height: 900 },
@@ -226,7 +229,7 @@ try {
 
   const plain = await browser.newContext({ javaScriptEnabled: false });
   const noJS = await plain.newPage();
-  for (const route of routes) {
+  for (const route of portfolioRoutes) {
     await noJS.goto(new URL(route, base).href);
     assert.equal(await noJS.locator('main').isVisible(), true);
     assert.equal(await noJS.locator('.coastal-footer').isVisible(), false);

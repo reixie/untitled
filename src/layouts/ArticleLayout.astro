@@ -18,13 +18,15 @@ const date = new Intl.DateTimeFormat('en-GB', {
 }).format(publishedAt);
 ---
 
-<DocumentLayout title={`${title} — Alex L.`} description={description}>
+<DocumentLayout title={title} description={description}>
   <nav aria-label="Article navigation">
     <BackLink />
   </nav>
   <article aria-labelledby="article-title">
     <header>
-      <h1 id="article-title">{title}</h1>
+      <h1 class="reading-title" id="article-title">
+        {title}
+      </h1>
       <time datetime={publishedAt.toISOString().slice(0, 10)}>{date}</time>
     </header>
     <div class="prose">
@@ -36,11 +38,6 @@ const date = new Intl.DateTimeFormat('en-GB', {
 <style>
   header {
     margin-bottom: 2.5rem;
-  }
-  h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    line-height: 1.25;
-    text-wrap: balance;
   }
   time {
     display: block;

@@ -16,13 +16,13 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath, URL } from 'node:url';
 
-// Fixtures exist only in an isolated temporary project, never in the real source/dist.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const scratch = await mkdtemp(join(tmpdir(), 'untitled-content-'));
 const astro = join(root, 'node_modules/astro/bin/astro.mjs');
+const articleDirectory = join(scratch, 'src/content/articles');
 
 async function fixture(name, content) {
-  await writeFile(join(scratch, 'src/content/articles', name), content);
+  await writeFile(join(articleDirectory, name), content);
 }
 
 function build() {
@@ -50,9 +50,9 @@ try {
     join(scratch, 'node_modules'),
     'dir',
   );
-  // Test data is independent of any real articles added after Stage 1.
-  await rm(join(scratch, 'src/content/articles'), { recursive: true });
-  await mkdir(join(scratch, 'src/content/articles'));
+  // Publication checks use independent fixtures so changes to real posts cannot mask a regression.
+  await rm(articleDirectory, { recursive: true });
+  await mkdir(articleDirectory);
   await mkdir(join(scratch, 'src/components'), { recursive: true });
   await writeFile(
     join(scratch, 'src/components/StaticProof.astro'),
@@ -62,46 +62,31 @@ try {
     'unfinished.mdx',
     '---\nstatus: draft\n---\nUnfinished draft without dates.',
   );
-  await fixture(
-    'older.md',
-    '---\nstatus: published\ntitle: Older\ndescription: Markdown proof\npublishedAt: "2026-01-01"\n---\nMarkdown body.',
-  );
-  for (const id of ['newer', 'same-date']) {
+  const publications = [
+    {
+      id: 'older',
+      title: 'Older',
+      format: 'md',
+      date: '2026-01-01',
+      body: 'Markdown body.',
+    },
+    ...['same-date', 'newer'].map((id) => ({
+      id,
+      title: id,
+      format: 'mdx',
+      date: '2026-02-01',
+      body: "import StaticProof from '../../components/StaticProof.astro';\n\n## MDX compilation proof\n\n<StaticProof />",
+    })),
+  ];
+  for (const { id, title, format, date, body } of publications) {
     await fixture(
-      `${id}.mdx`,
-      `---\nstatus: published\ntitle: ${id}\ndescription: MDX proof\npublishedAt: "2026-02-01"\n---\nimport StaticProof from '../../components/StaticProof.astro';\n\n## MDX compilation proof\n\n<StaticProof />`,
+      `${id}.${format}`,
+      `---\nstatus: published\ntitle: ${title}\ndescription: Publication proof\npublishedAt: "${date}"\n---\n${body}`,
     );
   }
-  await writeFile(
-    join(scratch, 'src/pages/stage1-verification.astro'),
-    `---
-import { render } from 'astro:content';
-import { getPublishedArticles } from '../lib/articles';
-const articles = await getPublishedArticles();
-const rendered = await Promise.all(articles.map(async article => ({
-  id: article.id,
-  ...(await render(article)),
-})));
----
-<html lang="en"><body>
-{rendered.map(({ id, Content }) => <article data-id={id}><Content /></article>)}
-</body></html>`,
-  );
 
   const valid = build();
   assert.equal(valid.status, 0, valid.output);
-  const html = await readFile(
-    join(scratch, 'dist/stage1-verification/index.html'),
-    'utf8',
-  );
-  assert.match(html, /<h2[^>]*>MDX compilation proof<\/h2>/);
-  assert.match(html, /data-static-proof/);
-  assert.match(html, /Markdown body/);
-  assert.doesNotMatch(html, /Unfinished draft|<script|astro-island/);
-  assert.deepEqual(
-    [...html.matchAll(/data-id="([^"]+)"/g)].map((match) => match[1]),
-    ['newer', 'same-date', 'older'],
-  );
   const homepage = await readFile(join(scratch, 'dist/index.html'), 'utf8');
   assert.deepEqual(
     [...homepage.matchAll(/href="\/articles\/([^"]+)\/"/g)].map(
@@ -112,22 +97,26 @@ const rendered = await Promise.all(articles.map(async article => ({
   );
   const routes = await readdir(join(scratch, 'dist/articles'));
   assert.deepEqual(routes.sort(), ['newer', 'older', 'same-date']);
-  for (const id of routes) {
-    const article = await readFile(
+  for (const { id, title, format } of publications) {
+    const html = await readFile(
       join(scratch, 'dist/articles', id, 'index.html'),
       'utf8',
     );
-    assert.match(
-      article,
-      new RegExp(`<h1\\b[^>]*>${id === 'older' ? 'Older' : id}</h1>`),
-    );
-    assert.match(article, /Markdown body|data-static-proof/);
-    assert.doesNotMatch(article, /Unfinished draft|astro-island/);
-    assert.doesNotMatch(
-      /<article\b[\s\S]*?<\/article>/.exec(article)?.[0] ?? '',
-      /<script\b/,
-    );
-    assert.match(article, /data-coastal-footer/);
+    const article = /<article\b[\s\S]*?<\/article>/.exec(html)?.[0];
+    assert.ok(article, `Missing article on ${id}`);
+    assert.equal(/<h1\b[^>]*>([^<]+)<\/h1>/.exec(article)?.[1], title);
+    if (format === 'mdx') {
+      assert.match(article, /<h2\b[^>]*>MDX compilation proof<\/h2>/);
+      assert.match(
+        article,
+        /<aside\b[^>]*data-static-proof[^>]*>Static component compiled in MDX<\/aside>/,
+      );
+    } else {
+      assert.match(article, /<p\b[^>]*>Markdown body\.<\/p>/);
+    }
+    assert.doesNotMatch(article, /<script\b/);
+    assert.doesNotMatch(html, /Unfinished draft|astro-island/);
+    assert.match(html, /data-coastal-footer/);
   }
   assert.doesNotMatch(homepage, /Unfinished draft|\/articles\/unfinished\//);
   console.log(
@@ -165,7 +154,7 @@ const rendered = await Promise.all(articles.map(async article => ({
     assert.match(invalid.output, /invalid\.mdx|invalid/);
     assert.match(invalid.output, expected);
     console.log(`PASS: ${name} rejected with entry and field diagnostics.`);
-    await rm(join(scratch, 'src/content/articles/invalid.mdx'));
+    await rm(join(articleDirectory, 'invalid.mdx'));
   }
 } finally {
   await rm(scratch, { recursive: true, force: true });

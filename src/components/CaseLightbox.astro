@@ -1,4 +1,16 @@
-<dialog class="case-lightbox" aria-label="Image viewer">
+---
+interface Props {
+  for: string;
+}
+
+const { for: sourceId } = Astro.props;
+---
+
+<dialog
+  class="case-lightbox"
+  data-case-viewer-for={sourceId}
+  aria-label="Image viewer"
+>
   <div class="controls">
     <button type="button" data-zoom aria-label="Show actual size" disabled>
       <svg
@@ -54,10 +66,10 @@
 </dialog>
 
 <script>
-  const dialog = document.querySelector<HTMLDialogElement>('.case-lightbox');
+  function enhanceCaseLightbox(dialog: HTMLDialogElement) {
+    const source = document.getElementById(dialog.dataset.caseViewerFor ?? '');
+    if (!source || typeof dialog.showModal !== 'function') return;
 
-  if (dialog && typeof dialog.showModal === 'function') {
-    const article = document.querySelector('.case-study')!;
     const controls = dialog.querySelector('.controls')!;
     const viewport = dialog.querySelector<HTMLElement>('.viewport')!;
     const image = dialog.querySelector('img')!;
@@ -80,7 +92,15 @@
       );
     }
 
-    article.addEventListener('click', (event) => {
+    function resetImage() {
+      image.hidden = true;
+      image.removeAttribute('src');
+      status.textContent = '';
+      zoom.disabled = true;
+      setActualSize(false);
+    }
+
+    source.addEventListener('click', (event) => {
       if (
         !(event instanceof MouseEvent) ||
         event.defaultPrevented ||
@@ -99,8 +119,10 @@
           : null;
       if (!link) return;
 
-      const label =
-        link.dataset.caseLightbox || link.textContent?.trim() || 'Image viewer';
+      const label = link.dataset.caseLightbox;
+      if (!label) return;
+
+      resetImage();
       dialog.setAttribute('aria-label', label);
       image.alt = link.querySelector('img')?.alt || label;
       opener = link;
@@ -137,15 +159,16 @@
     });
     dialog.addEventListener('close', () => {
       if (dialog.open) return;
-      image.hidden = true;
-      image.removeAttribute('src');
-      status.textContent = '';
-      zoom.disabled = true;
-      setActualSize(false);
-      opener?.focus({ preventScroll: true });
+      resetImage();
+      const previousOpener = opener;
       opener = undefined;
+      previousOpener?.focus({ preventScroll: true });
     });
   }
+
+  document
+    .querySelectorAll<HTMLDialogElement>('dialog[data-case-viewer-for]')
+    .forEach(enhanceCaseLightbox);
 </script>
 
 <style>

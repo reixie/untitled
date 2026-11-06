@@ -6,6 +6,7 @@ description: A small-team CRM concept with a company directory, an expert walkth
 
 import CaseFigure from '../../components/CaseFigure.astro';
 import CaseFlow from '../../components/CaseFlow.astro';
+import CaseImageLink from '../../components/CaseImageLink.astro';
 import AccordHeadcount from '../../components/AccordHeadcount.astro';
 import brand from '../../assets/images/accord/accord-brand-original.webp';
 import shell from '../../assets/images/accord/accord-application-shell-original.webp';
@@ -85,18 +86,12 @@ In the static Light mockup, Ramp is in row one and Stripe is in row eight. Both 
   caption="The table and navigation keep their positions in Dark."
 />
 
-- <a href={brand.src} data-case-lightbox="Accord brand artwork">
-    Accord brand artwork
-  </a>
-- <a href={shell.src} data-case-lightbox="Application shell and workspace menu">
-    Application shell and workspace menu
-  </a>
-- <a
-    href={menuDark.src}
-    data-case-lightbox="Workspace and appearance menus in Dark"
-  >
-    Workspace and appearance menus in Dark
-  </a>
+- <CaseImageLink src={brand} label="Accord brand artwork" />
+- <CaseImageLink src={shell} label="Application shell and workspace menu" />
+- <CaseImageLink
+    src={menuDark}
+    label="Workspace and appearance menus in Dark"
+  />
 
 ## What to test next
 

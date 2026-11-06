@@ -4,21 +4,18 @@ import arrow from '../assets/icons/arrow-right.svg?url';
 interface Props {
   label: string;
   role?: string;
-  href: string | null;
+  href: string;
 }
 const { label, role, href } = Astro.props;
-const Tag = href ? 'a' : 'div';
-const isExternal = href
-  ? new URL(href, Astro.url).origin !== Astro.url.origin
-  : false;
+const isExternal = new URL(href, Astro.url).origin !== Astro.url.origin;
 ---
 
-<Tag
-  href={href ?? undefined}
+<a
+  href={href}
   target={isExternal ? '_blank' : undefined}
   rel={isExternal ? 'noopener noreferrer' : undefined}
   class="row"
-  data-focus-region={href ? '' : undefined}
+  data-focus-region
 >
   <span class="label">
     {label}
@@ -36,7 +33,7 @@ const isExternal = href
     style={`--arrow-source: url("${arrow}")`}
     aria-hidden="true"
   ></span>
-</Tag>
+</a>
 
 <style>
   .row {

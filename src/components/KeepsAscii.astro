@@ -1,5 +1,9 @@
 ---
-import { keepsFrame, keepsStage, keepsStillMs } from '../scripts/keeps-scene';
+import {
+  keepsInkProperties,
+  keepsStage,
+  keepsStillFrame,
+} from '../scripts/keeps-scene';
 
 const {
   width,
@@ -20,11 +24,11 @@ const {
     font-size={fontSize}
     font-family={fontFamily}
   >
-    {keepsFrame(keepsStillMs).map(({ x, y, text, ink }) => (
+    {keepsStillFrame.map(({ x, y, text, ink }) => (
       <text
         x={left + x * cellWidth}
         y={baseline + y * cellHeight}
-        fill={`var(--ascii-${ink})`}
+        fill={`var(${keepsInkProperties[ink]})`}
         textLength={text.length * cellWidth}
         lengthAdjust="spacingAndGlyphs"
       >
