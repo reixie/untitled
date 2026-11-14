@@ -20,7 +20,7 @@
     "verify:output": "node scripts/verify-output.mjs"
   },
   "dependencies": {
-    "astro": "7.4.2",
+    "astro": "7.4.7",
     "@astrojs/mdx": "8.1.1"
   },
   "devDependencies": {
